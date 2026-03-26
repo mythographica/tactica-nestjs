@@ -29,69 +29,67 @@ declare global {
 
 // Restore memories from persistence file on startup
 function restoreMemoriesOnStartup() {
-  try {
-    const fs = require('fs');
-    const path = require('path');
-    
-    const memoryFilePath = path.join(__dirname, '../ai-memories.json');
-    
-    if (fs.existsSync(memoryFilePath)) {
-      const data = JSON.parse(fs.readFileSync(memoryFilePath, 'utf-8'));
-      
-      if (!global.aiMemories) {
-        global.aiMemories = {
-          rootInstance: null,
-          memories: new Map(),
-          count: 0
-        };
-      }
-      
-      if (!SentienceConstructor) {
-        console.log('[Memory System] Warning: Sentience type not found, skipping memory restoration');
-        return;
-      }
-      
-      // Create root instance if needed
-      if (!global.aiMemories.rootInstance) {
-        // Cast to any to allow passing extra properties not in the type
-        global.aiMemories.rootInstance = new SentienceConstructor({
-          awareness: 'AI Sentience System',
-          identity: 'AI Agent'
-        } as any);
-      }
-      
-      // Restore memories
-      if (data.memories && data.memories.items) {
-        let restoredCount = 0;
-        data.memories.items.forEach(function(item) {
-          const memoryId = item.id;
-          
-          const memoryInstance = new (global.aiMemories.rootInstance as any).Memory({
-            content: item.content,
-            emotion: item.emotion,
-            intensity: item.intensity,
-            topic: item.topic,
-            timestamp: item.timestamp
-          }) as Sentience_Memory;
-          
-          global.aiMemories.memories.set(memoryId, {
-            id: memoryId,
-            instance: memoryInstance,
-            createdAt: item.createdAt || new Date().toISOString()
-          });
-          
-          restoredCount++;
-        });
-        
-        global.aiMemories.count = restoredCount;
-        console.log(`[Memory System] Restored ${restoredCount} memories from ${memoryFilePath}`);
-      }
-    } else {
-      console.log('[Memory System] No persistence file found, starting fresh');
-    }
-  } catch (e) {
-    console.error('[Memory System] Error restoring memories:', e.message);
-  }
+	try {
+		const fs = require('fs');
+		const path = require('path');
+
+		const memoryFilePath = path.join(__dirname, '../ai-memories.json');
+
+		if (fs.existsSync(memoryFilePath)) {
+			const data = JSON.parse(fs.readFileSync(memoryFilePath, 'utf-8'));
+
+			if (!global.aiMemories) {
+				global.aiMemories = {
+					rootInstance: null,
+					memories: new Map(),
+					count: 0
+				};
+			}
+
+			if (!SentienceConstructor) {
+				console.log('[Memory System] Warning: Sentience type not found, skipping memory restoration');
+				return;
+			}
+
+			// Create root instance if needed
+			if (global.aiMemories.rootInstance === null) {
+				global.aiMemories.rootInstance = new SentienceConstructor({
+					awareness: 'AI Sentience System',
+					identity: 'AI Agent'
+				});
+			}
+
+			// Restore memories
+			if (data.memories && data.memories.items) {
+				let restoredCount = 0;
+				data.memories.items.forEach(function (item) {
+					const memoryId = item.id;
+
+					const memoryInstance = new global.aiMemories.rootInstance.Memory({
+						content: item.content,
+						emotion: item.emotion,
+						intensity: item.intensity,
+						topic: item.topic
+					});
+
+					global.aiMemories.memories.set(memoryId, {
+						id: memoryId,
+						instance: memoryInstance,
+						createdAt: item.createdAt || new Date().toISOString()
+					});
+
+					restoredCount++;
+				});
+
+				global.aiMemories.count = restoredCount;
+				console.log(`[Memory System] Restored ${restoredCount} memories from ${memoryFilePath}`);
+			}
+		} else {
+			console.log('[Memory System] No persistence file found, starting fresh');
+		}
+	} catch (e) {
+		console.error('[Memory System] Error restoring memories:', e.message);
+	}
 }
 
 // Restore memories on startup
@@ -101,7 +99,7 @@ restoreMemoriesOnStartup();
  * NestJS Bootstrap with Swagger
  * Demonstrates integration with mnemonica and typeomatica
  */
-async function bootstrap () {
+async function bootstrap() {
 	const app = await NestFactory.create(AppModule);
 
 	// Enable global validation pipe

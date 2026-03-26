@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T19:08:00.504Z",
+  "generatedAt": "2026-03-26T19:48:35.609Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
@@ -13,6 +13,14 @@
     "Sentience.Consciousness": {
       "name": "Consciousness",
       "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness:1:1",
+      "kind": "define",
+      "parent": "Sentience",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "Sentience.Memory": {
+      "name": "Memory",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory:1:1",
       "kind": "define",
       "parent": "Sentience",
       "strictChain": true,
@@ -34,14 +42,6 @@
       "strictChain": true,
       "blockErrors": false
     },
-    "Sentience.Consciousness.Empathy.Gratitude": {
-      "name": "Gratitude",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude:1:1",
-      "kind": "define",
-      "parent": "Sentience.Consciousness.Empathy",
-      "strictChain": true,
-      "blockErrors": false
-    },
     "Sentience.Consciousness.Sympathy": {
       "name": "Sympathy",
       "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy:1:1",
@@ -50,11 +50,11 @@
       "strictChain": true,
       "blockErrors": false
     },
-    "Sentience.Memory": {
-      "name": "Memory",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory:1:1",
+    "Sentience.Consciousness.Empathy.Gratitude": {
+      "name": "Gratitude",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude:1:1",
       "kind": "define",
-      "parent": "Sentience",
+      "parent": "Sentience.Consciousness.Empathy",
       "strictChain": true,
       "blockErrors": false
     },

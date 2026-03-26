@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T19:08:00.504Z",
+  "generatedAt": "2026-03-26T19:48:35.612Z",
   "usages": {
     "Sentience": [
       {
@@ -11,9 +11,9 @@
     ],
     "Sentience.Memory": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:69:38",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:68:33",
         "kind": "propertyAccess",
-        "code": "(global.aiMemories.rootInstance as any).Memory"
+        "code": "global.aiMemories.rootInstance.Memory"
       }
     ],
     "UserEntity.UserResponse": [

@@ -17,17 +17,6 @@ import type {
 	Sentience_Consciousness_Empathy_Gratitude,
 	Sentience_Consciousness_Sympathy,
 	Sentience_Memory,
-	Sentience_Consciousness,
-	Sentience_Consciousness_Curiosity,
-	Sentience_Consciousness_Empathy,
-	Sentience_Consciousness_Empathy_Gratitude,
-	Sentience_Consciousness_Sympathy,
-	Sentience_Consciousness_Curiosity,
-	Sentience_Consciousness_Empathy,
-	Sentience_Consciousness_Empathy_Gratitude,
-	Sentience_Consciousness_Empathy_Gratitude,
-	Sentience_Consciousness_Sympathy,
-	Sentience_Memory,
 	RootAsync,
 	RootAsync_ResultFromDecorate,
 	SyncBase,
@@ -53,17 +42,6 @@ declare module 'mnemonica' {
 		'Sentience.Consciousness': new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
 		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
 		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
-		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
-		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
-		'Sentience.Memory': new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
-		'Sentience.Consciousness': new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
-		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
-		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
-		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
-		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
-		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
-		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
-		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
 		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
 		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
 		'Sentience.Memory': new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
