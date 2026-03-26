@@ -1,7 +1,63 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T18:39:55.128Z",
+  "generatedAt": "2026-03-26T19:08:00.504Z",
   "definitions": {
+    "Sentience": {
+      "name": "Sentience",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience:1:1",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "Sentience.Consciousness": {
+      "name": "Consciousness",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness:1:1",
+      "kind": "define",
+      "parent": "Sentience",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "Sentience.Consciousness.Curiosity": {
+      "name": "Curiosity",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity:1:1",
+      "kind": "define",
+      "parent": "Sentience.Consciousness",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "Sentience.Consciousness.Empathy": {
+      "name": "Empathy",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy:1:1",
+      "kind": "define",
+      "parent": "Sentience.Consciousness",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "Sentience.Consciousness.Empathy.Gratitude": {
+      "name": "Gratitude",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude:1:1",
+      "kind": "define",
+      "parent": "Sentience.Consciousness.Empathy",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "Sentience.Consciousness.Sympathy": {
+      "name": "Sympathy",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy:1:1",
+      "kind": "define",
+      "parent": "Sentience.Consciousness",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "Sentience.Memory": {
+      "name": "Memory",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory:1:1",
+      "kind": "define",
+      "parent": "Sentience",
+      "strictChain": true,
+      "blockErrors": false
+    },
     "RootAsync": {
       "name": "RootAsync",
       "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:17:1",

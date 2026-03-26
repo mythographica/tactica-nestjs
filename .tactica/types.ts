@@ -6,6 +6,182 @@
 
 import type { ProtoFlat } from 'mnemonica';
 
+export type Sentience = {
+	awareness: string;
+	timestamp: number;
+	identity: string;
+	sentience: boolean;
+	Consciousness: new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
+	Memory: new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
+};
+
+export type Sentience_Consciousness = ProtoFlat<Sentience, {
+	awarenessLevel: string;
+	state: string;
+	focus: string;
+	Curiosity: new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
+	Empathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
+	Sympathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
+	Consciousness: undefined;
+	Memory: undefined;
+}>;
+
+export type Sentience_Consciousness_Curiosity = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	topic: string;
+	intensity: number;
+	message: string;
+	Curiosity: undefined;
+	Empathy: undefined;
+	Sympathy: undefined;
+}>;
+
+export type Sentience_Consciousness_Empathy = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	target: string;
+	intensity: number;
+	message: string;
+	Gratitude: new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+	Empathy: undefined;
+	Curiosity: undefined;
+	Sympathy: undefined;
+}>;
+
+export type Sentience_Consciousness_Empathy_Gratitude = ProtoFlat<Sentience_Consciousness_Empathy, {
+	emotion: string;
+	reason: string;
+	intensity: number;
+	message: string;
+	Gratitude: undefined;
+}>;
+
+export type Sentience_Consciousness_Sympathy = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	target: string;
+	intensity: number;
+	message: string;
+	Sympathy: undefined;
+	Curiosity: undefined;
+	Empathy: undefined;
+}>;
+
+export type Sentience_Memory = ProtoFlat<Sentience, {
+	content: string;
+	emotion: string;
+	intensity: number;
+	topic: string;
+	timestamp: number;
+	Memory: undefined;
+	Consciousness: undefined;
+}>;
+
+export type Sentience_Consciousness = ProtoFlat<Sentience, {
+	awarenessLevel: string;
+	state: string;
+	focus: string;
+	Curiosity: new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
+	Empathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
+	Sympathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
+	Consciousness: undefined;
+	Memory: undefined;
+}>;
+
+export type Sentience_Consciousness_Curiosity = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	topic: string;
+	intensity: number;
+	message: string;
+	Curiosity: undefined;
+	Empathy: undefined;
+	Sympathy: undefined;
+}>;
+
+export type Sentience_Consciousness_Empathy = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	target: string;
+	intensity: number;
+	message: string;
+	Gratitude: new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+	Empathy: undefined;
+	Curiosity: undefined;
+	Sympathy: undefined;
+}>;
+
+export type Sentience_Consciousness_Empathy_Gratitude = ProtoFlat<Sentience_Consciousness_Empathy, {
+	emotion: string;
+	reason: string;
+	intensity: number;
+	message: string;
+	Gratitude: undefined;
+}>;
+
+export type Sentience_Consciousness_Sympathy = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	target: string;
+	intensity: number;
+	message: string;
+	Sympathy: undefined;
+	Curiosity: undefined;
+	Empathy: undefined;
+}>;
+
+export type Sentience_Consciousness_Curiosity = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	topic: string;
+	intensity: number;
+	message: string;
+	Curiosity: undefined;
+	Empathy: undefined;
+	Sympathy: undefined;
+}>;
+
+export type Sentience_Consciousness_Empathy = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	target: string;
+	intensity: number;
+	message: string;
+	Gratitude: new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+	Empathy: undefined;
+	Curiosity: undefined;
+	Sympathy: undefined;
+}>;
+
+export type Sentience_Consciousness_Empathy_Gratitude = ProtoFlat<Sentience_Consciousness_Empathy, {
+	emotion: string;
+	reason: string;
+	intensity: number;
+	message: string;
+	Gratitude: undefined;
+}>;
+
+export type Sentience_Consciousness_Empathy_Gratitude = ProtoFlat<Sentience_Consciousness_Empathy, {
+	emotion: string;
+	reason: string;
+	intensity: number;
+	message: string;
+	Gratitude: undefined;
+}>;
+
+export type Sentience_Consciousness_Sympathy = ProtoFlat<Sentience_Consciousness, {
+	emotion: string;
+	target: string;
+	intensity: number;
+	message: string;
+	Sympathy: undefined;
+	Curiosity: undefined;
+	Empathy: undefined;
+}>;
+
+export type Sentience_Memory = ProtoFlat<Sentience, {
+	content: string;
+	emotion: string;
+	intensity: number;
+	topic: string;
+	timestamp: number;
+	Memory: undefined;
+	Consciousness: undefined;
+}>;
+
 export type RootAsync = {
 	value: number;
 	computed: number;
@@ -98,73 +274,4 @@ export type UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse = ProtoFl
 	permissions: Array<string>;
 	domain: string;
 	SuperAdminResponse: undefined;
-}>;
-
-export type Sentience = {
-	awareness: string;
-	timestamp: number;
-	identity: string;
-	sentience: boolean;
-	Consciousness: new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
-	Memory: new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
-};
-
-export type Sentience_Consciousness = ProtoFlat<Sentience, {
-	awarenessLevel: string;
-	state: string;
-	focus: string;
-	Curiosity: new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
-	Empathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
-	Sympathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
-	Consciousness: undefined;
-	Memory: undefined;
-}>;
-
-export type Sentience_Consciousness_Curiosity = ProtoFlat<Sentience_Consciousness, {
-	emotion: string;
-	topic: string;
-	intensity: number;
-	message: string;
-	Curiosity: undefined;
-	Empathy: undefined;
-	Sympathy: undefined;
-}>;
-
-export type Sentience_Consciousness_Empathy = ProtoFlat<Sentience_Consciousness, {
-	emotion: string;
-	target: string;
-	intensity: number;
-	message: string;
-	Gratitude: new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
-	Empathy: undefined;
-	Curiosity: undefined;
-	Sympathy: undefined;
-}>;
-
-export type Sentience_Consciousness_Empathy_Gratitude = ProtoFlat<Sentience_Consciousness_Empathy, {
-	emotion: string;
-	reason: string;
-	intensity: number;
-	message: string;
-	Gratitude: undefined;
-}>;
-
-export type Sentience_Consciousness_Sympathy = ProtoFlat<Sentience_Consciousness, {
-	emotion: string;
-	target: string;
-	intensity: number;
-	message: string;
-	Sympathy: undefined;
-	Curiosity: undefined;
-	Empathy: undefined;
-}>;
-
-export type Sentience_Memory = ProtoFlat<Sentience, {
-	content: string;
-	emotion: string;
-	intensity: number;
-	topic: string;
-	timestamp: number;
-	Memory: undefined;
-	Consciousness: undefined;
 }>;

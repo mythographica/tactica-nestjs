@@ -1,7 +1,21 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T18:39:55.128Z",
+  "generatedAt": "2026-03-26T19:08:00.504Z",
   "usages": {
+    "Sentience": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:15:30",
+        "kind": "lookup",
+        "code": "lookupTyped('Sentience')"
+      }
+    ],
+    "Sentience.Memory": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:69:38",
+        "kind": "propertyAccess",
+        "code": "(global.aiMemories.rootInstance as any).Memory"
+      }
+    ],
     "UserEntity.UserResponse": [
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:29:28",

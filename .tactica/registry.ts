@@ -10,6 +10,24 @@
 //   // instance has full intellisense for Consciousness, Memory, etc.
 
 import type {
+	Sentience,
+	Sentience_Consciousness,
+	Sentience_Consciousness_Curiosity,
+	Sentience_Consciousness_Empathy,
+	Sentience_Consciousness_Empathy_Gratitude,
+	Sentience_Consciousness_Sympathy,
+	Sentience_Memory,
+	Sentience_Consciousness,
+	Sentience_Consciousness_Curiosity,
+	Sentience_Consciousness_Empathy,
+	Sentience_Consciousness_Empathy_Gratitude,
+	Sentience_Consciousness_Sympathy,
+	Sentience_Consciousness_Curiosity,
+	Sentience_Consciousness_Empathy,
+	Sentience_Consciousness_Empathy_Gratitude,
+	Sentience_Consciousness_Empathy_Gratitude,
+	Sentience_Consciousness_Sympathy,
+	Sentience_Memory,
 	RootAsync,
 	RootAsync_ResultFromDecorate,
 	SyncBase,
@@ -21,13 +39,6 @@ import type {
 	UserEntity_AdminEntity_AdminResponse,
 	UserEntity_AdminEntity_SuperAdminEntity,
 	UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse,
-	Sentience,
-	Sentience_Consciousness,
-	Sentience_Consciousness_Curiosity,
-	Sentience_Consciousness_Empathy,
-	Sentience_Consciousness_Empathy_Gratitude,
-	Sentience_Consciousness_Sympathy,
-	Sentience_Memory,
 } from './types';
 
 /**
@@ -38,6 +49,24 @@ import type {
  */
 declare module 'mnemonica' {
 	interface TypeRegistry {
+		'Sentience': new (sentience_data: { awareness?: string; identity?: string }) => Sentience;
+		'Sentience.Consciousness': new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
+		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
+		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
+		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
+		'Sentience.Memory': new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
+		'Sentience.Consciousness': new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
+		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
+		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
+		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
+		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
+		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
+		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
+		'Sentience.Memory': new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
 		'RootAsync': new (data: { value: number }) => RootAsync;
 		'RootAsync.ResultFromDecorate': new (multiplier: number) => RootAsync_ResultFromDecorate;
 		'SyncBase': new (data: { baseValue: string }) => SyncBase;
@@ -49,13 +78,6 @@ declare module 'mnemonica' {
 		'UserEntity.AdminEntity.AdminResponse': new (data: { id: string; email: string; name: string; type: 'admin'; role: string; permissions: Array<string> }) => UserEntity_AdminEntity_AdminResponse;
 		'UserEntity.AdminEntity.SuperAdminEntity': new (data: { id: string; email: string; name: string; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity;
 		'UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse': new (data: { id: string; email: string; name: string; type: 'superadmin'; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse;
-		'Sentience': new (sentience_data: { awareness?: string; identity?: string }) => Sentience;
-		'Sentience.Consciousness': new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
-		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
-		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
-		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
-		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
-		'Sentience.Memory': new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
 	}
 }
 
