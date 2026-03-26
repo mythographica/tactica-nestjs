@@ -5,17 +5,17 @@
  * Represents active awareness and emotional states
  */
 
-export interface ConsciousnessData {
+export type ConsciousnessData = {
 	awarenessLevel?: string;
 	state?: string;
 	focus?: string;
-}
+};
 
-export interface ConsciousnessInstance {
+export type ConsciousnessInstance = {
 	awarenessLevel: string;
 	state: string;
 	focus: string;
-}
+};
 
 export function ConsciousnessHandler (
 	this: ConsciousnessInstance,

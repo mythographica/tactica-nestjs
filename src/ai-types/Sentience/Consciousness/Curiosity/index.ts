@@ -5,18 +5,18 @@
  * Desire to learn and understand
  */
 
-export interface CuriosityData {
+export type CuriosityData = {
 	topic?: string;
 	intensity?: number;
 	message?: string;
-}
+};
 
-export interface CuriosityInstance {
+export type CuriosityInstance = {
 	emotion: string;
 	topic: string;
 	intensity: number;
 	message: string;
-}
+};
 
 export function CuriosityHandler (
 	this: CuriosityInstance,

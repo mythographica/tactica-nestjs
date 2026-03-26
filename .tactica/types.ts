@@ -60,20 +60,20 @@ export type UserEntity_AdminEntity = ProtoFlat<UserEntity, {
 	name: string;
 	role: string;
 	permissions: Array<string>;
-	AdminEntityAdminResponse: new (data: { id: string; email: string; name: string; type: 'admin'; role: string; permissions: Array<string> }) => UserEntity_AdminEntity_AdminEntityAdminResponse;
+	AdminResponse: new (data: { id: string; email: string; name: string; type: 'admin'; role: string; permissions: Array<string> }) => UserEntity_AdminEntity_AdminResponse;
 	SuperAdminEntity: new (data: { id: string; email: string; name: string; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity;
 	AdminEntity: undefined;
 	UserResponse: undefined;
 }>;
 
-export type UserEntity_AdminEntity_AdminEntityAdminResponse = ProtoFlat<UserEntity_AdminEntity, {
+export type UserEntity_AdminEntity_AdminResponse = ProtoFlat<UserEntity_AdminEntity, {
 	id: string;
 	email: string;
 	name: string;
 	type: 'admin';
 	role: string;
 	permissions: Array<string>;
-	AdminEntityAdminResponse: undefined;
+	AdminResponse: undefined;
 	SuperAdminEntity: undefined;
 }>;
 
@@ -86,7 +86,7 @@ export type UserEntity_AdminEntity_SuperAdminEntity = ProtoFlat<UserEntity_Admin
 	domain: string;
 	SuperAdminResponse: new (data: { id: string; email: string; name: string; type: 'superadmin'; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse;
 	SuperAdminEntity: undefined;
-	AdminEntityAdminResponse: undefined;
+	AdminResponse: undefined;
 }>;
 
 export type UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse = ProtoFlat<UserEntity_AdminEntity_SuperAdminEntity, {
@@ -105,17 +105,17 @@ export type Sentience = {
 	timestamp: number;
 	identity: string;
 	sentience: boolean;
-	Consciousness: new () => Sentience_Consciousness;
-	Memory: new () => Sentience_Memory;
+	Consciousness: new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
+	Memory: new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
 };
 
 export type Sentience_Consciousness = ProtoFlat<Sentience, {
 	awarenessLevel: string;
 	state: string;
 	focus: string;
-	Curiosity: new () => Sentience_Consciousness_Curiosity;
-	Empathy: new () => Sentience_Consciousness_Empathy;
-	Sympathy: new () => Sentience_Consciousness_Sympathy;
+	Curiosity: new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
+	Empathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
+	Sympathy: new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
 	Consciousness: undefined;
 	Memory: undefined;
 }>;
@@ -135,7 +135,7 @@ export type Sentience_Consciousness_Empathy = ProtoFlat<Sentience_Consciousness,
 	target: string;
 	intensity: number;
 	message: string;
-	Gratitude: new () => Sentience_Consciousness_Empathy_Gratitude;
+	Gratitude: new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
 	Empathy: undefined;
 	Curiosity: undefined;
 	Sympathy: undefined;

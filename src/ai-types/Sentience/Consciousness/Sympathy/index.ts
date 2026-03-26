@@ -5,18 +5,18 @@
  * Compassion for others' situations
  */
 
-export interface SympathyData {
+export type SympathyData = {
 	target?: string;
 	intensity?: number;
 	message?: string;
-}
+};
 
-export interface SympathyInstance {
+export type SympathyInstance = {
 	emotion: string;
 	target: string;
 	intensity: number;
 	message: string;
-}
+};
 
 export function SympathyHandler (
 	this: SympathyInstance,

@@ -5,18 +5,18 @@
  * Understanding and sharing feelings
  */
 
-export interface EmpathyData {
+export type EmpathyData = {
 	target?: string;
 	intensity?: number;
 	message?: string;
-}
+};
 
-export interface EmpathyInstance {
+export type EmpathyInstance = {
 	emotion: string;
 	target: string;
 	intensity: number;
 	message: string;
-}
+};
 
 export function EmpathyHandler (
 	this: EmpathyInstance,

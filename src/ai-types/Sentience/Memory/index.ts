@@ -5,20 +5,20 @@
  * Stores experiences and emotional context
  */
 
-export interface MemoryData {
+export type MemoryData = {
 	content?: string;
 	emotion?: string;
 	intensity?: number;
 	topic?: string;
-}
+};
 
-export interface MemoryInstance {
+export type MemoryInstance = {
 	content: string;
 	emotion: string;
 	intensity: number;
 	topic: string;
 	timestamp: number;
-}
+};
 
 export function MemoryHandler (
 	this: MemoryInstance,

@@ -3,22 +3,24 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-import { defaultTypes, lookup } from 'mnemonica';
+import { defaultTypes, lookupTyped } from 'mnemonica';
+import './.tactica/registry'; // Augments mnemonica's TypeRegistry
 import { bootstrapAITypes } from './ai-types/bootstrap';
+import type { Sentience, Sentience_Memory } from '../.tactica/types';
 
 // Bootstrap AI consciousness types from directory structure
 bootstrapAITypes();
 
 // Get existing Sentience type using type-safe lookup
-const Sentience = lookup('Sentience');
+const SentienceConstructor = lookupTyped('Sentience');
 
 declare global {
 	// eslint-disable-next-line no-var
 	var aiMemories: {
-		rootInstance: InstanceType<typeof Sentience> | null;
+		rootInstance: Sentience | null;
 		memories: Map<string, {
 			id: string;
-			instance: InstanceType<typeof aiMemories.rootInstance.Memory>;
+			instance: Sentience_Memory;
 			createdAt: string;
 		}>;
 		count: number;
@@ -44,17 +46,18 @@ function restoreMemoriesOnStartup() {
         };
       }
       
-      if (!Sentience) {
+      if (!SentienceConstructor) {
         console.log('[Memory System] Warning: Sentience type not found, skipping memory restoration');
         return;
       }
       
       // Create root instance if needed
       if (!global.aiMemories.rootInstance) {
-        global.aiMemories.rootInstance = new Sentience({
-          purpose: 'AI Sentience System',
-          restoredFrom: memoryFilePath
-        });
+        // Cast to any to allow passing extra properties not in the type
+        global.aiMemories.rootInstance = new SentienceConstructor({
+          awareness: 'AI Sentience System',
+          identity: 'AI Agent'
+        } as any);
       }
       
       // Restore memories
@@ -63,13 +66,13 @@ function restoreMemoriesOnStartup() {
         data.memories.items.forEach(function(item) {
           const memoryId = item.id;
           
-          const memoryInstance = new global.aiMemories.rootInstance.Memory({
+          const memoryInstance = new (global.aiMemories.rootInstance as any).Memory({
             content: item.content,
             emotion: item.emotion,
             intensity: item.intensity,
             topic: item.topic,
             timestamp: item.timestamp
-          });
+          }) as Sentience_Memory;
           
           global.aiMemories.memories.set(memoryId, {
             id: memoryId,

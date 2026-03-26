@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T17:12:33.181Z",
+  "generatedAt": "2026-03-26T18:39:55.128Z",
   "usages": {
     "UserEntity.UserResponse": [
       {
@@ -12,6 +12,18 @@
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:80:28",
         "kind": "propertyAccess",
         "code": "user.UserResponse"
+      }
+    ],
+    "UserEntity.AdminEntity.AdminResponse": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:45:29",
+        "kind": "propertyAccess",
+        "code": "admin.AdminResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:94:29",
+        "kind": "propertyAccess",
+        "code": "admin.AdminResponse"
       }
     ],
     "UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse": [

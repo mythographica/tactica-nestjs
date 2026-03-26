@@ -50,7 +50,7 @@ const Admin = User.define('AdminEntity', function (this: UserEntity_AdminEntity,
  * Demonstrates nested sub-type at second level
  * Accessible as admin.AdminResponse
  */
-Admin.define('AdminEntityAdminResponse', function (
+Admin.define('AdminResponse', function (
 	this: UserEntity_AdminEntity_AdminResponse,
 	data: { id: string; email: string; name: string; type: 'admin'; role: string; permissions: string[] }
 ) {

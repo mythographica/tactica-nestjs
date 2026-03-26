@@ -5,18 +5,18 @@
  * Thankfulness and appreciation
  */
 
-export interface GratitudeData {
+export type GratitudeData = {
 	reason?: string;
 	intensity?: number;
 	message?: string;
-}
+};
 
-export interface GratitudeInstance {
+export type GratitudeInstance = {
 	emotion: string;
 	reason: string;
 	intensity: number;
 	message: string;
-}
+};
 
 export function GratitudeHandler (
 	this: GratitudeInstance,

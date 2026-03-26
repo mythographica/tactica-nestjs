@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T17:12:33.180Z",
+  "generatedAt": "2026-03-26T18:39:55.128Z",
   "definitions": {
     "RootAsync": {
       "name": "RootAsync",
@@ -66,8 +66,8 @@
       "strictChain": true,
       "blockErrors": false
     },
-    "UserEntity.AdminEntity.AdminEntityAdminResponse": {
-      "name": "AdminEntityAdminResponse",
+    "UserEntity.AdminEntity.AdminResponse": {
+      "name": "AdminResponse",
       "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:53:1",
       "kind": "define",
       "parent": "UserEntity.AdminEntity",

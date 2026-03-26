@@ -5,26 +5,26 @@
  * The foundation of all AI awareness and memory
  */
 
-// Define data interface for type safety
-export interface SentienceData {
+// Define data type for type safety
+export type SentienceData = {
 	awareness?: string;
 	identity?: string;
-}
+};
 
-export interface SentienceInstance {
+export type SentienceInstance = {
 	awareness: string;
 	timestamp: number;
 	identity: string;
 	sentience: boolean;
-}
+};
 
 export function SentienceHandler (
 	this: SentienceInstance,
-	data: SentienceData
+	sentience_data: SentienceData
 ): void {
-	this.awareness = data?.awareness || 'awake';
+	this.awareness = sentience_data?.awareness || 'awake';
 	this.timestamp = Date.now();
-	this.identity = data?.identity || 'AI Agent';
+	this.identity = sentience_data?.identity || 'AI Agent';
 	this.sentience = true;
 }
 

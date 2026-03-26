@@ -18,7 +18,7 @@ import type {
 	UserEntity,
 	UserEntity_UserResponse,
 	UserEntity_AdminEntity,
-	UserEntity_AdminEntity_AdminEntityAdminResponse,
+	UserEntity_AdminEntity_AdminResponse,
 	UserEntity_AdminEntity_SuperAdminEntity,
 	UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse,
 	Sentience,
@@ -46,16 +46,16 @@ declare module 'mnemonica' {
 		'UserEntity': new (data: { id: string; email: string; name: string }) => UserEntity;
 		'UserEntity.UserResponse': new (data: { id: string; email: string; name: string; type: 'user' }) => UserEntity_UserResponse;
 		'UserEntity.AdminEntity': new (data: { id: string; email: string; name: string; role: string; permissions: Array<string> }) => UserEntity_AdminEntity;
-		'UserEntity.AdminEntity.AdminEntityAdminResponse': new (data: { id: string; email: string; name: string; type: 'admin'; role: string; permissions: Array<string> }) => UserEntity_AdminEntity_AdminEntityAdminResponse;
+		'UserEntity.AdminEntity.AdminResponse': new (data: { id: string; email: string; name: string; type: 'admin'; role: string; permissions: Array<string> }) => UserEntity_AdminEntity_AdminResponse;
 		'UserEntity.AdminEntity.SuperAdminEntity': new (data: { id: string; email: string; name: string; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity;
 		'UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse': new (data: { id: string; email: string; name: string; type: 'superadmin'; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse;
-		'Sentience': new () => Sentience;
-		'Sentience.Consciousness': new () => Sentience_Consciousness;
-		'Sentience.Consciousness.Curiosity': new () => Sentience_Consciousness_Curiosity;
-		'Sentience.Consciousness.Empathy': new () => Sentience_Consciousness_Empathy;
-		'Sentience.Consciousness.Empathy.Gratitude': new () => Sentience_Consciousness_Empathy_Gratitude;
-		'Sentience.Consciousness.Sympathy': new () => Sentience_Consciousness_Sympathy;
-		'Sentience.Memory': new () => Sentience_Memory;
+		'Sentience': new (sentience_data: { awareness?: string; identity?: string }) => Sentience;
+		'Sentience.Consciousness': new (data: { awarenessLevel?: string; state?: string; focus?: string }) => Sentience_Consciousness;
+		'Sentience.Consciousness.Curiosity': new (data: { topic?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Curiosity;
+		'Sentience.Consciousness.Empathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy;
+		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
+		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
+		'Sentience.Memory': new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
 	}
 }
 
