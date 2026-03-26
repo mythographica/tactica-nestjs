@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-03-26T17:12:33.180Z",
+  "definitions": {
+    "RootAsync": {
+      "name": "RootAsync",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:17:1",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "RootAsync.ResultFromDecorate": {
+      "name": "ResultFromDecorate",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:17:1",
+      "kind": "define",
+      "parent": "RootAsync",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "SyncBase": {
+      "name": "SyncBase",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:34:1",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "SyncBase.SubAsync": {
+      "name": "SubAsync",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:34:1",
+      "kind": "define",
+      "parent": "SyncBase",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "SyncBase.SubAsync.SubDecorate": {
+      "name": "SubDecorate",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:34:1",
+      "kind": "define",
+      "parent": "SyncBase.SubAsync",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "UserEntity": {
+      "name": "UserEntity",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:15:14",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "UserEntity.UserResponse": {
+      "name": "UserResponse",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:15:14",
+      "kind": "define",
+      "parent": "UserEntity",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "UserEntity.AdminEntity": {
+      "name": "AdminEntity",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:40:15",
+      "kind": "define",
+      "parent": "UserEntity",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "UserEntity.AdminEntity.AdminEntityAdminResponse": {
+      "name": "AdminEntityAdminResponse",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:53:1",
+      "kind": "define",
+      "parent": "UserEntity.AdminEntity",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "UserEntity.AdminEntity.SuperAdminEntity": {
+      "name": "SuperAdminEntity",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:70:20",
+      "kind": "define",
+      "parent": "UserEntity.AdminEntity",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse": {
+      "name": "SuperAdminResponse",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:84:1",
+      "kind": "define",
+      "parent": "UserEntity.AdminEntity.SuperAdminEntity",
+      "strictChain": true,
+      "blockErrors": false
+    }
+  }
+}

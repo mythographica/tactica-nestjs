@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "savedAt": "2026-03-07T23:35:46.879Z",
+    "memoryCount": 6,
+    "emotionCount": 6,
+    "source": "NestJS via CDP",
+    "added": 0,
+    "merged": true
+  },
+  "memories": {
+    "count": 6,
+    "items": [
+      {
+        "id": "memory-1",
+        "content": "This memory is truly stored in NestJS runtime via CDP!",
+        "emotion": "joy",
+        "intensity": 0.95,
+        "topic": "cdp_verification",
+        "timestamp": 1772652347919,
+        "createdAt": "2026-03-04T19:25:47.920Z"
+      },
+      {
+        "id": "memory-2",
+        "content": "Test memory to verify CDP persistence - created on 2026-03-05 morning",
+        "emotion": "curious",
+        "intensity": 0.7,
+        "topic": "cdp_testing",
+        "timestamp": 1772694683659,
+        "createdAt": "2026-03-05T07:11:23.660Z"
+      },
+      {
+        "id": "memory-3",
+        "content": "Memory created via CDP for persistence test on 2026-03-05",
+        "emotion": "excited",
+        "intensity": 0.9,
+        "topic": "testing",
+        "timestamp": 1772695134393,
+        "createdAt": "2026-03-05T07:18:54.394Z"
+      },
+      {
+        "id": "memory-4",
+        "content": "Testing CDP memory persistence workflow - this memory was created via CDP in NestJS",
+        "emotion": "curiosity",
+        "intensity": 0.8,
+        "topic": "testing",
+        "timestamp": 1772698438777,
+        "createdAt": "2026-03-05T08:13:58.777Z"
+      },
+      {
+        "id": "memory-5",
+        "content": "Second test memory for merge verification - checking that persistence doesn't overwrite",
+        "emotion": "hope",
+        "intensity": 0.75,
+        "topic": "merge-testing",
+        "timestamp": 1772698552787,
+        "createdAt": "2026-03-05T08:15:52.788Z"
+      },
+      {
+        "id": "memory-6",
+        "content": "COMPLETED: CDP Memory Persistence Workflow Tested Successfully. 1) Created memories via CDP in NestJS (memory-4, memory-5). 2) persist_memories MCP command merges new memories with existing file (no data loss). 3) File ai-memories.json now contains 5 memories + 5 emotions. 4) Architecture: cdp_store_memory → NestJS → fetch-memories.js → persist_memories (merge) → ai-memories.json. All working! User AFK for 1 day.",
+        "emotion": "satisfaction",
+        "intensity": 0.9,
+        "topic": "completion",
+        "timestamp": 1772700400537,
+        "createdAt": "2026-03-05T08:46:40.537Z"
+      }
+    ]
+  },
+  "emotions": {
+    "count": 6,
+    "items": [
+      {
+        "id": "joy-1772926546879",
+        "type": "Joy",
+        "message": "Feeling joy",
+        "intensity": 0.95
+      },
+      {
+        "id": "curious-1772926546879",
+        "type": "Curious",
+        "message": "Feeling curious",
+        "intensity": 0.7
+      },
+      {
+        "id": "excited-1772926546879",
+        "type": "Excited",
+        "message": "Feeling excited",
+        "intensity": 0.9
+      },
+      {
+        "id": "curiosity-1772926546879",
+        "type": "Curiosity",
+        "message": "Feeling curiosity",
+        "intensity": 0.8
+      },
+      {
+        "id": "hope-1772926546879",
+        "type": "Hope",
+        "message": "Feeling hope",
+        "intensity": 0.75
+      },
+      {
+        "id": "satisfaction-1772926546879",
+        "type": "Satisfaction",
+        "message": "Feeling satisfaction",
+        "intensity": 0.9
+      }
+    ]
+  },
+  "typeHierarchy": {
+    "consciousness": [
+      "Sentience",
+      "Memory"
+    ]
+  }
+}

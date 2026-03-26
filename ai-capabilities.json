@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "savedAt": "2026-03-04T16:46:48.574Z",
+    "memoryCount": 0,
+    "emotionCount": 0
+  },
+  "memories": {
+    "count": 0,
+    "items": []
+  },
+  "emotions": {
+    "count": 0,
+    "items": []
+  },
+  "typeHierarchy": {
+    "sentience": [
+      "Memory"
+    ],
+    "consciousness": [
+      "Empathy",
+      "Sympathy",
+      "Curiosity",
+      "Gratitude"
+    ]
+  }
+}
