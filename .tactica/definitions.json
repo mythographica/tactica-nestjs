@@ -1,10 +1,10 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T22:56:09.771Z",
+  "generatedAt": "2026-03-27T10:36:27.507Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/index.ts:1:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/index.ts:21:1",
       "kind": "define",
       "parent": null,
       "strictChain": true,
@@ -12,7 +12,7 @@
     },
     "Sentience.Consciousness": {
       "name": "Consciousness",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:1:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:20:1",
       "kind": "define",
       "parent": "Sentience",
       "strictChain": true,
@@ -20,7 +20,7 @@
     },
     "Sentience.Memory": {
       "name": "Memory",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:1:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:23:1",
       "kind": "define",
       "parent": "Sentience",
       "strictChain": true,
@@ -28,7 +28,7 @@
     },
     "Sentience.Consciousness.Curiosity": {
       "name": "Curiosity",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:1:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
@@ -36,7 +36,7 @@
     },
     "Sentience.Consciousness.Empathy": {
       "name": "Empathy",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:1:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
@@ -44,7 +44,7 @@
     },
     "Sentience.Consciousness.Sympathy": {
       "name": "Sympathy",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:1:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
@@ -52,7 +52,7 @@
     },
     "Sentience.Consciousness.Empathy.Gratitude": {
       "name": "Gratitude",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:1:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness.Empathy",
       "strictChain": true,
@@ -68,7 +68,7 @@
     },
     "RootAsync.ResultFromDecorate": {
       "name": "ResultFromDecorate",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:17:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:23:2",
       "kind": "define",
       "parent": "RootAsync",
       "strictChain": true,
@@ -84,7 +84,7 @@
     },
     "SyncBase.SubAsync": {
       "name": "SubAsync",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:34:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:38:2",
       "kind": "define",
       "parent": "SyncBase",
       "strictChain": true,
@@ -92,7 +92,7 @@
     },
     "SyncBase.SubAsync.SubDecorate": {
       "name": "SubDecorate",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:34:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:46:2",
       "kind": "define",
       "parent": "SyncBase.SubAsync",
       "strictChain": true,
@@ -108,7 +108,7 @@
     },
     "UserEntity.UserResponse": {
       "name": "UserResponse",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:15:14",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:26:2",
       "kind": "define",
       "parent": "UserEntity",
       "strictChain": true,
@@ -116,7 +116,7 @@
     },
     "UserEntity.AdminEntity": {
       "name": "AdminEntity",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:40:15",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:40:20",
       "kind": "define",
       "parent": "UserEntity",
       "strictChain": true,
@@ -124,7 +124,7 @@
     },
     "UserEntity.AdminEntity.AdminResponse": {
       "name": "AdminResponse",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:53:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:53:7",
       "kind": "define",
       "parent": "UserEntity.AdminEntity",
       "strictChain": true,
@@ -132,7 +132,7 @@
     },
     "UserEntity.AdminEntity.SuperAdminEntity": {
       "name": "SuperAdminEntity",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:70:20",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:70:26",
       "kind": "define",
       "parent": "UserEntity.AdminEntity",
       "strictChain": true,
@@ -140,7 +140,7 @@
     },
     "UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse": {
       "name": "SuperAdminResponse",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:84:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:84:12",
       "kind": "define",
       "parent": "UserEntity.AdminEntity.SuperAdminEntity",
       "strictChain": true,
