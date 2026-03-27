@@ -1,12 +1,17 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-26T19:48:35.612Z",
+  "generatedAt": "2026-03-26T22:56:09.772Z",
   "usages": {
     "Sentience": [
       {
         "location": "/code/mnemonica/tactica-nestjs/src/main.ts:15:30",
         "kind": "lookup",
         "code": "lookupTyped('Sentience')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:56:38",
+        "kind": "instantiation",
+        "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})"
       }
     ],
     "Sentience.Memory": [

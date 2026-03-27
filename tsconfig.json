@@ -19,7 +19,13 @@
 		"noFallthroughCasesInSwitch": false,
 		"esModuleInterop": true,
 		"noUnusedLocals": true,
-		"noUnusedParameters": true
+		"noUnusedParameters": true,
+		"plugins": [
+			{
+				"name": "@mnemonica/tactica",
+				"outputDir": ".tactica"
+			}
+		]
 	},
 	"include": ["src/**/*", ".tactica/*.ts"],
 	"exclude": ["node_modules", "dist"]
