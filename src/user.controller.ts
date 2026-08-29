@@ -16,9 +16,9 @@ import {
 	CreateSuperAdminDto,
 } from './dto/user.dto';
 
-import { lookupTyped } from 'mnemonica';
+import { lookup } from 'mnemonica';
 
-const UserEntity = lookupTyped('UserEntity');
+const UserEntity = lookup('UserEntity');
 
 import type {
 	UserEntity,

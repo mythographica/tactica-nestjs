@@ -32,3 +32,7 @@ export function MemoryHandler (
 }
 
 export default MemoryHandler;
+
+// topologica convention: the index of a type directory must export
+// the handler under the directory name (default export is not detected)
+export { MemoryHandler as Memory };

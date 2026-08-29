@@ -2,13 +2,13 @@
 	"name": "nestjs",
 	"version": "1.0.0",
 	"description": "NestJS + Mnemonica + Typeomatica integration example",
-	"main": "dist/main.js",
+	"main": "dist/src/main.js",
 	"scripts": {
 		"build": "npm run tactica:generate && tsc",
 		"start": "nest start",
 		"start:dev": "nest start --watch",
 		"start:debug": "nest start --debug --watch",
-		"start:prod": "node dist/main",
+		"start:prod": "node dist/src/main.js",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"tactica:generate": "tactica --generate",
 		"tactica:watch": "tactica --watch"
@@ -17,23 +17,27 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@mnemonica/tactica": "file:../tactica",
-		"@mnemonica/topologica": "file:../topologica",
+		"@mnemonica/dive": "^0.7.0",
+		"@mnemonica/tactica": "0.1.9",
+		"@mnemonica/topologica": "0.1.0",
 		"@nestjs/common": "^11.1.14",
 		"@nestjs/core": "^11.1.14",
 		"@nestjs/platform-express": "^11.1.14",
 		"@nestjs/swagger": "^11.2.6",
 		"class-transformer": "^0.5.1",
 		"class-validator": "^0.14.4",
-		"mnemonica": "file:../core",
+		"infer-debug": "file:../../infer-debug",
+		"mnemonica": "^1.2.8",
 		"reflect-metadata": "^0.2.2",
 		"rxjs": "^7.8.2",
 		"swagger-ui-express": "^5.0.1",
-		"typeomatica": "file:../typeomatica"
+		"typeomatica": "0.3.62",
+		"@mnemonica/nestjs": "^0.7.1"
 	},
 	"devDependencies": {
 		"@types/node": "^25.3.0",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.9.3"
-	}
+	},
+	"private": true
 }

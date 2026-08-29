@@ -29,3 +29,7 @@ export function GratitudeHandler (
 }
 
 export default GratitudeHandler;
+
+// topologica convention: the index of a type directory must export
+// the handler under the directory name (default export is not detected)
+export { GratitudeHandler as Gratitude };

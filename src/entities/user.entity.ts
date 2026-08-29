@@ -22,8 +22,13 @@ const User = define('UserEntity', function (this: UserEntity, data: { id: string
  * UserResponse - nested type for API responses
  * Demonstrates mnemonica's hierarchical type system
  * This is a sub-type of UserEntity, accessible as user.UserResponse
+ *
+ * NOTE: `.define()` returns the SUBTYPE constructor — never chain
+ * `define(...).define(...)` into a const meant to hold the parent.
+ * (That bug once parked AdminEntity under UserResponse and broke
+ * `new user.AdminEntity()` with a 500 at runtime.)
  */
-.define('UserResponse', function (
+User.define('UserResponse', function (
 	this: UserEntity_UserResponse,
 	data: { id: string; email: string; name: string; type: 'user' }
 ) {

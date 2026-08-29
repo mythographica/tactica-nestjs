@@ -8,7 +8,7 @@ This is a **NestJS** application demonstrating integration with **mnemonica** fo
 
 ## Build/Test Commands
 
-All commands run from the `tactica-examples/nestjs/` directory:
+All commands run from the `tactica-nestjs/` directory (formerly `tactica-examples/nestjs/`):
 
 ```bash
 # Install dependencies
@@ -80,8 +80,9 @@ Types are imported from tactica-generated files:
 // Import constructors from entities
 import { UserEntity, UserResponse } from './entities/user.entity';
 
-// Import types from tactica-generated file
-import type { UserEntityInstance, UserResponseInstance } from '../.tactica/types';
+// Import types from tactica-generated file (modern naming: type name as-is,
+// nested types use underscore paths)
+import type { UserEntity as UserEntityT, UserEntity_UserResponse } from '../.tactica/types';
 ```
 
 ### Creating Nested Types

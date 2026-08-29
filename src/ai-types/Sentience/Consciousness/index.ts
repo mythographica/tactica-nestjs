@@ -27,3 +27,7 @@ export function ConsciousnessHandler (
 }
 
 export default ConsciousnessHandler;
+
+// topologica convention: the index of a type directory must export
+// the handler under the directory name (default export is not detected)
+export { ConsciousnessHandler as Consciousness };

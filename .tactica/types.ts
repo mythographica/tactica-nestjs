@@ -75,37 +75,6 @@ export type Sentience_Memory = ProtoFlat<Sentience, {
 	Consciousness: undefined;
 }>;
 
-export type RootAsync = {
-	value: number;
-	computed: number;
-	ResultFromDecorate: new (multiplier: number) => RootAsync_ResultFromDecorate;
-};
-
-export type RootAsync_ResultFromDecorate = ProtoFlat<RootAsync, {
-	result: number;
-	timestamp: number;
-	ResultFromDecorate: undefined;
-}>;
-
-export type SyncBase = {
-	baseValue: string;
-	SubAsync: new (asyncData: { delay: number; extra: string }) => SyncBase_SubAsync;
-};
-
-export type SyncBase_SubAsync = ProtoFlat<SyncBase, {
-	delay: number;
-	extra: string;
-	processed: string;
-	SubDecorate: new (decorateValue: string) => SyncBase_SubAsync_SubDecorate;
-	SubAsync: undefined;
-}>;
-
-export type SyncBase_SubAsync_SubDecorate = ProtoFlat<SyncBase_SubAsync, {
-	decorateValue: string;
-	combined: string;
-	SubDecorate: undefined;
-}>;
-
 export type UserEntity = {
 	id: string;
 	email: string;
@@ -167,4 +136,35 @@ export type UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse = ProtoFl
 	permissions: Array<string>;
 	domain: string;
 	SuperAdminResponse: undefined;
+}>;
+
+export type RootAsync = {
+	value: number;
+	computed: number;
+	ResultFromDecorate: new (multiplier: number) => RootAsync_ResultFromDecorate;
+};
+
+export type RootAsync_ResultFromDecorate = ProtoFlat<RootAsync, {
+	result: number;
+	timestamp: number;
+	ResultFromDecorate: undefined;
+}>;
+
+export type SyncBase = {
+	baseValue: string;
+	SubAsync: new (asyncData: { delay: number; extra: string }) => SyncBase_SubAsync;
+};
+
+export type SyncBase_SubAsync = ProtoFlat<SyncBase, {
+	delay: number;
+	extra: string;
+	processed: string;
+	SubDecorate: new (decorateValue: string) => SyncBase_SubAsync_SubDecorate;
+	SubAsync: undefined;
+}>;
+
+export type SyncBase_SubAsync_SubDecorate = ProtoFlat<SyncBase_SubAsync, {
+	decorateValue: string;
+	combined: string;
+	SubDecorate: undefined;
 }>;

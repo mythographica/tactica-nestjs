@@ -22,10 +22,10 @@ import {
 	RootAsyncResponseDto,
 } from './dto/async.dto';
 
-import { lookupTyped } from 'mnemonica';
+import { lookup } from 'mnemonica';
 
-const RootAsync = lookupTyped('RootAsync');
-const SyncBase = lookupTyped('SyncBase');
+const RootAsync = lookup('RootAsync');
+const SyncBase = lookup('SyncBase');
 
 /**
  * AsyncController demonstrates mnemonica async/await patterns

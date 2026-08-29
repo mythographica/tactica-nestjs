@@ -29,3 +29,7 @@ export function SympathyHandler (
 }
 
 export default SympathyHandler;
+
+// topologica convention: the index of a type directory must export
+// the handler under the directory name (default export is not detected)
+export { SympathyHandler as Sympathy };

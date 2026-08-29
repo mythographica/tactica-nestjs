@@ -1,31 +1,22 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-03-27T10:36:27.508Z",
+  "generatedAt": "2026-08-29T15:29:53.062Z",
   "usages": {
-    "Sentience": [
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:15:30",
-        "kind": "lookup",
-        "code": "lookupTyped('Sentience')"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:56:38",
-        "kind": "instantiation",
-        "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})"
-      }
-    ],
-    "Sentience.Memory": [
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:68:33",
-        "kind": "propertyAccess",
-        "code": "global.aiMemories.rootInstance.Memory"
-      }
-    ],
     "UserEntity.UserResponse": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:29:24",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\tid: user.id,\n\t\t\temail: user.email,\n\t\t\tname: user.name,\n\t\t\ttype: 'user',\n\t"
+      },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:29:28",
         "kind": "propertyAccess",
         "code": "user.UserResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:80:24",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\tid: user.id,\n\t\t\temail: user.email,\n\t\t\tname: user.name,\n\t\t\ttype: 'user',\n\t"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:80:28",
@@ -35,9 +26,19 @@
     ],
     "UserEntity.AdminEntity.AdminResponse": [
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:45:25",
+        "kind": "instantiation",
+        "code": "new admin.AdminResponse({\n\t\t\tid: admin.id,\n\t\t\temail: admin.email,\n\t\t\tname: admin.name,\n\t\t\ttype: 'adm"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:45:29",
         "kind": "propertyAccess",
         "code": "admin.AdminResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:94:25",
+        "kind": "instantiation",
+        "code": "new admin.AdminResponse({\n\t\t\tid: admin.id,\n\t\t\temail: admin.email,\n\t\t\tname: admin.name,\n\t\t\ttype: 'adm"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:94:29",
@@ -47,9 +48,19 @@
     ],
     "UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse": [
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:63:30",
+        "kind": "instantiation",
+        "code": "new superAdmin.SuperAdminResponse({\n\t\t\tid: superAdmin.id,\n\t\t\temail: superAdmin.email,\n\t\t\tname: super"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:63:34",
         "kind": "propertyAccess",
         "code": "superAdmin.SuperAdminResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:110:30",
+        "kind": "instantiation",
+        "code": "new superAdmin.SuperAdminResponse({\n\t\t\tid: superAdmin.id,\n\t\t\temail: superAdmin.email,\n\t\t\tname: super"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:110:34",
@@ -61,7 +72,7 @@
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:21:20",
         "kind": "lookup",
-        "code": "lookupTyped('UserEntity')"
+        "code": "lookup('UserEntity')"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:55:16",
@@ -81,9 +92,19 @@
     ],
     "UserEntity.AdminEntity": [
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:112:17",
+        "kind": "instantiation",
+        "code": "new user.AdminEntity({\n\t\t\tid: user.id,\n\t\t\temail: user.email,\n\t\t\tname: user.name,\n\t\t\trole: createAdmi"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:112:21",
         "kind": "propertyAccess",
         "code": "user.AdminEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:180:17",
+        "kind": "instantiation",
+        "code": "new user.AdminEntity({\n\t\t\tid: user.id,\n\t\t\temail: user.email,\n\t\t\tname: user.name,\n\t\t\trole: createSupe"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:180:21",
@@ -92,6 +113,11 @@
       }
     ],
     "UserEntity.AdminEntity.SuperAdminEntity": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:192:22",
+        "kind": "instantiation",
+        "code": "new admin.SuperAdminEntity({\n\t\t\tid: admin.id,\n\t\t\temail: admin.email,\n\t\t\tname: admin.name,\n\t\t\trole: a"
+      },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:192:26",
         "kind": "propertyAccess",
@@ -102,7 +128,7 @@
       {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:27:19",
         "kind": "lookup",
-        "code": "lookupTyped('RootAsync')"
+        "code": "lookup('RootAsync')"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:55:27",
@@ -124,7 +150,7 @@
       {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:28:18",
         "kind": "lookup",
-        "code": "lookupTyped('SyncBase')"
+        "code": "lookup('SyncBase')"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:133:20",
@@ -149,9 +175,19 @@
     ],
     "RootAsync.ResultFromDecorate": [
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:77:32",
+        "kind": "instantiation",
+        "code": "new rootAsync.ResultFromDecorate(dto.multiplier)"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:77:36",
         "kind": "propertyAccess",
         "code": "rootAsync.ResultFromDecorate"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:106:32",
+        "kind": "instantiation",
+        "code": "new rootAsync.ResultFromDecorate(parseInt(multiplier, 10))"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:106:36",
@@ -161,14 +197,29 @@
     ],
     "SyncBase.SubAsync": [
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:154:26",
+        "kind": "instantiation",
+        "code": "new syncBase.SubAsync({ delay: dto.delay, extra: dto.extra })"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:154:30",
         "kind": "propertyAccess",
         "code": "syncBase.SubAsync"
       },
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:178:26",
+        "kind": "instantiation",
+        "code": "new syncBase.SubAsync({\n\t\t\tdelay: dto.delay,\n\t\t\textra: dto.extra,\n\t\t})"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:178:30",
         "kind": "propertyAccess",
         "code": "syncBase.SubAsync"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:217:26",
+        "kind": "instantiation",
+        "code": "new syncBase.SubAsync({\n\t\t\tdelay: parseInt(delay, 10),\n\t\t\textra,\n\t\t})"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:217:30",
@@ -178,14 +229,48 @@
     ],
     "SyncBase.SubAsync.SubDecorate": [
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:182:29",
+        "kind": "instantiation",
+        "code": "new subAsync.SubDecorate(dto.decorateValue)"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:182:33",
         "kind": "propertyAccess",
         "code": "subAsync.SubDecorate"
       },
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:221:29",
+        "kind": "instantiation",
+        "code": "new subAsync.SubDecorate(decorateValue)"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/async.controller.ts:221:33",
         "kind": "propertyAccess",
         "code": "subAsync.SubDecorate"
+      }
+    ],
+    "Sentience": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:17:30",
+        "kind": "lookup",
+        "code": "lookup('Sentience')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:59:38",
+        "kind": "instantiation",
+        "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})"
+      }
+    ],
+    "Sentience.Memory": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:71:29",
+        "kind": "instantiation",
+        "code": "new global.aiMemories.rootInstance.Memory({\n\t\t\t\t\t\tcontent: item.content,\n\t\t\t\t\t\temotion: item.emotion"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:71:33",
+        "kind": "propertyAccess",
+        "code": "global.aiMemories.rootInstance.Memory"
       }
     ]
   }

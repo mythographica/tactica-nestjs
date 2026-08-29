@@ -8,8 +8,7 @@ This project includes **@mnemonica/tactica** which generates TypeScript types fr
 
 ```typescript
 // src/entities/user.entity.ts
-/// <reference types="../../.tactica/types" />
-import type { UserEntityInstance, AdminEntityInstance, SuperAdminEntityInstance } from '../../.tactica/types';
+import type { UserEntity, UserEntity_AdminEntity } from '../../.tactica/types';
 ```
 
 ### Tactica Scripts

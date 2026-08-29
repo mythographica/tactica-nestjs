@@ -29,3 +29,7 @@ export function SentienceHandler (
 }
 
 export default SentienceHandler;
+
+// topologica convention: the index of a type directory must export
+// the handler under the directory name (default export is not detected)
+export { SentienceHandler as Sentience };

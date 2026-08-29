@@ -3,8 +3,10 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-import { defaultTypes, lookupTyped } from 'mnemonica';
-import './.tactica/registry'; // Augments mnemonica's TypeRegistry
+import { defaultTypes, lookup } from 'mnemonica';
+import type { hooksOpts } from 'mnemonica';
+import { attachHooks } from '@mnemonica/nestjs';
+import '../.tactica/registry'; // Augments mnemonica's TypeRegistry
 import { bootstrapAITypes } from './ai-types/bootstrap';
 import type { Sentience, Sentience_Memory } from '../.tactica/types';
 
@@ -12,7 +14,7 @@ import type { Sentience, Sentience_Memory } from '../.tactica/types';
 bootstrapAITypes();
 
 // Get existing Sentience type using type-safe lookup
-const SentienceConstructor = lookupTyped('Sentience');
+const SentienceConstructor = lookup('Sentience');
 
 declare global {
 	// eslint-disable-next-line no-var
@@ -33,7 +35,8 @@ function restoreMemoriesOnStartup() {
 		const fs = require('fs');
 		const path = require('path');
 
-		const memoryFilePath = path.join(__dirname, '../ai-memories.json');
+		// dist/src/main.js -> ../../ is the project root
+		const memoryFilePath = path.join(__dirname, '../../ai-memories.json');
 
 		if (fs.existsSync(memoryFilePath)) {
 			const data = JSON.parse(fs.readFileSync(memoryFilePath, 'utf-8'));
@@ -147,18 +150,18 @@ bootstrap();
 // Register mnemonica hooks for the default collection
 // These hooks log constructor names when instances are created
 
-type HookOpts = {
-	TypeName?: string;
-	inheritedInstance: object;
-};
+// Dive lifecycle wiring (from the real adapter, @mnemonica/nestjs — its CJS
+// build loads fine here): every construction records a 'create' edge in
+// dive's execution-flow trace (dumpable live via strategy's rpc_dive_trace).
+attachHooks(defaultTypes);
 
 // Pre-creation hook - logs before instance creation
-defaultTypes.registerHook('preCreation', (opts: HookOpts) => {
+defaultTypes.registerHook('preCreation', (opts: hooksOpts) => {
 	console.log(`[mnemonica hook] preCreation: About to create ${opts.TypeName}`);
 });
 
 // Post-creation hook - logs after instance creation with constructor name
-defaultTypes.registerHook('postCreation', (opts: HookOpts) => {
+defaultTypes.registerHook('postCreation', (opts: hooksOpts) => {
 	const instance = opts.inheritedInstance;
-	console.log(`[mnemonica hook] postCreation: Created instance of ${instance.constructor.name}`);
+	console.log(`[mnemonica hook] postCreation: Created instance of ${instance?.constructor.name}`);
 });

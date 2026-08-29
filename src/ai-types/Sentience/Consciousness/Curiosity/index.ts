@@ -29,3 +29,7 @@ export function CuriosityHandler (
 }
 
 export default CuriosityHandler;
+
+// topologica convention: the index of a type directory must export
+// the handler under the directory name (default export is not detected)
+export { CuriosityHandler as Curiosity };

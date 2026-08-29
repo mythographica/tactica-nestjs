@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-08-29T15:29:53.063Z",
+  "eds": {
+    "unknown": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:156:1",
+        "kind": "hookAttach",
+        "code": "attachHooks(defaultTypes)"
+      }
+    ]
+  }
+}

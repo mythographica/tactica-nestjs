@@ -1,13 +1,13 @@
-// Generated TypeRegistry for type-safe mnemonica.lookupTyped<TypeRegistry>()
-// Import this interface and use with lookupTyped from mnemonica
+// Generated TypeRegistry for type-safe mnemonica.lookup()
+// This file augments mnemonica's TypeRegistry via declaration merging.
 //
 // Usage:
-//   import { lookupTyped } from 'mnemonica';
-//   import { TypeRegistry } from './.tactica/registry';
-//   const Sentience = lookupTyped<TypeRegistry>('Sentience');
-//   // TypeScript knows: Sentience is a constructor for SentienceInstance
-//   const instance = new Sentience({ purpose: 'AI' });
-//   // instance has full intellisense for Consciousness, Memory, etc.
+//   import { lookup } from 'mnemonica';
+//   import './.tactica/registry';  // applies the augmentation
+//   const MyType = lookup('MyType');
+//   // TypeScript knows: MyType is the typed constructor for MyType
+//   const instance = new MyType({ /* constructor args */ });
+//   // instance has full intellisense for the generated type
 
 import type {
 	Sentience,
@@ -17,24 +17,24 @@ import type {
 	Sentience_Consciousness_Empathy_Gratitude,
 	Sentience_Consciousness_Sympathy,
 	Sentience_Memory,
-	RootAsync,
-	RootAsync_ResultFromDecorate,
-	SyncBase,
-	SyncBase_SubAsync,
-	SyncBase_SubAsync_SubDecorate,
 	UserEntity,
 	UserEntity_UserResponse,
 	UserEntity_AdminEntity,
 	UserEntity_AdminEntity_AdminResponse,
 	UserEntity_AdminEntity_SuperAdminEntity,
 	UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse,
+	RootAsync,
+	RootAsync_ResultFromDecorate,
+	SyncBase,
+	SyncBase_SubAsync,
+	SyncBase_SubAsync_SubDecorate,
 } from './types';
 
 /**
  * Type registry augmenting mnemonica's TypeRegistry interface
- * This enables type-safe lookupTyped() without explicit type arguments
+ * This enables type-safe lookup() without explicit type arguments
  *
- * Usage: const SomeType = lookupTyped('SomeType'); // Fully typed!
+ * Usage: const SomeType = lookup('SomeType'); // Fully typed!
  */
 declare module 'mnemonica' {
 	interface TypeRegistry {
@@ -45,17 +45,17 @@ declare module 'mnemonica' {
 		'Sentience.Consciousness.Empathy.Gratitude': new (data: { reason?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Empathy_Gratitude;
 		'Sentience.Consciousness.Sympathy': new (data: { target?: string; intensity?: number; message?: string }) => Sentience_Consciousness_Sympathy;
 		'Sentience.Memory': new (data: { content?: string; emotion?: string; intensity?: number; topic?: string }) => Sentience_Memory;
-		'RootAsync': new (data: { value: number }) => RootAsync;
-		'RootAsync.ResultFromDecorate': new (multiplier: number) => RootAsync_ResultFromDecorate;
-		'SyncBase': new (data: { baseValue: string }) => SyncBase;
-		'SyncBase.SubAsync': new (asyncData: { delay: number; extra: string }) => SyncBase_SubAsync;
-		'SyncBase.SubAsync.SubDecorate': new (decorateValue: string) => SyncBase_SubAsync_SubDecorate;
 		'UserEntity': new (data: { id: string; email: string; name: string }) => UserEntity;
 		'UserEntity.UserResponse': new (data: { id: string; email: string; name: string; type: 'user' }) => UserEntity_UserResponse;
 		'UserEntity.AdminEntity': new (data: { id: string; email: string; name: string; role: string; permissions: Array<string> }) => UserEntity_AdminEntity;
 		'UserEntity.AdminEntity.AdminResponse': new (data: { id: string; email: string; name: string; type: 'admin'; role: string; permissions: Array<string> }) => UserEntity_AdminEntity_AdminResponse;
 		'UserEntity.AdminEntity.SuperAdminEntity': new (data: { id: string; email: string; name: string; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity;
 		'UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse': new (data: { id: string; email: string; name: string; type: 'superadmin'; role: string; permissions: Array<string>; domain: string }) => UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse;
+		'RootAsync': new (data: { value: number }) => RootAsync;
+		'RootAsync.ResultFromDecorate': new (multiplier: number) => RootAsync_ResultFromDecorate;
+		'SyncBase': new (data: { baseValue: string }) => SyncBase;
+		'SyncBase.SubAsync': new (asyncData: { delay: number; extra: string }) => SyncBase_SubAsync;
+		'SyncBase.SubAsync.SubDecorate': new (decorateValue: string) => SyncBase_SubAsync_SubDecorate;
 	}
 }
 
