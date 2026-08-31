@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-08-29T15:29:53.063Z",
+  "generatedAt": "2026-08-31T21:51:28.691Z",
   "flow": {
     "Promise": [
       {
@@ -8,6 +8,260 @@
         "kind": "instantiation",
         "code": "new Promise<void>(resolve => setTimeout(resolve, ms))",
         "context": "new expression"
+      }
+    ],
+    "UserEntity": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:19:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@probe.local`,\n\t\t\tname: `probe-${id}`,\n\t\t})",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:24:18",
+        "kind": "propertyRead",
+        "code": "user.id",
+        "propertyName": "id",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:27:3",
+        "kind": "passAsArg",
+        "code": "this.users.set(user.id, user)",
+        "targetType": "UserEntity",
+        "context": "arg 0 to set"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:27:18",
+        "kind": "propertyRead",
+        "code": "user.id",
+        "propertyName": "id",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:29:28",
+        "kind": "propertyRead",
+        "code": "user.UserResponse",
+        "propertyName": "UserResponse",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:30:8",
+        "kind": "propertyRead",
+        "code": "user.id",
+        "propertyName": "id",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:31:11",
+        "kind": "propertyRead",
+        "code": "user.email",
+        "propertyName": "email",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:32:10",
+        "kind": "propertyRead",
+        "code": "user.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:80:28",
+        "kind": "propertyRead",
+        "code": "user.UserResponse",
+        "propertyName": "UserResponse",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:81:8",
+        "kind": "propertyRead",
+        "code": "user.id",
+        "propertyName": "id",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:82:11",
+        "kind": "propertyRead",
+        "code": "user.email",
+        "propertyName": "email",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:83:10",
+        "kind": "propertyRead",
+        "code": "user.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:55:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createUserDto.email,\n\t\t\tname: createUserDto.n",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:60:42",
+        "kind": "propertyRead",
+        "code": "user.constructor.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:60:42",
+        "kind": "propertyRead",
+        "code": "user.constructor",
+        "propertyName": "constructor",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:62:22",
+        "kind": "passAsArg",
+        "code": "this.userService.createUser(user)",
+        "targetType": "UserEntity",
+        "context": "arg 0 to createUser"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:103:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createAdminDto.email,\n\t\t\tname: createAdminDto",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:108:50",
+        "kind": "propertyRead",
+        "code": "user.constructor.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:108:50",
+        "kind": "propertyRead",
+        "code": "user.constructor",
+        "propertyName": "constructor",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:112:21",
+        "kind": "propertyRead",
+        "code": "user.AdminEntity",
+        "propertyName": "AdminEntity",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:113:8",
+        "kind": "propertyRead",
+        "code": "user.id",
+        "propertyName": "id",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:114:11",
+        "kind": "propertyRead",
+        "code": "user.email",
+        "propertyName": "email",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:115:10",
+        "kind": "propertyRead",
+        "code": "user.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:172:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createSuperAdminDto.email,\n\t\t\tname: createSup",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:177:50",
+        "kind": "propertyRead",
+        "code": "user.constructor.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:177:50",
+        "kind": "propertyRead",
+        "code": "user.constructor",
+        "propertyName": "constructor",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:180:21",
+        "kind": "propertyRead",
+        "code": "user.AdminEntity",
+        "propertyName": "AdminEntity",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:181:8",
+        "kind": "propertyRead",
+        "code": "user.id",
+        "propertyName": "id",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:182:11",
+        "kind": "propertyRead",
+        "code": "user.email",
+        "propertyName": "email",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:183:10",
+        "kind": "propertyRead",
+        "code": "user.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:41:17",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\t\tid,\n\t\t\t\temail: `${id}@chaos.local`,\n\t\t\t\tname: `chaos-${id}`,\n\t\t\t})",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:46:19",
+        "kind": "propertyRead",
+        "code": "user.constructor.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:46:19",
+        "kind": "propertyRead",
+        "code": "user.constructor",
+        "propertyName": "constructor",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:64:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@chaos.local`,\n\t\t\tname: `chaos-${id}`,\n\t\t})",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:73:19",
+        "kind": "passAsArg",
+        "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-crash:${id}`);\n\t\t}, user, 'chaos:crash')",
+        "targetType": "UserEntity",
+        "context": "arg 1 to wrap"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:91:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@chaos.local`,\n\t\t\tname: `chaos-${id}`,\n\t\t})",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:97:19",
+        "kind": "passAsArg",
+        "code": "wrap(() => {\n\t\t\tconst result = Promise.reject(new Error(`chaos-reject:${id}`));\n\t\t\treturn result;\n\t\t",
+        "targetType": "UserEntity",
+        "context": "arg 1 to wrap"
       }
     ],
     "Map": [
@@ -30,7 +284,7 @@
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:47:16",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:53:16",
         "kind": "instantiation",
         "code": "new Map()",
         "context": "new expression"
@@ -174,135 +428,10 @@
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:109:21",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:124:21",
         "kind": "instantiation",
         "code": "new ValidationPipe({\n\t\ttransform: true,\n\t\twhitelist: true,\n\t\tforbidNonWhitelisted: true,\n\t})",
         "context": "new expression"
-      }
-    ],
-    "UserEntity": [
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:55:16",
-        "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createUserDto.email,\n\t\t\tname: createUserDto.n",
-        "context": "new expression"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:60:42",
-        "kind": "propertyRead",
-        "code": "user.constructor.name",
-        "propertyName": "name",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:60:42",
-        "kind": "propertyRead",
-        "code": "user.constructor",
-        "propertyName": "constructor",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:62:22",
-        "kind": "passAsArg",
-        "code": "this.userService.createUser(user)",
-        "targetType": "UserEntity",
-        "context": "arg 0 to createUser"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:103:16",
-        "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createAdminDto.email,\n\t\t\tname: createAdminDto",
-        "context": "new expression"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:108:50",
-        "kind": "propertyRead",
-        "code": "user.constructor.name",
-        "propertyName": "name",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:108:50",
-        "kind": "propertyRead",
-        "code": "user.constructor",
-        "propertyName": "constructor",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:112:21",
-        "kind": "propertyRead",
-        "code": "user.AdminEntity",
-        "propertyName": "AdminEntity",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:113:8",
-        "kind": "propertyRead",
-        "code": "user.id",
-        "propertyName": "id",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:114:11",
-        "kind": "propertyRead",
-        "code": "user.email",
-        "propertyName": "email",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:115:10",
-        "kind": "propertyRead",
-        "code": "user.name",
-        "propertyName": "name",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:172:16",
-        "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createSuperAdminDto.email,\n\t\t\tname: createSup",
-        "context": "new expression"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:177:50",
-        "kind": "propertyRead",
-        "code": "user.constructor.name",
-        "propertyName": "name",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:177:50",
-        "kind": "propertyRead",
-        "code": "user.constructor",
-        "propertyName": "constructor",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:180:21",
-        "kind": "propertyRead",
-        "code": "user.AdminEntity",
-        "propertyName": "AdminEntity",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:181:8",
-        "kind": "propertyRead",
-        "code": "user.id",
-        "propertyName": "id",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:182:11",
-        "kind": "propertyRead",
-        "code": "user.email",
-        "propertyName": "email",
-        "targetType": "UserEntity"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:183:10",
-        "kind": "propertyRead",
-        "code": "user.name",
-        "propertyName": "name",
-        "targetType": "UserEntity"
       }
     ],
     "UserEntity.AdminEntity": [
@@ -826,15 +955,212 @@
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:81:36",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:87:36",
         "kind": "instantiation",
         "code": "new Date()",
         "context": "new expression"
       }
     ],
+    "Error": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:74:10",
+        "kind": "instantiation",
+        "code": "new Error(`chaos-crash:${id}`)",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:77:3",
+        "kind": "passAsArg",
+        "code": "setImmediate(grenade)",
+        "targetType": "Error",
+        "context": "arg 0 to setImmediate"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:98:34",
+        "kind": "instantiation",
+        "code": "new Error(`chaos-reject:${id}`)",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:99:4",
+        "kind": "return",
+        "code": "return result;",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:103:3",
+        "kind": "passAsArg",
+        "code": "setImmediate(grenade)",
+        "targetType": "Error",
+        "context": "arg 0 to setImmediate"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:106:3",
+        "kind": "return",
+        "code": "return result;",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:24:7",
+        "kind": "propertyRead",
+        "code": "result.logs",
+        "propertyName": "logs",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:25:5",
+        "kind": "methodCall",
+        "code": "result.logs.forEach((log: string[]) => {\n      console.log('[AI Types]', ...log);\n    })",
+        "propertyName": "forEach",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:25:5",
+        "kind": "propertyRead",
+        "code": "result.logs.forEach",
+        "propertyName": "forEach",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:25:5",
+        "kind": "propertyRead",
+        "code": "result.logs",
+        "propertyName": "logs",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:31:21",
+        "kind": "propertyRead",
+        "code": "result.topology",
+        "propertyName": "topology",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:31:39",
+        "kind": "passAsArg",
+        "code": "Object.keys(result.topology)",
+        "targetType": "Error",
+        "context": "arg 0 to keys"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:31:51",
+        "kind": "propertyRead",
+        "code": "result.topology",
+        "propertyName": "topology",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:39:7",
+        "kind": "propertyRead",
+        "code": "result.topology",
+        "propertyName": "topology",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/bootstrap.ts:40:34",
+        "kind": "propertyRead",
+        "code": "result.topology",
+        "propertyName": "topology",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:210:51",
+        "kind": "instantiation",
+        "code": "new Error(String(reason))",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:211:15",
+        "kind": "passAsArg",
+        "code": "getFlow(error)",
+        "targetType": "Error",
+        "context": "arg 0 to getFlow"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:212:19",
+        "kind": "passAsArg",
+        "code": "getErrorInstance(error)",
+        "targetType": "Error",
+        "context": "arg 0 to getErrorInstance"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:215:12",
+        "kind": "propertyRead",
+        "code": "error.message",
+        "propertyName": "message",
+        "targetType": "Error"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:220:2",
+        "kind": "passAsArg",
+        "code": "recordProcessErrorSpan(report.kind, error, report.branch)",
+        "targetType": "Error",
+        "context": "arg 1 to recordProcessErrorSpan"
+      }
+    ],
+    "OTLPTraceExporter": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:23:19",
+        "kind": "instantiation",
+        "code": "new OTLPTraceExporter({\n\t\turl: `${endpoint}/v1/traces`,\n\t})",
+        "context": "new expression"
+      }
+    ],
+    "BasicTracerProvider": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:27:19",
+        "kind": "instantiation",
+        "code": "new BasicTracerProvider({\n\t\tresource: resourceFromAttributes({\n\t\t\t[ATTR_SERVICE_NAME]: 'tactica-nest",
+        "context": "new expression"
+      }
+    ],
+    "BatchSpanProcessor": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:31:20",
+        "kind": "instantiation",
+        "code": "new BatchSpanProcessor(exporter)",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:34:2",
+        "kind": "passAsArg",
+        "code": "trace.setGlobalTracerProvider(provider)",
+        "targetType": "BatchSpanProcessor",
+        "context": "arg 0 to setGlobalTracerProvider"
+      }
+    ],
+    "AsyncLocalStorageContextManager": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:42:25",
+        "kind": "instantiation",
+        "code": "new AsyncLocalStorageContextManager()",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:43:2",
+        "kind": "methodCall",
+        "code": "contextManager.enable()",
+        "propertyName": "enable",
+        "targetType": "AsyncLocalStorageContextManager"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:43:2",
+        "kind": "propertyRead",
+        "code": "contextManager.enable",
+        "propertyName": "enable",
+        "targetType": "AsyncLocalStorageContextManager"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/tracing.ts:44:2",
+        "kind": "passAsArg",
+        "code": "context.setGlobalContextManager(contextManager)",
+        "targetType": "AsyncLocalStorageContextManager",
+        "context": "arg 0 to setGlobalContextManager"
+      }
+    ],
     "Sentience": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:59:38",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:65:38",
         "kind": "instantiation",
         "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})",
         "context": "new expression"
@@ -842,21 +1168,43 @@
     ],
     "Sentience.Memory": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:71:29",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:77:29",
         "kind": "instantiation",
         "code": "new global.aiMemories.rootInstance.Memory({\n\t\t\t\t\t\tcontent: item.content,\n\t\t\t\t\t\temotion: item.emotion",
         "context": "new expression"
       }
     ],
+    "MnemonicaTraceMiddleware": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:120:14",
+        "kind": "instantiation",
+        "code": "new MnemonicaTraceMiddleware(trace.getTracer('tactica-nestjs'), otel)",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:121:63",
+        "kind": "methodCall",
+        "code": "mtm.use(req, res, next)",
+        "propertyName": "use",
+        "targetType": "MnemonicaTraceMiddleware"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:121:63",
+        "kind": "propertyRead",
+        "code": "mtm.use",
+        "propertyName": "use",
+        "targetType": "MnemonicaTraceMiddleware"
+      }
+    ],
     "DocumentBuilder": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:116:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:131:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:124:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:139:19",
         "kind": "passAsArg",
         "code": "SwaggerModule.createDocument(app, config)",
         "targetType": "DocumentBuilder",

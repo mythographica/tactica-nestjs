@@ -168,3 +168,7 @@ export type SyncBase_SubAsync_SubDecorate = ProtoFlat<SyncBase_SubAsync, {
 	combined: string;
 	SubDecorate: undefined;
 }>;
+
+export type EdsProbe = {
+	note: string;
+};

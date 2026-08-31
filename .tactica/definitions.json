@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-08-29T15:29:53.061Z",
+  "generatedAt": "2026-08-31T21:51:28.688Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
@@ -143,6 +143,14 @@
       "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:46:2",
       "kind": "define",
       "parent": "SyncBase.SubAsync",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "EdsProbe": {
+      "name": "EdsProbe",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:16:18",
+      "kind": "define",
+      "parent": null,
       "strictChain": true,
       "blockErrors": false
     }

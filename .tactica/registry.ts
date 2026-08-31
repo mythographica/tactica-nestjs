@@ -28,6 +28,7 @@ import type {
 	SyncBase,
 	SyncBase_SubAsync,
 	SyncBase_SubAsync_SubDecorate,
+	EdsProbe,
 } from './types';
 
 /**
@@ -56,6 +57,7 @@ declare module 'mnemonica' {
 		'SyncBase': new (data: { baseValue: string }) => SyncBase;
 		'SyncBase.SubAsync': new (asyncData: { delay: number; extra: string }) => SyncBase_SubAsync;
 		'SyncBase.SubAsync.SubDecorate': new (decorateValue: string) => SyncBase_SubAsync_SubDecorate;
+		'EdsProbe': new (data: { note: string }) => EdsProbe;
 	}
 }
 

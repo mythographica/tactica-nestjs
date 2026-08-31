@@ -1,11 +1,17 @@
 import 'reflect-metadata';
+// OTEL must register before any wrapped construction records an edge.
+import { initTracing } from './tracing';
+initTracing();
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-import { defaultTypes, lookup } from 'mnemonica';
+import { defaultTypes, lookup, utils } from 'mnemonica';
 import type { hooksOpts } from 'mnemonica';
-import { attachHooks } from '@mnemonica/nestjs';
+import { MnemonicaOtelProvider, MnemonicaTraceMiddleware } from '@mnemonica/nestjs';
+import { getFlow, getErrorInstance } from '@mnemonica/dive';
+import { trace, SpanStatusCode } from '@opentelemetry/api';
+import type { Request, Response, NextFunction } from 'express';
 import '../.tactica/registry'; // Augments mnemonica's TypeRegistry
 import { bootstrapAITypes } from './ai-types/bootstrap';
 import type { Sentience, Sentience_Memory } from '../.tactica/types';
@@ -105,6 +111,15 @@ restoreMemoriesOnStartup();
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule);
 
+	// Per-request OTel span (the adapter's mtm): this is the span the dive
+	// branch and the construction spans nest under, so one HTTP request
+	// reads as ONE joined trace in Jaeger. Constructed manually — the
+	// middleware's Tracer parameter is an interface type, so Nest's DI
+	// cannot resolve it (design:paramtypes collapses it to Object).
+	const otel = app.get(MnemonicaOtelProvider, { strict: false });
+	const mtm = new MnemonicaTraceMiddleware(trace.getTracer('tactica-nestjs'), otel);
+	app.use((req: Request, res: Response, next: NextFunction) => mtm.use(req, res, next));
+
 	// Enable global validation pipe
 	app.useGlobalPipes(new ValidationPipe({
 		transform: true,
@@ -150,10 +165,60 @@ bootstrap();
 // Register mnemonica hooks for the default collection
 // These hooks log constructor names when instances are created
 
-// Dive lifecycle wiring (from the real adapter, @mnemonica/nestjs — its CJS
-// build loads fine here): every construction records a 'create' edge in
-// dive's execution-flow trace (dumpable live via strategy's rpc_dive_trace).
-attachHooks(defaultTypes);
+// Dive lifecycle wiring lives in the adapter module path now:
+// MnemonicaModule.forRoot({ thunderstruck: true }) in AppModule calls
+// attachHooks(defaultTypes) itself (and registers the pre-root
+// interceptor), so every construction records a 'create' edge in dive's
+// execution-flow trace (dumpable live via strategy's rpc_dive_trace).
+
+// Process-level error handlers for the chaos endpoints.
+//
+// Listeners keep the process ALIVE under sustained load (Node only exits on
+// uncaughtException/unhandledRejection when nobody listens). Each handler
+// reconstructs the failing branch from dive's flight recorder and enriches
+// the report with the pinned instance's plain-data fields via mnemonica's
+// extract() — one structured JSON line per failure for downstream tooling.
+// Process-level failures usually escape the request's OTEL context (the throw
+// crosses setImmediate / a dangling promise). With tracing.ts registering a
+// global AsyncLocalStorage context manager, a failure that stays inside the
+// request's async resource now parents onto the request span automatically;
+// one that truly escapes still emits as a one-shot root span: ERROR status +
+// the recorded exception, so Jaeger's error search (with_errors) finds them.
+function recordProcessErrorSpan(kind: string, error: Error, branch: string[]) {
+	const span = trace.getTracer('tactica-nestjs').startSpan(`process.${kind}`);
+	span.setAttribute('process.error.kind', kind);
+	span.setAttribute('dive.branch', branch.join(' → '));
+	span.setStatus({ code: SpanStatusCode.ERROR, message: error.message });
+	span.recordException(error);
+	span.end();
+}
+
+process.on('uncaughtException', (error: Error) => {
+	const flow = getFlow(error);
+	const instance = getErrorInstance(error);
+	const report = {
+		kind: 'uncaughtException',
+		message: error.message,
+		branch: flow.map((edge) => `${edge.kind}:${edge.name}`),
+		instance: instance ? utils.extract(instance) : null,
+	};
+	console.log(`[chaos] ${JSON.stringify(report)}`);
+	recordProcessErrorSpan(report.kind, error, report.branch);
+});
+
+process.on('unhandledRejection', (reason: unknown) => {
+	const error = reason instanceof Error ? reason : new Error(String(reason));
+	const flow = getFlow(error);
+	const instance = getErrorInstance(error);
+	const report = {
+		kind: 'unhandledRejection',
+		message: error.message,
+		branch: flow.map((edge) => `${edge.kind}:${edge.name}`),
+		instance: instance ? utils.extract(instance) : null,
+	};
+	console.log(`[chaos] ${JSON.stringify(report)}`);
+	recordProcessErrorSpan(report.kind, error, report.branch);
+});
 
 // Pre-creation hook - logs before instance creation
 defaultTypes.registerHook('preCreation', (opts: hooksOpts) => {

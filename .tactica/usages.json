@@ -1,7 +1,59 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-08-29T15:29:53.062Z",
+  "generatedAt": "2026-08-31T21:51:28.690Z",
   "usages": {
+    "UserEntity": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:4:20",
+        "kind": "lookup",
+        "code": "lookup('UserEntity')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:19:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@probe.local`,\n\t\t\tname: `probe-${id}`,\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:21:20",
+        "kind": "lookup",
+        "code": "lookup('UserEntity')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:55:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createUserDto.email,\n\t\t\tname: createUserDto.n"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:103:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createAdminDto.email,\n\t\t\tname: createAdminDto"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:172:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createSuperAdminDto.email,\n\t\t\tname: createSup"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:11:20",
+        "kind": "lookup",
+        "code": "lookup('UserEntity')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:41:17",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\t\tid,\n\t\t\t\temail: `${id}@chaos.local`,\n\t\t\t\tname: `chaos-${id}`,\n\t\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:64:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@chaos.local`,\n\t\t\tname: `chaos-${id}`,\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:91:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@chaos.local`,\n\t\t\tname: `chaos-${id}`,\n\t\t})"
+      }
+    ],
     "UserEntity.UserResponse": [
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:29:24",
@@ -66,28 +118,6 @@
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:110:34",
         "kind": "propertyAccess",
         "code": "superAdmin.SuperAdminResponse"
-      }
-    ],
-    "UserEntity": [
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:21:20",
-        "kind": "lookup",
-        "code": "lookup('UserEntity')"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:55:16",
-        "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createUserDto.email,\n\t\t\tname: createUserDto.n"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:103:16",
-        "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createAdminDto.email,\n\t\t\tname: createAdminDto"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:172:16",
-        "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createSuperAdminDto.email,\n\t\t\tname: createSup"
       }
     ],
     "UserEntity.AdminEntity": [
@@ -251,24 +281,24 @@
     ],
     "Sentience": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:17:30",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:23:30",
         "kind": "lookup",
         "code": "lookup('Sentience')"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:59:38",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:65:38",
         "kind": "instantiation",
         "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})"
       }
     ],
     "Sentience.Memory": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:71:29",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:77:29",
         "kind": "instantiation",
         "code": "new global.aiMemories.rootInstance.Memory({\n\t\t\t\t\t\tcontent: item.content,\n\t\t\t\t\t\temotion: item.emotion"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:71:33",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:77:33",
         "kind": "propertyAccess",
         "code": "global.aiMemories.rootInstance.Memory"
       }

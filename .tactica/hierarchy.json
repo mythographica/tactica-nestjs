@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-08-29T15:29:53.064Z",
+  "generatedAt": "2026-08-31T21:51:28.692Z",
   "roots": [
     {
       "name": "Sentience",
@@ -118,6 +118,12 @@
           ]
         }
       ]
+    },
+    {
+      "name": "EdsProbe",
+      "fullPath": "EdsProbe",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:16:18",
+      "children": []
     }
   ]
 }

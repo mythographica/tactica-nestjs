@@ -1,12 +1,56 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-08-29T15:29:53.063Z",
+  "generatedAt": "2026-08-31T21:51:28.691Z",
   "eds": {
+    "EdsProbe": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:18:15",
+        "kind": "wrap",
+        "code": "wrap((id: string) => {\n\t\tconst user = new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@probe.local`,\n\t\t\tname",
+        "scope": "EdsProbe",
+        "createsTypes": [
+          "UserEntity"
+        ]
+      }
+    ],
     "unknown": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:156:1",
-        "kind": "hookAttach",
-        "code": "attachHooks(defaultTypes)"
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:40:18",
+        "kind": "wrap",
+        "code": "wrap((id: string) => {\n\t\t\tconst user = new UserEntity({\n\t\t\t\tid,\n\t\t\t\temail: `${id}@chaos.local`,\n\t\t\t\t",
+        "createsTypes": [
+          "UserEntity"
+        ]
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:73:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-crash:${id}`);\n\t\t}, user, 'chaos:crash')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:97:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tconst result = Promise.reject(new Error(`chaos-reject:${id}`));\n\t\t\treturn result;\n\t\t"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:197:15",
+        "kind": "contextConsume",
+        "code": "getFlow(error)"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:198:19",
+        "kind": "contextConsume",
+        "code": "getErrorInstance(error)"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:211:15",
+        "kind": "contextConsume",
+        "code": "getFlow(error)"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:212:19",
+        "kind": "contextConsume",
+        "code": "getErrorInstance(error)"
       }
     ]
   }

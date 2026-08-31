@@ -8,22 +8,32 @@
 		"start": "nest start",
 		"start:dev": "nest start --watch",
 		"start:debug": "nest start --debug --watch",
-		"start:prod": "node dist/src/main.js",
+		"start:prod": "node --enable-source-maps dist/src/main.js",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"tactica:generate": "tactica --generate",
-		"tactica:watch": "tactica --watch"
+		"tactica:watch": "tactica --watch",
+		"use:public": "rm -rf node_modules package-lock.json && npm install mnemonica@latest @mnemonica/dive@latest @mnemonica/tactica@latest @mnemonica/topologica@latest @mnemonica/nestjs@latest --save && echo 'Switched to PUBLIC npm dependencies (latest)'",
+		"use:local": "node -e \"const fs=require('fs'),p=JSON.parse(fs.readFileSync('package.json','utf8'));p.dependencies.mnemonica='file:../core';p.dependencies['@mnemonica/dive']='file:../dive';p.dependencies['@mnemonica/tactica']='file:../tactica';p.dependencies['@mnemonica/topologica']='file:../topologica';fs.mkdirSync('.local-links',{recursive:true});const nv=JSON.parse(fs.readFileSync('../nestjs-adapter/package.json','utf8')).version;require('child_process').execSync('npm pack ../nestjs-adapter --pack-destination .local-links',{stdio:'inherit'});p.dependencies['@mnemonica/nestjs']='file:.local-links/mnemonica-nestjs-'+nv+'.tgz';fs.writeFileSync('package.json',JSON.stringify(p,null,'\\t')+'\\n');console.log('Switched to LOCAL file: dependencies (mnemonica family incl. @mnemonica/nestjs)')\"",
+		"demo:trace": "node scripts/adapter-create-demo.mjs"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@mnemonica/dive": "^0.7.0",
-		"@mnemonica/tactica": "0.1.9",
-		"@mnemonica/topologica": "0.1.0",
+		"@mnemonica/dive": "^0.8.2",
+		"@mnemonica/nestjs": "^0.7.3",
+		"@mnemonica/tactica": "^0.1.15",
+		"@mnemonica/topologica": "^0.1.0",
 		"@nestjs/common": "^11.1.14",
 		"@nestjs/core": "^11.1.14",
 		"@nestjs/platform-express": "^11.1.14",
 		"@nestjs/swagger": "^11.2.6",
+		"@opentelemetry/api": "^1.9.1",
+		"@opentelemetry/context-async-hooks": "^2.11.0",
+		"@opentelemetry/exporter-trace-otlp-http": "^0.221.0",
+		"@opentelemetry/resources": "^2.10.0",
+		"@opentelemetry/sdk-trace-node": "^2.10.0",
+		"@opentelemetry/semantic-conventions": "^1.43.0",
 		"class-transformer": "^0.5.1",
 		"class-validator": "^0.14.4",
 		"infer-debug": "file:../../infer-debug",
@@ -31,8 +41,10 @@
 		"reflect-metadata": "^0.2.2",
 		"rxjs": "^7.8.2",
 		"swagger-ui-express": "^5.0.1",
-		"typeomatica": "0.3.62",
-		"@mnemonica/nestjs": "^0.7.1"
+		"typeomatica": "0.3.62"
+	},
+	"overrides": {
+		"@mnemonica/dive": "$@mnemonica/dive"
 	},
 	"devDependencies": {
 		"@types/node": "^25.3.0",

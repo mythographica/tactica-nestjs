@@ -14,6 +14,7 @@ Type Hierarchy (Trie):
 │           └── UserEntity_AdminEntity_SuperAdminEntity_SuperAdminResponse
 ├── RootAsync
 │   └── RootAsync_ResultFromDecorate
-└── SyncBase
-    └── SyncBase_SubAsync
-        └── SyncBase_SubAsync_SubDecorate
+├── SyncBase
+│   └── SyncBase_SubAsync
+│       └── SyncBase_SubAsync_SubDecorate
+└── EdsProbe

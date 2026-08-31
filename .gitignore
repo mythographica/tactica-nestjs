@@ -137,3 +137,7 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# packed tarballs for use:local (npm pack of file: deps)
+.local-links/
+
