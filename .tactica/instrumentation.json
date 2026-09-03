@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-03T00:36:22.321Z",
+  "points": [
+    {
+      "kind": "pipe",
+      "className": "ValidationPipe",
+      "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:49:2",
+      "code": "@UsePipes(new ValidationPipe({ transform: true }))",
+      "scope": "method:UserController.createUser",
+      "targets": [
+        "UserController"
+      ]
+    },
+    {
+      "kind": "pipe",
+      "className": "ValidationPipe",
+      "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:97:2",
+      "code": "@UsePipes(new ValidationPipe({ transform: true }))",
+      "scope": "method:AdminController.createAdmin",
+      "targets": [
+        "AdminController"
+      ]
+    },
+    {
+      "kind": "pipe",
+      "className": "ValidationPipe",
+      "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:164:2",
+      "code": "@UsePipes(new ValidationPipe({ transform: true }))",
+      "scope": "method:SuperAdminController.createSuperAdmin",
+      "targets": [
+        "SuperAdminController"
+      ]
+    },
+    {
+      "kind": "interceptor",
+      "className": "MarkInterceptor",
+      "location": "/code/mnemonica/tactica-nestjs/src/mark.interceptor.ts:18:14",
+      "code": "@Injectable()",
+      "scope": "global",
+      "targets": []
+    },
+    {
+      "kind": "middleware",
+      "className": "MidSleepMiddleware",
+      "location": "/code/mnemonica/tactica-nestjs/src/mid-sleep.middleware.ts:39:14",
+      "code": "@Injectable()",
+      "scope": "module",
+      "targets": [
+        "chaos/mid_sleep"
+      ]
+    },
+    {
+      "kind": "middleware",
+      "className": "MistPlusMiddleware",
+      "location": "/code/mnemonica/tactica-nestjs/src/mist-plus.middleware.ts:23:14",
+      "code": "@Injectable()",
+      "scope": "module",
+      "targets": [
+        "chaos/blindspot",
+        "chaos/unblinding"
+      ]
+    },
+    {
+      "kind": "middleware",
+      "className": "CornerCutMiddleware",
+      "location": "/code/mnemonica/tactica-nestjs/src/corner-cut.middleware.ts:16:14",
+      "code": "@Injectable()",
+      "scope": "module",
+      "targets": [
+        "chaos/corner_cut"
+      ]
+    },
+    {
+      "kind": "filter",
+      "className": "TraceExceptionFilter",
+      "location": "/code/mnemonica/tactica-nestjs/src/trace-exception.filter.ts:95:14",
+      "code": "@Catch()",
+      "scope": "module",
+      "targets": []
+    },
+    {
+      "kind": "interceptor",
+      "className": "MarkInterceptor",
+      "location": "/code/mnemonica/tactica-nestjs/src/mark.interceptor.ts:18:14",
+      "code": "@Injectable()",
+      "scope": "module",
+      "targets": []
+    }
+  ]
+}

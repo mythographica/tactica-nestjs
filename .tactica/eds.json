@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-08-31T21:51:28.691Z",
+  "generatedAt": "2026-09-03T00:36:22.320Z",
   "eds": {
     "EdsProbe": [
       {
@@ -15,40 +15,86 @@
     ],
     "unknown": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:40:18",
+        "location": "/code/mnemonica/tactica-nestjs/src/trace-exception.filter.ts:110:26",
+        "kind": "contextConsume",
+        "code": "getFlow(error)"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:107:18",
         "kind": "wrap",
-        "code": "wrap((id: string) => {\n\t\t\tconst user = new UserEntity({\n\t\t\t\tid,\n\t\t\t\temail: `${id}@chaos.local`,\n\t\t\t\t",
+        "code": "wrap(() => {\n\t\t\tconst result = user.constructor.name;\n\t\t\treturn result;\n\t\t}, user, 'chaos:ok')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:135:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-crash:${id}:${mark}`);\n\t\t}, user, 'chaos:crash')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:160:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tconst result = Promise.reject(new Error(`chaos-reject:${id}:${mark}`));\n\t\t\treturn re"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:192:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tconst disconnected = JSON.parse(JSON.stringify(user));\n\t\t\tif (outcome === 'throw') {"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:243:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-pure:${id}:${mark}`);\n\t\t}, 'chaos:pure-error')"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:272:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-crash-un:${id}:${mark}`);\n\t\t}, user, 'chaos:crash-un-response"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:305:19",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-crash-int:${id}:${imark}:${mark}`);\n\t\t}, user, 'chaos:crash-i"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:402:24",
+        "kind": "wrap",
+        "code": "wrap((msg: queueMessage) => {\n\t\t\tconst crafted = new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t",
         "createsTypes": [
           "UserEntity"
         ]
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:73:19",
-        "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-crash:${id}`);\n\t\t}, user, 'chaos:crash')"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:97:19",
-        "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\tconst result = Promise.reject(new Error(`chaos-reject:${id}`));\n\t\t\treturn result;\n\t\t"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:197:15",
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:417:17",
         "kind": "contextConsume",
         "code": "getFlow(error)"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:198:19",
-        "kind": "contextConsume",
-        "code": "getErrorInstance(error)"
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:490:24",
+        "kind": "wrap",
+        "code": "wrap((msg: queueMessage) => {\n\t\t\tconst crafted = new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t",
+        "createsTypes": [
+          "UserEntity"
+        ]
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:211:15",
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:549:17",
+        "kind": "wrap",
+        "code": "wrap((data: { name?: string }) => {\n\t\t\t// data.name is undefined on the malformed payload: the explo",
+        "createsTypes": [
+          "UserEntity"
+        ]
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/mid-sleep.middleware.ts:54:20",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\t\tthrow new Error(`chaos-mid-sleep:${stash.id}:${stash.mark}`);\n\t\t\t}, stash.userRespo"
+      },
+      {
+        "location": "src/main.ts:307:15",
         "kind": "contextConsume",
         "code": "getFlow(error)"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:212:19",
+        "location": "src/main.ts:308:19",
         "kind": "contextConsume",
         "code": "getErrorInstance(error)"
       }

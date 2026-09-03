@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-08-31T21:51:28.690Z",
+  "generatedAt": "2026-09-03T00:36:22.320Z",
   "usages": {
     "UserEntity": [
       {
@@ -34,24 +34,59 @@
         "code": "new UserEntity({\n\t\t\tid: crypto.randomUUID(),\n\t\t\temail: createSuperAdminDto.email,\n\t\t\tname: createSup"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:11:20",
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:21:20",
         "kind": "lookup",
         "code": "lookup('UserEntity')"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:41:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:95:16",
         "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\t\tid,\n\t\t\t\temail: `${id}@chaos.local`,\n\t\t\t\tname: `chaos-${id}`,\n\t\t\t})"
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-${mark}-${id}`,\n\t\t})"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:64:16",
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:126:16",
         "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@chaos.local`,\n\t\t\tname: `chaos-${id}`,\n\t\t})"
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-${mark}-${id}`,\n\t\t})"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:91:16",
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:154:16",
         "kind": "instantiation",
-        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${id}@chaos.local`,\n\t\t\tname: `chaos-${id}`,\n\t\t})"
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-${mark}-${id}`,\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:182:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-${mark}-${id}`,\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:262:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-un-${mark}-${id}`,\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:297:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-int-${mark}-${imark}-${id}`"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:324:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-midsleep-${mark}-${id}`,\n\t\t"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:363:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-mist-${mark}-${id}`,\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:457:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-unblind-${mark}-${id}`,\n\t\t}"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:516:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-corner-${mark}-${id}`,\n\t\t})"
       }
     ],
     "UserEntity.UserResponse": [
@@ -72,6 +107,66 @@
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:80:28",
+        "kind": "propertyAccess",
+        "code": "user.UserResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:332:24",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-midsleep-response-${"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:332:28",
+        "kind": "propertyAccess",
+        "code": "user.UserResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:381:20",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\t\tid,\n\t\t\t\temail: `${mark}@chaos.local`,\n\t\t\t\tname: `chaos-mist-ok-${mark}-$"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:381:24",
+        "kind": "propertyAccess",
+        "code": "user.UserResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:403:20",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t\tname : `sanity-failed:${msg.detail}:${mark}`,\n\t\t"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:403:24",
+        "kind": "propertyAccess",
+        "code": "user.UserResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:470:20",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\t\tid,\n\t\t\t\temail: `${mark}@chaos.local`,\n\t\t\t\tname: `chaos-unblind-ok-${mark"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:470:24",
+        "kind": "propertyAccess",
+        "code": "user.UserResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:491:20",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t\tname : `sanity-failed:${msg.detail}:${mark}`,\n\t\t"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:491:24",
+        "kind": "propertyAccess",
+        "code": "user.UserResponse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:554:20",
+        "kind": "instantiation",
+        "code": "new user.UserResponse({\n\t\t\t\tid,\n\t\t\t\temail: `${mark}@chaos.local`,\n\t\t\t\tname: data.name as string,\n\t\t\t"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:554:24",
         "kind": "propertyAccess",
         "code": "user.UserResponse"
       }
@@ -281,24 +376,24 @@
     ],
     "Sentience": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:23:30",
+        "location": "src/main.ts:102:30",
         "kind": "lookup",
         "code": "lookup('Sentience')"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:65:38",
+        "location": "src/main.ts:144:38",
         "kind": "instantiation",
         "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})"
       }
     ],
     "Sentience.Memory": [
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:77:29",
+        "location": "src/main.ts:156:29",
         "kind": "instantiation",
         "code": "new global.aiMemories.rootInstance.Memory({\n\t\t\t\t\t\tcontent: item.content,\n\t\t\t\t\t\temotion: item.emotion"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:77:33",
+        "location": "src/main.ts:156:33",
         "kind": "propertyAccess",
         "code": "global.aiMemories.rootInstance.Memory"
       }

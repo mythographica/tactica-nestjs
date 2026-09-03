@@ -36,6 +36,13 @@ User.define('UserResponse', function (
 	this.email = data.email;
 	this.name = data.name;
 	this.type = data.type;
+	// Sanity check (2026-09-02, mist_plus demo): a response carrying the
+	// remote server's failed-sanity marker cannot be crafted at all. The
+	// throw happens AFTER field assignment, so the mnemonica errored
+	// instance still carries the partial payload into the trace.
+	if (data.name.includes('sanity-failed')) {
+		throw new Error(`UserResponse sanity check failed: ${data.name}`);
+	}
 });
 
 /**

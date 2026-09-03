@@ -1,0 +1,172 @@
+MNEMONICA E2E RUNBOOK — drive the whole tooling chain by hand
+=============================================================
+(tactica-nestjs fixture → WS App Channel → Mnemographica Live Trace → Jaeger)
+
+Three terminals + one VS Code window.
+
+1. Jaeger (traces backend + UI)
+   cd /code/mnemonica/strategy && npm run jaegger:pre-configured
+   → UI on http://localhost:16686 , OTLP HTTP intake on :4318
+   (idempotent: an old jaeger-mnem container is replaced)
+
+2. The app, with its WS strategy channel switched on
+   cd /code/mnemonica/tactica-nestjs
+   npm run build && STRATEGY_CLIENT=1 npm run start:prod
+   → Nest listens on :3000
+   sanity check from another shell:
+     curl http://127.0.0.1:3000/strategy/channel
+   → returns JSON {host, port, token}
+
+3. VS Code (Mnemographica)
+   If package.json of the extension changed since the window loaded:
+     Ctrl+Shift+P → Developer: Reload Window   (once)
+   Open the App Channel tab:
+     click the PLUG icon on the "Live Trace" view title
+     (or Ctrl+Shift+P → "Ψ App Channel")
+   In the tab: Discovery URL is pre-filled with
+     http://127.0.0.1:3000/strategy/channel
+   → click "Discover & Connect" → status must flip to "connected"
+
+4. Load
+   cd /code/mnemonica/tactica-nestjs && npm run demo:load 10
+   (or: bash scripts/chaos-load.sh 10 ; BASE=... to override target)
+
+What "everything works" looks like — check with your own eyes:
+  · Live Trace: green ok rows streaming; RED rows for crash,
+    delayed/throw, pure-error; rejection rows for reject, delayed/reject.
+    Click a row → acid-green (red if errored) highlight in 3D graph.
+  · App stdout: one structured JSON line per uncaughtException /
+    unhandledRejection with the dive branch
+    (create:UserEntity → call:<callsite>), the extracted failure-site
+    instance, the ALS "frame" (parental edgeId + pinned instances —
+    the async-flow backbone, asyncFlow: true in app.module.ts), and
+    "running": the still-unfinished fibers at crash time (empty for the
+    crash fiber itself — its edges settle as 'error' during unwind).
+  · Jaeger process.* error spans also carry dive.frame_edge_id and
+    dive.running_count attributes.
+  · ab summary printed by the script: ~800 rps, 0 failed requests,
+    app process still alive at the end.
+  · Jaeger localhost:16686: service "tactica-nestjs", errored spans on
+    crash/reject traces; span links jump back into VS Code files and
+    into the Live Trace sidebar (jaeger-ui.json link patterns).
+
+Chaos endpoints (all in src/chaos.controller.ts):
+  GET  /chaos/ok                     control path (used by ab)
+  POST /chaos/crash                  real uncaughtException (setImmediate)
+  POST /chaos/reject                 real unhandledRejection (dangling)
+  POST /chaos/delayed {outcome}      100ms-after-construction callback:
+                                     ok | throw | reject (disconnected data)
+  POST /chaos/pure-error             wrapped error, NO mnemonica instance
+  POST /chaos/crash_un_response      uncaughtException that ANSWERS its own
+                                     request: the response is parked
+                                     (src/crash-park.ts), the process-level
+                                     handler replies HTTP 500 with the full
+                                     crash report as the body
+  POST /chaos/crash_int_response     same parked-500 mechanics PLUS the
+                                     interceptor-stamped second token:
+                                     MarkInterceptor (src/mark.interceptor.ts,
+                                     APP_INTERCEPTOR in app.module.ts — a
+                                     FIXTURE piece, not the published adapter)
+                                     sets req.imark (x-imark header overrides)
+  POST /chaos/mid_sleep              armored-shoes demo: a MIDDLEWARE timer
+                                     (src/mid-sleep.middleware.ts, 100ms)
+                                     throws while the handler is still in its
+                                     1000ms sleep. The request survives
+                                     (201 "survived" after the full second);
+                                     the uncaughtException trace connects
+                                     through ANCESTORS — branch reads
+                                     create:UserEntity → create:UserResponse →
+                                     call:mid-sleep-timer — because the timer
+                                     was established BEFORE the instances
+                                     existed, so the throw wraps with the
+                                     stashed instance at fire time and has no
+                                     wrap predecessor in its own fiber.
+  POST /chaos/corner_cut             the lazybones cascade (fake-queue task
+                                     side + corner-cut middleware): the
+                                     middleware fires a queue task and
+                                     FORGETS it, stashing the task id as an
+                                     untyped req attachment; the handler
+                                     awaits the result (shortened outbox)
+                                     and feeds the any-typed payload into
+                                     UserResponse. body.flavor:
+                                       typeerror — default: malformed payload,
+                                         data.name undefined → TypeError
+                                         INSIDE the constructHandler (errored
+                                         mnemonica construction) → Nest blind
+                                         500. Fog, with the trace recorded
+                                         but unread.
+                                       circular — the handler throws the
+                                         self-referencing PAYLOAD itself (not
+                                         an Error): Nest's default filter
+                                         survives it (logs the object, blind
+                                         500). Fogged, not fatal.
+                                       headers — the handler res.write()s a
+                                         partial answer first: the client
+                                         gets 201 "partial-answer", the
+                                         server logs the TypeError, and the
+                                         failure vanishes ENTIRELY — no
+                                         process-level event, the response
+                                         says success. The darkest variant:
+                                         success-shaped fog.
+  POST /chaos/blindspot              Kafka request-reply emulation
+                                     (src/fake-queue.ts + mist-plus
+                                     middleware): the handler AWAITS the
+                                     queue reply; 100ms in the middleware
+                                     timer produces one that fails the sanity
+                                     marker → business rules demand a throw →
+                                     crafting the error response dies INSIDE
+                                     the UserResponse constructor (sanity
+                                     check in entities/user.entity.ts).
+                                     The BLIND side: stdout gets the full
+                                     [mist] report, but Nest's default
+                                     exception filter answers the client
+                                     {"statusCode":500,"message":"Internal
+                                     server error"} — the fog a real Nest
+                                     app lives in.
+  POST /chaos/unblinding             the TAUGHT side: identical mechanics,
+                                     but the route has no try/catch at all —
+                                     TraceExceptionFilter (src/trace-
+                                     exception.filter.ts, @UseFilters on the
+                                     route) answers 500 with the dive branch
+                                     + errored construction + actual error AS
+                                     the response body, and records an OTel
+                                     ERROR span with the exception, so the
+                                     failure exists in Jaeger too.
+                                     NOTE: a failed mnemonica constructor
+                                     rolls back own field assignments — the
+                                     errored instance keeps TYPE identity
+                                     (constructor.name) but no own fields.
+                                     What a failed construction THROWS is
+                                     that errored instance itself, and it IS
+                                     an Error (the original error is spliced
+                                     into its prototype chain; probed:
+                                     caught === creationError's
+                                     inheritedInstance). The attempted
+                                     constructor args survive on it via
+                                     core's getProps(error).args — the filter
+                                     and main.ts's processErrorReport both
+                                     recover them that way.
+
+Demo-trust token: every chaos endpoint mints a random `mark`
+(8 hex chars from a uuid) and echoes it in the HTTP response; the SAME
+mark lands in the error message AND in the extracted instance payload of
+the process-level crash line. A skeptic passes their own —
+  curl -X POST .../chaos/crash -d '{"mark":"MY-OWN-VALUE"}'
+  curl ".../chaos/ok?mark=MY-OWN-VALUE"
+—and watches MY-OWN-VALUE appear in the [chaos] report. Nothing is
+hardcoded; the crash provably carries that request's data.
+
+The parked-500 pair closes the loop the other endpoints deliberately
+leave open. /chaos/crash answers 201 "scheduled" BEFORE the grenade
+fires (the throw escapes the request cycle — Nest filters never see it,
+so a default 500 is impossible). The _response pair parks the socket and
+the uncaughtException handler answers it:
+  curl -X POST .../chaos/crash_un_response -d '{"mark":"PARKED-1"}'
+  → HTTP 500, body IS the crash report (branch, instance, frame, running)
+  curl -X POST .../chaos/crash_int_response -d '{"mark":"PARKED-2"}'
+  → HTTP 500, report carries BOTH tokens: imark (interceptor) + mark
+    (yours) — the three-column correlation table:
+    watcher mark  →  interceptor imark  →  crash payload
+App stdout shows it: [chaos] answered=true ... (plain endpoints log
+answered=false — log-only, exactly as before). Park safety: if no crash
+arrives within 10s the socket gets a 500 timeout note instead of hanging.

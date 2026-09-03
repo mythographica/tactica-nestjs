@@ -110,8 +110,20 @@ src/
 │   ├── user.entity.ts       # Mnemonica entities with define() - REFERENCE EXAMPLE
 │   └── async.entity.ts      # Async/await + @decorate() - REFERENCE EXAMPLE
 ├── user.controller.ts       # NestJS controllers
+├── chaos.controller.ts      # Load/error fixture: /chaos/ok, /chaos/crash, /chaos/reject,
+│                            # /chaos/delayed (outcome: ok|reject|throw — 100ms timer,
+│                            # disconnected JSON data), /chaos/pure-error (wrapper error
+│                            # with NO mnemonica instance — ambient dive context cleared)
 ├── async.controller.ts      # Async examples controller
 ├── user.service.ts          # NestJS services
+├── strategy-channel.ts      # Embedded strategy WS channel: startStrategyClient()
+│                            # from @mnemonica/strategy, gated by env
+│                            # STRATEGY_CLIENT=1 or STRATEGY_CLIENT_PORT=<n>;
+│                            # handle stored on globalThis.__strategyChannel
+├── strategy-channel.controller.ts  # GET /strategy/channel → { available, port,
+│                            # token, pid } — discovery for MnemoGraphica's App
+│                            # Channel tab. Dev-only: the token authenticates
+│                            # the WS channel, never expose it beyond localhost
 ├── app.module.ts            # NestJS module
 └── main.ts                  # Bootstrap with Swagger
 ```
@@ -123,6 +135,16 @@ src/
 ## API Documentation
 
 Swagger UI is available at `http://localhost:3000/api-docs` when the server is running.
+
+## Strategy Channel (WS, no CDP)
+
+With `STRATEGY_CLIENT=1` (ephemeral port) or `STRATEGY_CLIENT_PORT=<n>` in the
+environment, the app self-hosts the strategy WS channel in-process via
+`startStrategyClient()` from `@mnemonica/strategy` (the same `ws-server.js`
+payload the CDP path injects — single source of truth). `GET /strategy/channel`
+returns `{ available, port, token, pid }`; MnemoGraphica's App Channel tab uses
+it for discovery, then speaks `trace/subscribe` / `define` / `ws_swap` over WS
+directly — no CDP involved.
 
 ## Handling Tactica's `unknown` Type Fields
 
