@@ -141,3 +141,7 @@ vite.config.ts.timestamp-*
 # packed tarballs for use:local (npm pack of file: deps)
 .local-links/
 
+
+# internal agent memory — never published
+plans/
+reports/

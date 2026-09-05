@@ -1,10 +1,10 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-03T00:36:22.319Z",
+  "generatedAt": "2026-09-04T10:58:58.541Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
-      "location": "src/ai-types/Sentience/index.ts:21:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/index.ts:21:1",
       "kind": "define",
       "parent": null,
       "strictChain": true,
@@ -12,7 +12,7 @@
     },
     "Sentience.Consciousness": {
       "name": "Consciousness",
-      "location": "src/ai-types/Sentience/Consciousness/index.ts:20:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:20:1",
       "kind": "define",
       "parent": "Sentience",
       "strictChain": true,
@@ -20,7 +20,7 @@
     },
     "Sentience.Memory": {
       "name": "Memory",
-      "location": "src/ai-types/Sentience/Memory/index.ts:23:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:23:1",
       "kind": "define",
       "parent": "Sentience",
       "strictChain": true,
@@ -28,7 +28,7 @@
     },
     "Sentience.Consciousness.Curiosity": {
       "name": "Curiosity",
-      "location": "src/ai-types/Sentience/Consciousness/Curiosity/index.ts:21:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
@@ -36,7 +36,7 @@
     },
     "Sentience.Consciousness.Empathy": {
       "name": "Empathy",
-      "location": "src/ai-types/Sentience/Consciousness/Empathy/index.ts:21:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
@@ -44,7 +44,7 @@
     },
     "Sentience.Consciousness.Sympathy": {
       "name": "Sympathy",
-      "location": "src/ai-types/Sentience/Consciousness/Sympathy/index.ts:21:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
@@ -52,7 +52,7 @@
     },
     "Sentience.Consciousness.Empathy.Gratitude": {
       "name": "Gratitude",
-      "location": "src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:21:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:21:1",
       "kind": "define",
       "parent": "Sentience.Consciousness.Empathy",
       "strictChain": true,

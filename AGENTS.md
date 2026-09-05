@@ -113,7 +113,9 @@ src/
 ├── chaos.controller.ts      # Load/error fixture: /chaos/ok, /chaos/crash, /chaos/reject,
 │                            # /chaos/delayed (outcome: ok|reject|throw — 100ms timer,
 │                            # disconnected JSON data), /chaos/pure-error (wrapper error
-│                            # with NO mnemonica instance — ambient dive context cleared)
+│                            # with NO mnemonica instance — ambient dive context cleared),
+│                            # /chaos/nested (wrap inside a wrapped callback — eds.json
+│                            # `via` / generation-chain demo for the wrappers graph)
 ├── async.controller.ts      # Async examples controller
 ├── user.service.ts          # NestJS services
 ├── strategy-channel.ts      # Embedded strategy WS channel: startStrategyClient()

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-03T00:36:22.321Z",
+  "generatedAt": "2026-09-04T10:58:58.543Z",
   "flow": {
     "Error": [
       {
@@ -184,6 +184,12 @@
         "targetType": "Error"
       },
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:598:3",
+        "kind": "return",
+        "code": "return result;",
+        "targetType": "Error"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/mark.interceptor.ts:28:3",
         "kind": "return",
         "code": "return result;",
@@ -265,31 +271,31 @@
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:81:3",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:81:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:285:3",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:285:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:289:3",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:289:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:355:51",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:355:51",
         "kind": "instantiation",
         "code": "new Error(String(reason))",
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:356:2",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:356:2",
         "kind": "passAsArg",
         "code": "processErrorReport('unhandledRejection', error)",
         "targetType": "Error",
@@ -495,182 +501,182 @@
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:151:8",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:151:8",
         "kind": "propertyRead",
         "code": "data.memories",
         "propertyName": "memories",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:151:25",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:151:25",
         "kind": "propertyRead",
         "code": "data.memories.items",
         "propertyName": "items",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:151:25",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:151:25",
         "kind": "propertyRead",
         "code": "data.memories",
         "propertyName": "memories",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:153:5",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:153:5",
         "kind": "methodCall",
         "code": "data.memories.items.forEach(function (item) {\n\t\t\t\t\tconst memoryId = item.id;\n\n\t\t\t\t\tconst memoryInsta",
         "propertyName": "forEach",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:153:5",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:153:5",
         "kind": "propertyRead",
         "code": "data.memories.items.forEach",
         "propertyName": "forEach",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:153:5",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:153:5",
         "kind": "propertyRead",
         "code": "data.memories.items",
         "propertyName": "items",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:153:5",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:153:5",
         "kind": "propertyRead",
         "code": "data.memories",
         "propertyName": "memories",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/index.ts:24:24",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:24:24",
         "kind": "propertyRead",
         "code": "data?.awarenessLevel",
         "propertyName": "awarenessLevel",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/index.ts:25:15",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:25:15",
         "kind": "propertyRead",
         "code": "data?.state",
         "propertyName": "state",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/index.ts:26:15",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:26:15",
         "kind": "propertyRead",
         "code": "data?.focus",
         "propertyName": "focus",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Curiosity/index.ts:26:15",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:26:15",
         "kind": "propertyRead",
         "code": "data?.topic",
         "propertyName": "topic",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Curiosity/index.ts:27:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:27:19",
         "kind": "propertyRead",
         "code": "data?.intensity",
         "propertyName": "intensity",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Curiosity/index.ts:28:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:28:17",
         "kind": "propertyRead",
         "code": "data?.message",
         "propertyName": "message",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Empathy/index.ts:26:16",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:26:16",
         "kind": "propertyRead",
         "code": "data?.target",
         "propertyName": "target",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Empathy/index.ts:27:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:27:19",
         "kind": "propertyRead",
         "code": "data?.intensity",
         "propertyName": "intensity",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Empathy/index.ts:28:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:28:17",
         "kind": "propertyRead",
         "code": "data?.message",
         "propertyName": "message",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:26:16",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:26:16",
         "kind": "propertyRead",
         "code": "data?.reason",
         "propertyName": "reason",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:27:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:27:19",
         "kind": "propertyRead",
         "code": "data?.intensity",
         "propertyName": "intensity",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:28:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:28:17",
         "kind": "propertyRead",
         "code": "data?.message",
         "propertyName": "message",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Sympathy/index.ts:26:16",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:26:16",
         "kind": "propertyRead",
         "code": "data?.target",
         "propertyName": "target",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Sympathy/index.ts:27:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:27:19",
         "kind": "propertyRead",
         "code": "data?.intensity",
         "propertyName": "intensity",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Consciousness/Sympathy/index.ts:28:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:28:17",
         "kind": "propertyRead",
         "code": "data?.message",
         "propertyName": "message",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Memory/index.ts:27:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:27:17",
         "kind": "propertyRead",
         "code": "data?.content",
         "propertyName": "content",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Memory/index.ts:28:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:28:17",
         "kind": "propertyRead",
         "code": "data?.emotion",
         "propertyName": "emotion",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Memory/index.ts:29:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:29:19",
         "kind": "propertyRead",
         "code": "data?.intensity",
         "propertyName": "intensity",
         "targetType": "Promise"
       },
       {
-        "location": "src/ai-types/Sentience/Memory/index.ts:30:15",
+        "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:30:15",
         "kind": "propertyRead",
         "code": "data?.topic",
         "propertyName": "topic",
@@ -1076,6 +1082,33 @@
         "code": "user.UserResponse",
         "propertyName": "UserResponse",
         "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:578:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-nested-${mark}-${id}`,\n\t\t})",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:587:18",
+        "kind": "passAsArg",
+        "code": "wrap(() => {\n\t\t\tconst inner = wrap(() => {\n\t\t\t\tconst text = `inner:${user.name}`;\n\t\t\t\treturn text;\n\t",
+        "targetType": "UserEntity",
+        "context": "arg 1 to wrap"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:588:18",
+        "kind": "passAsArg",
+        "code": "wrap(() => {\n\t\t\t\tconst text = `inner:${user.name}`;\n\t\t\t\treturn text;\n\t\t\t}, user, 'chaos:nested:inner",
+        "targetType": "UserEntity",
+        "context": "arg 1 to wrap"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/chaos.controller.ts:589:27",
+        "kind": "propertyRead",
+        "code": "user.name",
+        "propertyName": "name",
+        "targetType": "UserEntity"
       }
     ],
     "Map": [
@@ -1366,7 +1399,7 @@
         "targetType": "Map"
       },
       {
-        "location": "src/main.ts:132:16",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:132:16",
         "kind": "instantiation",
         "code": "new Map()",
         "context": "new expression"
@@ -1599,7 +1632,7 @@
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:206:21",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:206:21",
         "kind": "instantiation",
         "code": "new ValidationPipe({\n\t\ttransform: true,\n\t\twhitelist: true,\n\t\tforbidNonWhitelisted: true,\n\t})",
         "context": "new expression"
@@ -2126,7 +2159,7 @@
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:166:36",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:166:36",
         "kind": "instantiation",
         "code": "new Date()",
         "context": "new expression"
@@ -2194,7 +2227,7 @@
     ],
     "Sentience": [
       {
-        "location": "src/main.ts:144:38",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:144:38",
         "kind": "instantiation",
         "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})",
         "context": "new expression"
@@ -2202,7 +2235,7 @@
     ],
     "Sentience.Memory": [
       {
-        "location": "src/main.ts:156:29",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:156:29",
         "kind": "instantiation",
         "code": "new global.aiMemories.rootInstance.Memory({\n\t\t\t\t\t\tcontent: item.content,\n\t\t\t\t\t\temotion: item.emotion",
         "context": "new expression"
@@ -2210,20 +2243,20 @@
     ],
     "MnemonicaTraceMiddleware": [
       {
-        "location": "src/main.ts:202:14",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:202:14",
         "kind": "instantiation",
         "code": "new MnemonicaTraceMiddleware(trace.getTracer('tactica-nestjs'), otel, asyncFlowProvider)",
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:203:63",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:203:63",
         "kind": "methodCall",
         "code": "mtm.use(req, res, next)",
         "propertyName": "use",
         "targetType": "MnemonicaTraceMiddleware"
       },
       {
-        "location": "src/main.ts:203:63",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:203:63",
         "kind": "propertyRead",
         "code": "mtm.use",
         "propertyName": "use",
@@ -2232,13 +2265,13 @@
     ],
     "DocumentBuilder": [
       {
-        "location": "src/main.ts:213:17",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:213:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()",
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:221:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:221:19",
         "kind": "passAsArg",
         "code": "SwaggerModule.createDocument(app, config)",
         "targetType": "DocumentBuilder",

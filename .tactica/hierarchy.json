@@ -1,32 +1,32 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-03T00:36:22.322Z",
+  "generatedAt": "2026-09-04T10:58:58.576Z",
   "roots": [
     {
       "name": "Sentience",
       "fullPath": "Sentience",
-      "location": "src/ai-types/Sentience/index.ts:21:1",
+      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/index.ts:21:1",
       "children": [
         {
           "name": "Consciousness",
           "fullPath": "Sentience.Consciousness",
-          "location": "src/ai-types/Sentience/Consciousness/index.ts:20:1",
+          "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:20:1",
           "children": [
             {
               "name": "Curiosity",
               "fullPath": "Sentience.Consciousness.Curiosity",
-              "location": "src/ai-types/Sentience/Consciousness/Curiosity/index.ts:21:1",
+              "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:21:1",
               "children": []
             },
             {
               "name": "Empathy",
               "fullPath": "Sentience.Consciousness.Empathy",
-              "location": "src/ai-types/Sentience/Consciousness/Empathy/index.ts:21:1",
+              "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:21:1",
               "children": [
                 {
                   "name": "Gratitude",
                   "fullPath": "Sentience.Consciousness.Empathy.Gratitude",
-                  "location": "src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:21:1",
+                  "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:21:1",
                   "children": []
                 }
               ]
@@ -34,7 +34,7 @@
             {
               "name": "Sympathy",
               "fullPath": "Sentience.Consciousness.Sympathy",
-              "location": "src/ai-types/Sentience/Consciousness/Sympathy/index.ts:21:1",
+              "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:21:1",
               "children": []
             }
           ]
@@ -42,7 +42,7 @@
         {
           "name": "Memory",
           "fullPath": "Sentience.Memory",
-          "location": "src/ai-types/Sentience/Memory/index.ts:23:1",
+          "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:23:1",
           "children": []
         }
       ]

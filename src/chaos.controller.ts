@@ -565,4 +565,36 @@ export class ChaosController {
 		const result = { status: 'unexpected-ok', id, mark, data: extractSafe(crafted) };
 		return result;
 	}
+
+	@Post('nested')
+	@ApiOperation({
+		summary: 'Nested wraps — a generation chain for the wrappers graph',
+		description: 'A wrap() INSIDE a wrapped callback: the inner entry\'s via points at the outer call site, so Mnemographica renders gen-0 → gen-1 instead of gen-0 islands',
+	})
+	@ApiResponse({ status: 201, description: 'Nested wrap executed' })
+	nestedWraps (@Body() body?: { mark?: string }): { status: string; id: string; mark: string; inner: string } {
+		const id = crypto.randomUUID();
+		const mark = markOf(body?.mark);
+		const user = new UserEntity({
+			id,
+			email: `${mark}@chaos.local`,
+			name: `chaos-nested-${mark}-${id}`,
+		});
+
+		// Textual nesting is what tactica's `via` records: the inner wrap
+		// sits in the outer wrapped body, so dive wraps it at runtime when
+		// the outer runs — gen-0 outer, gen-1 inner, one generation edge.
+		const worker = wrap(() => {
+			const inner = wrap(() => {
+				const text = `inner:${user.name}`;
+				return text;
+			}, user, 'chaos:nested:inner');
+			const text = inner();
+			return text;
+		}, user, 'chaos:nested:outer');
+
+		const inner = worker();
+		const result = { status: 'ok', id, mark, inner };
+		return result;
+	}
 }
