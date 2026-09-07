@@ -21,7 +21,7 @@ npm run tactica:generate
 npm run tactica:watch
 ```
 
-The generated types are located in `.tactica/types.ts` and are excluded from git via `.gitignore`.
+The generated types are located in `.tactica/types.ts`; the whole `.tactica/` directory is committed to git, so the graph tooling (mnemographica) works from a fresh clone without running tactica first.
 
 ## Overview
 

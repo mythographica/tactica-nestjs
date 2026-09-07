@@ -159,9 +159,9 @@ directly — no CDP involved.
 `app.module.ts` imports `InferDebugModule.forRoot({ childPortEnvVar: 'PORT' })`
 from **`infer-debug/nestjs`** (since infer-debug 0.3.0 the root entry is the
 framework-free core; the NestJS wiring lives at the `/nestjs` subpath)
-— one line, no other wiring. The dependency is a `file:../../infer-debug`
-symlink, and `npm run use:local` re-asserts that line (it is part of the local
-dependency set now).
+— one line, no other wiring. The dependency is the published npm range
+(`^0.3.0`); `npm run use:local` switches the local dependency set back to
+`file:` sibling checkouts for ecosystem-wide development.
 
 **The module is env-gated:** it only activates with `INFER_DEBUG=true` in the
 environment (see the `enabled` option in infer-debug's README). Without it the
