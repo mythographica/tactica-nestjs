@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-05T02:08:12.689Z",
+  "generatedAt": "2026-09-06T20:45:09.350Z",
   "modules": {
     "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts": {
       "filePath": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts",
@@ -17,7 +17,7 @@
         {
           "name": "define",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -83,7 +83,7 @@
         {
           "name": "define",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -145,7 +145,7 @@
         {
           "name": "define",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -153,7 +153,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -161,7 +161,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -508,7 +508,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -759,7 +759,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -834,7 +834,7 @@
         {
           "name": "mnemonica",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "namespace",
           "isReExport": false,
           "external": true
@@ -970,7 +970,7 @@
         {
           "name": "getFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -978,7 +978,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -986,7 +986,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1139,7 +1139,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1147,7 +1147,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1155,7 +1155,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1163,7 +1163,7 @@
         {
           "name": "enterContext",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1171,7 +1171,7 @@
         {
           "name": "getFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1346,7 +1346,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1607,7 +1607,7 @@
         {
           "name": "InferDebugModule",
           "kind": "unknown",
-          "sourceModule": "/code/infer-debug/dist/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/infer-debug/dist/nestjs.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1858,7 +1858,7 @@
         {
           "name": "topologicaLoader",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/topologica/lib/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/topologica/lib/index.d.ts",
           "importKind": "namespace",
           "isReExport": false,
           "external": true
@@ -1866,7 +1866,7 @@
         {
           "name": "define",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1932,7 +1932,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1940,7 +1940,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1948,7 +1948,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1956,7 +1956,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1964,7 +1964,7 @@
         {
           "name": "hooksOpts",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/core/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2003,7 +2003,7 @@
         {
           "name": "getFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2011,7 +2011,7 @@
         {
           "name": "getErrorInstance",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2019,7 +2019,7 @@
         {
           "name": "getRunningEdges",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2027,7 +2027,7 @@
         {
           "name": "setTraceLimit",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2035,7 +2035,7 @@
         {
           "name": "divePkg",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/dive/build/index.d.ts",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "namespace",
           "isReExport": false,
           "external": true

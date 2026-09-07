@@ -8,7 +8,7 @@ import { trace } from '@opentelemetry/api';
 import './entities/user.entity';
 import './entities/async.entity';
 import './entities/eds-probe.entity';
-import { InferDebugModule } from 'infer-debug';
+import { InferDebugModule } from 'infer-debug/nestjs';
 import { MnemonicaModule } from '@mnemonica/nestjs';
 import { UserController, AdminController, SuperAdminController } from './user.controller';
 import { AsyncController } from './async.controller';

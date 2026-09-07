@@ -27,6 +27,12 @@ npm run tactica:generate
 npm run tactica:watch
 ```
 
+**tactica config:** `.tactica.js` (repo root) loads `@mnemonica/nestjs/tactica`
+— the adapter's plugin supplying the instrumentation vocabulary (tactica core
+is framework-blind without it; `instrumentation.json` would carry
+`points: []`). The plugin subpath exists since `@mnemonica/nestjs@0.8.0`;
+`use:local` repacks the adapter into `.local-links/` to provide it.
+
 ## Code Style
 
 ### Indentation
@@ -147,6 +153,36 @@ payload the CDP path injects — single source of truth). `GET /strategy/channel
 returns `{ available, port, token, pid }`; MnemoGraphica's App Channel tab uses
 it for discovery, then speaks `trace/subscribe` / `define` / `ws_swap` over WS
 directly — no CDP involved.
+
+## infer-debug (in-process debug proxy)
+
+`app.module.ts` imports `InferDebugModule.forRoot({ childPortEnvVar: 'PORT' })`
+from **`infer-debug/nestjs`** (since infer-debug 0.3.0 the root entry is the
+framework-free core; the NestJS wiring lives at the `/nestjs` subpath)
+— one line, no other wiring. The dependency is a `file:../../infer-debug`
+symlink, and `npm run use:local` re-asserts that line (it is part of the local
+dependency set now).
+
+**The module is env-gated:** it only activates with `INFER_DEBUG=true` in the
+environment (see the `enabled` option in infer-debug's README). Without it the
+control API still answers but the state stays `stopped` and no child spawns —
+this is by design, not a malfunction.
+
+With `INFER_DEBUG=true`:
+
+```bash
+PORT=3000 INFER_DEBUG=true node --enable-source-maps dist/src/main.js
+curl -X POST localhost:3000/infer-debug/start        # spawns child on PORT+1
+curl -H 'infer-debug: 1' localhost:3000/users/...    # request runs in the child
+```
+
+A request carrying the `infer-debug` header (presence, any value) is proxied to
+the debug child (the same compiled app, `--inspect` on 9229); the response
+carries the header back with a `devtools://…&ws=<host>:<port>/<targetId>` deep
+link that jumps straight into the child's inspector through the app's own port.
+Unmarked requests never leave the main process. The child runs the full
+tactica/mnemonica instrumentation (hooks, dive edges), so breakpoints land in
+the TypeScript sources via `--enable-source-maps`.
 
 ## Handling Tactica's `unknown` Type Fields
 

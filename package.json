@@ -12,8 +12,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"tactica:generate": "tactica --generate",
 		"tactica:watch": "tactica --watch",
-		"use:public": "rm -rf node_modules package-lock.json && npm install mnemonica@latest @mnemonica/dive@latest @mnemonica/tactica@latest @mnemonica/topologica@latest @mnemonica/nestjs@latest --save && echo 'Switched to PUBLIC npm dependencies (latest)'",
-		"use:local": "node -e \"const fs=require('fs'),p=JSON.parse(fs.readFileSync('package.json','utf8'));p.dependencies.mnemonica='file:../core';p.dependencies['@mnemonica/dive']='file:../dive';p.dependencies['@mnemonica/tactica']='file:../tactica';p.dependencies['@mnemonica/topologica']='file:../topologica';fs.mkdirSync('.local-links',{recursive:true});const nv=JSON.parse(fs.readFileSync('../nestjs-adapter/package.json','utf8')).version;require('child_process').execSync('npm pack ../nestjs-adapter --pack-destination .local-links',{stdio:'inherit'});p.dependencies['@mnemonica/nestjs']='file:.local-links/mnemonica-nestjs-'+nv+'.tgz';fs.writeFileSync('package.json',JSON.stringify(p,null,'\\t')+'\\n');console.log('Switched to LOCAL file: dependencies (mnemonica family incl. @mnemonica/nestjs)')\"",
+		"use:public": "rm -rf node_modules package-lock.json && npm install mnemonica@latest @mnemonica/dive@latest @mnemonica/tactica@latest @mnemonica/topologica@latest @mnemonica/otel@latest @mnemonica/nestjs@latest infer-debug@latest --save && echo 'Switched to PUBLIC npm dependencies (latest)'",
+		"use:local": "node -e \"const fs=require('fs'),p=JSON.parse(fs.readFileSync('package.json','utf8'));p.dependencies.mnemonica='file:../core';p.dependencies['@mnemonica/dive']='file:../dive';p.dependencies['@mnemonica/tactica']='file:../tactica';p.dependencies['@mnemonica/topologica']='file:../topologica';p.dependencies['@mnemonica/otel']='file:../otel';p.dependencies['infer-debug']='file:../../infer-debug';fs.mkdirSync('.local-links',{recursive:true});const nv=JSON.parse(fs.readFileSync('../nestjs-adapter/package.json','utf8')).version;require('child_process').execSync('npm pack ../nestjs-adapter --pack-destination .local-links',{stdio:'inherit'});p.dependencies['@mnemonica/nestjs']='file:.local-links/mnemonica-nestjs-'+nv+'.tgz';fs.writeFileSync('package.json',JSON.stringify(p,null,'\\t')+'\\n');console.log('Switched to LOCAL file: dependencies (mnemonica family incl. @mnemonica/nestjs + infer-debug)')\"",
 		"demo:trace": "node scripts/adapter-create-demo.mjs",
 		"demo:load": "bash scripts/chaos-load.sh",
 		"demo:ring": "bash scripts/ring-experiment.sh"
@@ -22,11 +22,12 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@mnemonica/dive": "file:../dive",
-		"@mnemonica/nestjs": "file:.local-links/mnemonica-nestjs-0.7.7.tgz",
+		"@mnemonica/dive": "^0.8.5",
+		"@mnemonica/nestjs": "^0.8.0",
+		"@mnemonica/otel": "^0.1.0",
 		"@mnemonica/strategy": "^0.5.1",
-		"@mnemonica/tactica": "file:../tactica",
-		"@mnemonica/topologica": "file:../topologica",
+		"@mnemonica/tactica": "^0.2.0",
+		"@mnemonica/topologica": "^0.1.0",
 		"@nestjs/common": "^11.1.14",
 		"@nestjs/core": "^11.1.14",
 		"@nestjs/platform-express": "^11.1.14",
@@ -39,15 +40,16 @@
 		"@opentelemetry/semantic-conventions": "^1.43.0",
 		"class-transformer": "^0.5.1",
 		"class-validator": "^0.14.4",
-		"infer-debug": "file:../../infer-debug",
-		"mnemonica": "file:../core",
+		"infer-debug": "^0.3.0",
+		"mnemonica": "^1.2.9",
 		"reflect-metadata": "^0.2.2",
 		"rxjs": "^7.8.2",
 		"swagger-ui-express": "^5.0.1",
 		"typeomatica": "0.3.62"
 	},
 	"overrides": {
-		"@mnemonica/dive": "$@mnemonica/dive"
+		"@mnemonica/dive": "$@mnemonica/dive",
+		"@mnemonica/otel": "$@mnemonica/otel"
 	},
 	"devDependencies": {
 		"@types/node": "^25.3.0",
