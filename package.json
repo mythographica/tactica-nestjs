@@ -12,6 +12,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"tactica:generate": "tactica --generate",
 		"tactica:watch": "tactica --watch",
+		"jaegger:pre-configured": "bash ./scripts/Jaegger-conf.sh",
 		"use:public": "rm -rf node_modules package-lock.json && npm install mnemonica@latest @mnemonica/dive@latest @mnemonica/tactica@latest @mnemonica/topologica@latest @mnemonica/otel@latest @mnemonica/nestjs@latest infer-debug@latest --save && echo 'Switched to PUBLIC npm dependencies (latest)'",
 		"use:local": "node -e \"const fs=require('fs'),p=JSON.parse(fs.readFileSync('package.json','utf8'));p.dependencies.mnemonica='file:../core';p.dependencies['@mnemonica/dive']='file:../dive';p.dependencies['@mnemonica/tactica']='file:../tactica';p.dependencies['@mnemonica/topologica']='file:../topologica';p.dependencies['@mnemonica/otel']='file:../otel';p.dependencies['infer-debug']='file:../../infer-debug';fs.mkdirSync('.local-links',{recursive:true});const nv=JSON.parse(fs.readFileSync('../nestjs-adapter/package.json','utf8')).version;require('child_process').execSync('npm pack ../nestjs-adapter --pack-destination .local-links',{stdio:'inherit'});p.dependencies['@mnemonica/nestjs']='file:.local-links/mnemonica-nestjs-'+nv+'.tgz';fs.writeFileSync('package.json',JSON.stringify(p,null,'\\t')+'\\n');console.log('Switched to LOCAL file: dependencies (mnemonica family incl. @mnemonica/nestjs + infer-debug)')\"",
 		"demo:trace": "node scripts/adapter-create-demo.mjs",

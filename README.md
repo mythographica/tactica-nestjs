@@ -1,4 +1,10 @@
-# NestJS + Mnemonica + Tactica Integration Example
+# Mnemographica Integration Example
+
+NestJS + Mnemonica + Tactica : Visualisation
+
+[![This repo's own type graph in Mnemonica Graphica 3D — spheres are types, diamonds are creation scopes, rings are dive wrap sites](./screen.png)](./screen.png)
+
+*This repository drawn by [Mnemonica Graphica](https://github.com/mythographica/mnemographica): its own `.tactica/` artifacts rendered as an interactive 3D scene. Clone it, open in VS Code with the extension, run `Mnemonica: Ψ 3D` — `.tactica/` is committed, so the graph works from a fresh clone.*
 
 This example demonstrates how to use **mnemonica** with **NestJS** for runtime inheritance in DTOs/entities, along with **@mnemonica/tactica** for TypeScript type generation.
 
@@ -42,7 +48,7 @@ src/
 │   └── async.dto.ts         # DTOs for async/await examples
 ├── entities/
 │   ├── user.entity.ts       # Mnemonica entities with define()
-│   └── async.entity.ts      # Async constructors with @decorate() examples
+│   └── async.entity.ts      # Async constructor examples (define chains)
 ├── user.controller.ts       # NestJS controllers with Swagger decorators
 ├── async.controller.ts      # Async/await examples controller
 ├── user.service.ts          # NestJS services
@@ -191,83 +197,66 @@ The server will start on `http://localhost:3000` with Swagger docs at `http://lo
 - `POST /super-admins` - Create a super admin (3-level inheritance)
 - `GET /super-admins/:id` - Get a super admin
 
-### Async Examples (Async/Await + @decorate())
+### Async Examples
 - `POST /async/root-async` - Create RootAsync instance (async constructor)
 - `POST /async/root-async/result` - Create RootAsync then ResultFromDecorate (chained)
 - `GET /async/root-async/:value/result/:multiplier` - GET version of chained result
-- `POST /async/sync-base` - Create SyncBase (@decorate() class)
-- `POST /async/sync-base/sub-async` - Create Sync.SubAsync (async on decorated class)
-- `POST /async/sync-base/sub-async/sub-decorate` - Full chain: Sync → SubAsync → SubDecorate
+- `POST /async/sync-base` - Create SyncBase
+- `POST /async/sync-base/sub-async` - Create SyncBase.SubAsync (async sub-type)
+- `POST /async/sync-base/sub-async/sub-decorate` - Full chain: SyncBase → SubAsync → SubDecorate
 - `GET /async/sync-base/:baseValue/sub-async/:delay/:extra/sub-decorate/:decorateValue` - GET version
 
 ## Async/Await Constructor Examples
 
-This project includes examples of **mnemonica's async constructors** combined with `@decorate()` decorator:
+This project demonstrates **mnemonica's async constructors**. Everything is typed through tactica's `.tactica/` augmentation — `define()` chains, `lookup()` results, and nested constructors on awaited instances — so the code needs **no casts at all**: `await new` just works.
 
 ### Pattern 1: Async Constructor with Sub-types
 
 ```typescript
 // src/entities/async.entity.ts
 import { define } from 'mnemonica';
+import type { RootAsync, RootAsync_ResultFromDecorate } from '../../.tactica/types';
 
 const sleep = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
 
-export const RootAsync = define('RootAsync', async function (this: RootAsyncInstance, data: { value: number }) {
-  await sleep(100);  // Simulate long operation
+define('RootAsync', async function (this: RootAsync, data: { value: number }) {
+  await sleep(100);
   this.value = data.value;
   this.computed = data.value * 2;
   return this;
-});
-
-// Define sub-type for adding decorated results
-export const ResultFromDecorate = RootAsync.define('ResultFromDecorate', function (
-  this: ResultFromDecorateInstance,
-  multiplier: number
-) {
+})
+.define('ResultFromDecorate', function (this: RootAsync_ResultFromDecorate, multiplier: number) {
   this.result = this.computed * multiplier;
+  this.timestamp = Date.now();
   return this;
 });
 ```
 
 Usage:
 ```typescript
-// await new RootAsync, then access rootAsync.ResultFromDecorate
-const rootAsync = await new RootAsync({ value: 42 }) as RootAsyncInstance;
-const result = await rootAsync.ResultFromDecorate(3) as ResultFromDecorateInstance;
-// result.computed = 84, result.result = 252
+// src/async.controller.ts — lookup() returns the fully typed constructor
+const RootAsync = lookup('RootAsync');
+
+const rootAsync = await new RootAsync({ value: 42 });
+const resultDecorate = await new rootAsync.ResultFromDecorate(3);
+// resultDecorate.computed = 84, resultDecorate.result = 252
 ```
 
-### Pattern 2: @decorate() Class with Async Sub-types
+### Pattern 2: Chained sub-types (SyncBase → SubAsync → SubDecorate)
 
 ```typescript
-// src/entities/async.entity.ts
-import { define, decorate } from 'mnemonica';
-
-@decorate()
-export class SyncBase {
-  baseValue: string = '';
-
-  constructor(data: { baseValue: string }) {
-    this.baseValue = data.baseValue;
-  }
-}
-
-// Define SubAsync on SyncBase
-export const SubAsync = (SyncBase as unknown as {
-  define: (name: string, handler: Function) => typeof SubAsync;
-}).define('SubAsync', async function (this: SubAsyncInstance, asyncData: { delay: number; extra: string }) {
+// src/entities/async.entity.ts — a plain define() chain, still no casts
+define('SyncBase', function (this: SyncBase, data: { baseValue: string }) {
+  this.baseValue = data.baseValue;
+})
+.define('SubAsync', async function (this: SyncBase_SubAsync, asyncData: { delay: number; extra: string }) {
   await sleep(100);  // Simulate long operation
   this.delay = asyncData.delay;
   this.extra = asyncData.extra;
   this.processed = `${this.baseValue}-${asyncData.extra}`;
   return this;
-});
-
-// Define SubDecorate on SubAsync
-export const SubDecorate = SubAsync.define('SubDecorate', function (
-  this: SubDecorateInstance,
-  decorateValue: string
-) {
+})
+.define('SubDecorate', function (this: SyncBase_SubAsync_SubDecorate, decorateValue: string) {
   this.decorateValue = decorateValue;
   this.combined = `${this.processed}:${decorateValue}`;
   return this;
@@ -276,22 +265,21 @@ export const SubDecorate = SubAsync.define('SubDecorate', function (
 
 Usage:
 ```typescript
-// await new SyncBase, then chain SubAsync, then SubDecorate
+// new SyncBase (sync constructor), then await the async sub-type, then chain
+const SyncBase = lookup('SyncBase');
+
 const syncBase = new SyncBase({ baseValue: 'hello' });
-const subAsync = await (syncBase as unknown as SubAsyncInstance).SubAsync({
-  delay: 100,
-  extra: 'world'
-}) as SubAsyncInstance;
-const subDecorate = await subAsync.SubDecorate('decorated') as SubDecorateInstance;
+const subAsync = await new syncBase.SubAsync({ delay: 100, extra: 'world' });
+const subDecorate = await new subAsync.SubDecorate('decorated');
 // subDecorate.combined = "hello-world:decorated"
 ```
 
 ### Key Concepts for Async Constructors
 
-1. **Async constructors work with `await new Type()`** - Mnemonica handles the Promise
-2. **`return this` is required** - The constructor must return the instance
-3. **Sub-types are accessible after await** - `rootAsync.ResultFromDecorate`
-4. **@decorate() enables sub-types on classes** - Classes can have async sub-types too
+1. **`await new Type()` just works** — an async constructor returns a Promise; `await` unwraps the fully-typed instance
+2. **No casts, ever** — no `as unknown as`, no `as SomeType`: tactica's `.tactica/` augmentation types `define()` chains, `lookup()` results, and nested constructors on awaited instances as-is
+3. **`return this` is required** - The constructor must return the instance
+4. **Sub-types are accessible after await** — `rootAsync.ResultFromDecorate`, `subAsync.SubDecorate`
 5. **Sleep simulates real async operations** - Database calls, HTTP requests, etc.
 
 See the full implementation in:

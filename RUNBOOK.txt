@@ -5,11 +5,11 @@ MNEMONICA E2E RUNBOOK — drive the whole tooling chain by hand
 Three terminals + one VS Code window.
 
 1. Jaeger (traces backend + UI)
-   cd /code/mnemonica/strategy && npm run jaegger:pre-configured
+   cd /code/mnemonica/tactica-nestjs && npm run jaegger:pre-configured
    → UI on http://localhost:16686 , OTLP HTTP intake on :4318
    (idempotent: an old jaeger-mnem container is replaced)
 
-2. The app, with its WS strategy channel switched on
+2. The app, with its WS App Channel switched on
    cd /code/mnemonica/tactica-nestjs
    npm run build && STRATEGY_CLIENT=1 npm run start:prod
    → Nest listens on :3000
@@ -48,7 +48,7 @@ What "everything works" looks like — check with your own eyes:
     app process still alive at the end.
   · Jaeger localhost:16686: service "tactica-nestjs", errored spans on
     crash/reject traces; span links jump back into VS Code files and
-    into the Live Trace sidebar (jaeger-ui.json link patterns).
+    into the Live Trace sidebar (scripts/jaeger-ui.json link patterns).
 
 Chaos endpoints (all in src/chaos.controller.ts):
   GET  /chaos/ok                     control path (used by ab)

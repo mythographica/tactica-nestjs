@@ -25,6 +25,10 @@ npm run tactica:generate
 
 # Watch mode for tactica (auto-regenerate on file changes)
 npm run tactica:watch
+
+# Jaeger all-in-one for the E2E runbook (docker, idempotent restart;
+# UI on :16686, OTLP HTTP on :4318, vscode:// link patterns mounted)
+npm run jaegger:pre-configured
 ```
 
 **tactica config:** `.tactica.js` (repo root) loads `@mnemonica/nestjs/tactica`
