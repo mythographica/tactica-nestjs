@@ -179,6 +179,31 @@ npm start
 
 The server will start on `http://localhost:3000` with Swagger docs at `http://localhost:3000/api-docs`.
 
+## Traces & Observability
+
+This demo is wired with [`@mnemonica/nestjs`](https://www.npmjs.com/package/@mnemonica/nestjs) — every mnemonica construction and every dive-wrapped call becomes an **OpenTelemetry span**, parented on the request it served, and the whole execution flow is recoverable after the fact. Two ways to look at the traces:
+
+### Jaeger (OTLP export)
+
+```bash
+npm run jaegger:pre-configured   # docker all-in-one, idempotent restart
+npm run demo:load                # generate traffic (chaos endpoints)
+```
+
+- Jaeger UI on `http://localhost:16686`, OTLP HTTP ingestion on `:4318` (the app exports there by default).
+- The mounted UI config (`scripts/jaeger-ui.json`) adds **link patterns**: span tags become clickable jumps — `code.filepath` → the source line in VS Code, `dive.root_edge_id` / trace ID → the MnemoGraphica 3D graph (`vscode://` URIs).
+- Error spans are searchable (`with_errors`): exceptions are recorded on the span with the attempted constructor args.
+
+### Live Trace in VS Code (no Jaeger needed)
+
+The app self-hosts the strategy WS channel in-process when `STRATEGY_CLIENT=1` is in the environment:
+
+1. Run `STRATEGY_CLIENT=1 npm run start:dev`.
+2. In VS Code with the MnemoGraphica extension: `Mnemonica: Ψ App Channel` → **Discover & Connect** (discovery via `GET http://127.0.0.1:3000/strategy/channel`).
+3. Hit any endpoint (or `npm run demo:load`) — the **Live Trace** sidebar collects the edges live; clicking a trace isolates its full lineage in the 3D graph.
+
+The full end-to-end walkthrough (extension install → graph → live traces → Jaeger loop) is in [`RUNBOOK.txt`](./RUNBOOK.txt).
+
 ## API Endpoints
 
 ### Swagger Documentation

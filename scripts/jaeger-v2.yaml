@@ -6,7 +6,7 @@
 #
 # The `ui.config_file` mount adds link patterns (jaeger-ui.json): span tags
 # `code.filepath` become `vscode://file/...` jumps and `dive.root_edge_id`
-# becomes a `vscode://mnemonica.mnemographica/trace?root=N` jump into the
+# becomes a `vscode://mythographica.mnemographica/trace?root=N` jump into the
 # Live Trace sidebar (Wanted #1). The browser asks once for permission to
 # open the vscode:// protocol.
 #
