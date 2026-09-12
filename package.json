@@ -29,7 +29,7 @@
 		"@mnemonica/nestjs": "^0.8.3",
 		"@mnemonica/otel": "^0.1.2",
 		"@mnemonica/strategy": "^0.5.2",
-		"@mnemonica/tactica": "^0.3.7",
+		"@mnemonica/tactica": "^0.3.12",
 		"@mnemonica/topologica": "^0.1.0",
 		"@nestjs/common": "^11.2.3",
 		"@nestjs/core": "^11.2.3",

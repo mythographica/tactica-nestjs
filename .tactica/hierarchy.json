@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-11T07:18:53.645Z",
+  "generatedAt": "2026-09-11T19:19:41.981Z",
   "roots": [
     {
       "name": "Sentience",
@@ -124,6 +124,50 @@
       "fullPath": "EdsProbe",
       "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:16:18",
       "children": []
+    },
+    {
+      "name": "MechanicsRoot",
+      "fullPath": "MechanicsRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:82:23",
+      "children": []
+    },
+    {
+      "name": "MechanicsClonable",
+      "fullPath": "MechanicsClonable",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:95:27",
+      "children": []
+    },
+    {
+      "name": "MechanicsAsyncRoot",
+      "fullPath": "MechanicsAsyncRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:104:28",
+      "children": []
+    },
+    {
+      "name": "MechanicsChainRoot",
+      "fullPath": "MechanicsChainRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:117:32",
+      "children": [
+        {
+          "name": "MechanicsChainTip",
+          "fullPath": "MechanicsChainRoot.MechanicsChainTip",
+          "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:121:50",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "MechanicsAsyncChainRoot",
+      "fullPath": "MechanicsAsyncChainRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:135:37",
+      "children": [
+        {
+          "name": "MechanicsAsyncChainTip",
+          "fullPath": "MechanicsAsyncChainRoot.MechanicsAsyncChainTip",
+          "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:139:60",
+          "children": []
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-11T07:18:53.628Z",
+  "generatedAt": "2026-09-11T19:19:41.950Z",
   "modules": {
     "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts": {
       "filePath": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts",
@@ -2433,6 +2433,141 @@
       "dependencies": [],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
+    },
+    "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts": {
+      "filePath": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+      "definedTypes": [
+        "MechanicsRoot",
+        "MechanicsClonable",
+        "MechanicsAsyncRoot",
+        "MechanicsChainRoot",
+        "MechanicsChainRoot.MechanicsChainTip",
+        "MechanicsAsyncChainRoot",
+        "MechanicsAsyncChainRoot.MechanicsAsyncChainTip"
+      ],
+      "exportedBindings": [
+        {
+          "name": "MechanicsRootInstance",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        },
+        {
+          "name": "MechanicsClonableInstance",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        },
+        {
+          "name": "MechanicsAsyncRootInstance",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        },
+        {
+          "name": "MechanicsChainTipInstance",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        },
+        {
+          "name": "MechanicsChainRootInstance",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        },
+        {
+          "name": "MechanicsAsyncChainTipInstance",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        },
+        {
+          "name": "MechanicsAsyncChainRootInstance",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        },
+        {
+          "name": "runConstructionShowcase",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "utils",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "call",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "apply",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "bind",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "define",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "IDEF",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "UserEntity_AdminEntity",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/tactica-nestjs/.tactica/types.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts",
+        "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "node:assert/strict"
+      ]
     }
   },
   "edges": [],

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-11T07:18:53.603Z",
+  "generatedAt": "2026-09-11T19:19:41.921Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
@@ -151,6 +151,62 @@
       "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:16:18",
       "kind": "define",
       "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "MechanicsRoot": {
+      "name": "MechanicsRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:82:23",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "MechanicsClonable": {
+      "name": "MechanicsClonable",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:95:27",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "MechanicsAsyncRoot": {
+      "name": "MechanicsAsyncRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:104:28",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "MechanicsChainRoot": {
+      "name": "MechanicsChainRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:117:32",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "MechanicsChainRoot.MechanicsChainTip": {
+      "name": "MechanicsChainTip",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:121:50",
+      "kind": "define",
+      "parent": "MechanicsChainRoot",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "MechanicsAsyncChainRoot": {
+      "name": "MechanicsAsyncChainRoot",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:135:37",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "MechanicsAsyncChainRoot.MechanicsAsyncChainTip": {
+      "name": "MechanicsAsyncChainTip",
+      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:139:60",
+      "kind": "define",
+      "parent": "MechanicsAsyncChainRoot",
       "strictChain": true,
       "blockErrors": false
     }

@@ -172,3 +172,40 @@ export type SyncBase_SubAsync_SubDecorate = ProtoFlat<SyncBase_SubAsync, {
 export type EdsProbe = {
 	note: string;
 };
+
+export type MechanicsRoot = {
+	id: string;
+	tag: string;
+	fork: unknown;
+	clone: { id: string; tag: string; fork: unknown; clone: unknown };
+};
+
+export type MechanicsClonable = {
+	id: string;
+	clone: unknown;
+};
+
+export type MechanicsAsyncRoot = {
+	value: number;
+	fork: unknown;
+};
+
+export type MechanicsChainRoot = {
+	id: string;
+	MechanicsChainTip: new (data: { tip: string }) => MechanicsChainRoot_MechanicsChainTip;
+};
+
+export type MechanicsChainRoot_MechanicsChainTip = ProtoFlat<MechanicsChainRoot, {
+	tip: string;
+	MechanicsChainTip: undefined;
+}>;
+
+export type MechanicsAsyncChainRoot = {
+	value: number;
+	MechanicsAsyncChainTip: new (data: { delay: number }) => MechanicsAsyncChainRoot_MechanicsAsyncChainTip;
+};
+
+export type MechanicsAsyncChainRoot_MechanicsAsyncChainTip = ProtoFlat<MechanicsAsyncChainRoot, {
+	delay: number;
+	MechanicsAsyncChainTip: undefined;
+}>;

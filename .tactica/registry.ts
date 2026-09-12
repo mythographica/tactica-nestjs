@@ -29,6 +29,13 @@ import type {
 	SyncBase_SubAsync,
 	SyncBase_SubAsync_SubDecorate,
 	EdsProbe,
+	MechanicsRoot,
+	MechanicsClonable,
+	MechanicsAsyncRoot,
+	MechanicsChainRoot,
+	MechanicsChainRoot_MechanicsChainTip,
+	MechanicsAsyncChainRoot,
+	MechanicsAsyncChainRoot_MechanicsAsyncChainTip,
 } from './types';
 
 /**
@@ -58,6 +65,13 @@ declare module 'mnemonica' {
 		'SyncBase.SubAsync': new (asyncData: { delay: number; extra: string }) => SyncBase_SubAsync;
 		'SyncBase.SubAsync.SubDecorate': new (decorateValue: string) => SyncBase_SubAsync_SubDecorate;
 		'EdsProbe': new (data: { note: string }) => EdsProbe;
+		'MechanicsRoot': new (data: { id: string; tag: string }) => MechanicsRoot;
+		'MechanicsClonable': new (data: { id: string }) => MechanicsClonable;
+		'MechanicsAsyncRoot': new (data: { value: number }) => MechanicsAsyncRoot;
+		'MechanicsChainRoot': new (data: { id: string }) => MechanicsChainRoot;
+		'MechanicsChainRoot.MechanicsChainTip': new (data: { tip: string }) => MechanicsChainRoot_MechanicsChainTip;
+		'MechanicsAsyncChainRoot': new (data: { value: number }) => MechanicsAsyncChainRoot;
+		'MechanicsAsyncChainRoot.MechanicsAsyncChainTip': new (data: { delay: number }) => MechanicsAsyncChainRoot_MechanicsAsyncChainTip;
 	}
 }
 

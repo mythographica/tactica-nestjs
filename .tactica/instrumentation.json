@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-11T07:18:53.645Z",
+  "generatedAt": "2026-09-11T19:19:41.980Z",
   "points": [
     {
       "kind": "pipe",
@@ -90,6 +90,14 @@
   ],
   "creationGraph": {
     "nodes": [
+      {
+        "scopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "name": "runConstructionShowcase",
+        "kind": "function",
+        "filePath": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts",
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "starter": true
+      },
       {
         "scopeId": "/code/mnemonica/tactica-nestjs/src/main.ts:153:33",
         "name": "/code/mnemonica/tactica-nestjs/src/main.ts:153",
@@ -740,6 +748,20 @@
         "variable": "user"
       },
       {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:187:23",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "UserEntity",
+        "constructorText": "UserEntity",
+        "variable": "showcaseUser"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:195:21",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "UserEntity",
+        "constructorText": "utils.merge",
+        "variable": "mergedUser"
+      },
+      {
         "location": "/code/mnemonica/tactica-nestjs/src/user.service.ts:29:24",
         "holderScopeId": "/code/mnemonica/tactica-nestjs/src/user.service.ts:26:2",
         "typePath": "UserEntity.UserResponse",
@@ -834,6 +856,27 @@
         "typePath": "UserEntity.AdminEntity",
         "constructorText": "user.AdminEntity",
         "variable": "admin"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:188:23",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "UserEntity.AdminEntity",
+        "constructorText": "showcaseUser.AdminEntity",
+        "variable": "adminContext"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:208:22",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "UserEntity.AdminEntity",
+        "constructorText": "AdminEntity",
+        "variable": "calledAdmin"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:214:23",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "UserEntity.AdminEntity",
+        "constructorText": "AdminEntity",
+        "variable": "appliedAdmin"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/user.controller.ts:192:22",
@@ -952,6 +995,97 @@
         "typePath": "Sentience.Memory",
         "constructorText": "global.aiMemories.rootInstance.Memory",
         "variable": "memoryInstance"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:158:24",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "MechanicsRoot",
+        "variable": "mechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:160:21",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "mechanicsRoot.fork",
+        "variable": "forkedSame"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:167:22",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "mechanicsRoot.fork",
+        "variable": "forkedFresh"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:172:25",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "mechanicsRoot.clone",
+        "variable": "clonedProperty"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:178:28",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsClonable",
+        "constructorText": "MechanicsClonable",
+        "variable": "mechanicsClonable"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:179:21",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsClonable",
+        "constructorText": "mechanicsClonable.clone",
+        "variable": "clonedCall"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:226:25",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsChainRoot.MechanicsChainTip",
+        "constructorText": "new MechanicsChainRoot({ id: 'chain-1' }).MechanicsChainTip",
+        "variable": "chainTipResult"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:226:25",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsChainRoot",
+        "constructorText": "MechanicsChainRoot",
+        "variable": "chainTipResult"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:231:32",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsAsyncChainRoot.MechanicsAsyncChainTip",
+        "constructorText": "new MechanicsAsyncChainRoot({ value: 3 }).MechanicsAsyncChainTip",
+        "variable": "awaitedChainTip"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:231:32",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsAsyncChainRoot",
+        "constructorText": "MechanicsAsyncChainRoot",
+        "variable": "awaitedChainTip"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:236:31",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsAsyncRoot",
+        "constructorText": "MechanicsAsyncRoot",
+        "variable": "mechanicsAsync"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:237:28",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsAsyncRoot",
+        "constructorText": "mechanicsAsync.fork",
+        "variable": "awaitedFork"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:242:33",
+        "holderScopeId": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:155:40",
+        "typePath": "MechanicsAsyncRoot",
+        "constructorText": "mechanicsAsync.fork",
+        "variable": "awaitedForkFresh"
       }
     ]
   }

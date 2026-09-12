@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-11T07:18:53.605Z",
+  "generatedAt": "2026-09-11T19:19:41.924Z",
   "flow": {
     "Error": [
       {
@@ -681,6 +681,82 @@
         "code": "data?.topic",
         "propertyName": "topic",
         "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:27:31",
+        "kind": "instantiation",
+        "code": "new Promise<void>(resolve => setTimeout(resolve, ms))",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:83:12",
+        "kind": "propertyRead",
+        "code": "data.id",
+        "propertyName": "id",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:84:13",
+        "kind": "propertyRead",
+        "code": "data.tag",
+        "propertyName": "tag",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:96:12",
+        "kind": "propertyRead",
+        "code": "data.id",
+        "propertyName": "id",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:106:15",
+        "kind": "propertyRead",
+        "code": "data.value",
+        "propertyName": "value",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:118:12",
+        "kind": "propertyRead",
+        "code": "data.id",
+        "propertyName": "id",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:122:13",
+        "kind": "propertyRead",
+        "code": "data.tip",
+        "propertyName": "tip",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:136:15",
+        "kind": "propertyRead",
+        "code": "data.value",
+        "propertyName": "value",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:140:8",
+        "kind": "passAsArg",
+        "code": "sleep(data.delay)",
+        "targetType": "Promise",
+        "context": "arg 0 to sleep"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:140:14",
+        "kind": "propertyRead",
+        "code": "data.delay",
+        "propertyName": "delay",
+        "targetType": "Promise"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:141:15",
+        "kind": "propertyRead",
+        "code": "data.delay",
+        "propertyName": "delay",
+        "targetType": "Promise"
       }
     ],
     "UserEntity": [
@@ -1109,6 +1185,89 @@
         "code": "user.name",
         "propertyName": "name",
         "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:187:23",
+        "kind": "instantiation",
+        "code": "new UserEntity({ id: 'u-show', email: 'show@case.dev', name: 'Showcase' })",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:188:27",
+        "kind": "propertyRead",
+        "code": "showcaseUser.AdminEntity",
+        "propertyName": "AdminEntity",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:195:21",
+        "kind": "passAsArg",
+        "code": "utils.merge(showcaseUser, adminContext)",
+        "targetType": "UserEntity",
+        "context": "arg 0 to merge"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:197:21",
+        "kind": "passAsArg",
+        "code": "utils.parent(mergedUser)",
+        "targetType": "UserEntity",
+        "context": "arg 0 to parent"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:198:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(mergedUser.email, 'show@case.dev')",
+        "targetType": "UserEntity",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:198:15",
+        "kind": "propertyRead",
+        "code": "mergedUser.email",
+        "propertyName": "email",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:199:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(mergedUser.role, 'ops', 'arg-1 fields visible through the chain')",
+        "targetType": "UserEntity",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:199:15",
+        "kind": "propertyRead",
+        "code": "mergedUser.role",
+        "propertyName": "role",
+        "targetType": "UserEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:208:22",
+        "kind": "passAsArg",
+        "code": "call(showcaseUser, AdminEntity, { id: 'c-1', email: 'c@case.dev', name: 'Called', role: 'called', pe",
+        "targetType": "UserEntity",
+        "context": "arg 0 to call"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:212:2",
+        "kind": "passAsArg",
+        "code": "assert.strictEqual(utils.parent(calledAdmin), showcaseUser, 'lineage: entity is the parent instance'",
+        "targetType": "UserEntity",
+        "context": "arg 1 to strictEqual"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:214:23",
+        "kind": "passAsArg",
+        "code": "apply(showcaseUser, AdminEntity, [{ id: 'a-1', email: 'a@case.dev', name: 'Applied', role: 'applied'",
+        "targetType": "UserEntity",
+        "context": "arg 0 to apply"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:218:28",
+        "kind": "passAsArg",
+        "code": "bind(showcaseUser, AdminEntity)",
+        "targetType": "UserEntity",
+        "context": "arg 0 to bind"
       }
     ],
     "Map": [
@@ -1727,6 +1886,122 @@
         "code": "admin.permissions",
         "propertyName": "permissions",
         "targetType": "UserEntity.AdminEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:188:23",
+        "kind": "instantiation",
+        "code": "new showcaseUser.AdminEntity({\n\t\tid: 'u-admin',\n\t\temail: 'adm@case.dev',\n\t\tname: 'Admin',\n\t\trole: 'o",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:195:21",
+        "kind": "passAsArg",
+        "code": "utils.merge(showcaseUser, adminContext)",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 1 to merge"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:197:2",
+        "kind": "passAsArg",
+        "code": "assert.strictEqual(utils.parent(mergedUser), adminContext, 'merge re-parents on arg 1')",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 1 to strictEqual"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:208:22",
+        "kind": "instantiation",
+        "code": "call(showcaseUser, AdminEntity, { id: 'c-1', email: 'c@case.dev', name: 'Called', role: 'called', pe",
+        "context": "call/apply construction"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:208:22",
+        "kind": "passAsArg",
+        "code": "call(showcaseUser, AdminEntity, { id: 'c-1', email: 'c@case.dev', name: 'Called', role: 'called', pe",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 1 to call"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:209:15",
+        "kind": "passAsArg",
+        "code": "utils.parse(calledAdmin)",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 0 to parse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:210:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(calledAdmin.role, 'called')",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:210:15",
+        "kind": "propertyRead",
+        "code": "calledAdmin.role",
+        "propertyName": "role",
+        "targetType": "UserEntity.AdminEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:211:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(calledAdmin.email, 'c@case.dev', 'the re-run constructor overwrites parent fields with ",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:211:15",
+        "kind": "propertyRead",
+        "code": "calledAdmin.email",
+        "propertyName": "email",
+        "targetType": "UserEntity.AdminEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:212:21",
+        "kind": "passAsArg",
+        "code": "utils.parent(calledAdmin)",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 0 to parent"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:214:23",
+        "kind": "instantiation",
+        "code": "apply(showcaseUser, AdminEntity, [{ id: 'a-1', email: 'a@case.dev', name: 'Applied', role: 'applied'",
+        "context": "call/apply construction"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:214:23",
+        "kind": "passAsArg",
+        "code": "apply(showcaseUser, AdminEntity, [{ id: 'a-1', email: 'a@case.dev', name: 'Applied', role: 'applied'",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 1 to apply"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:215:15",
+        "kind": "passAsArg",
+        "code": "utils.parse(appliedAdmin)",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 0 to parse"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:216:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(appliedAdmin.role, 'applied')",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:216:15",
+        "kind": "propertyRead",
+        "code": "appliedAdmin.role",
+        "propertyName": "role",
+        "targetType": "UserEntity.AdminEntity"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:218:28",
+        "kind": "passAsArg",
+        "code": "bind(showcaseUser, AdminEntity)",
+        "targetType": "UserEntity.AdminEntity",
+        "context": "arg 1 to bind"
       }
     ],
     "UserEntity.AdminEntity.SuperAdminEntity": [
@@ -2139,18 +2414,38 @@
         "targetType": "SyncBase.SubAsync.SubDecorate"
       }
     ],
+    "toISOString": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/graph.controller.ts:81:18",
+        "kind": "instantiation",
+        "code": "new Date().toISOString()",
+        "context": "chained construction"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/graph.controller.ts:91:3",
+        "kind": "return",
+        "code": "return output;",
+        "targetType": "toISOString"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/graph.controller.ts:121:15",
+        "kind": "instantiation",
+        "code": "new Date().toISOString()",
+        "context": "chained construction"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:166:36",
+        "kind": "instantiation",
+        "code": "new Date().toISOString()",
+        "context": "chained construction"
+      }
+    ],
     "Date": [
       {
         "location": "/code/mnemonica/tactica-nestjs/src/graph.controller.ts:81:18",
         "kind": "instantiation",
         "code": "new Date()",
         "context": "new expression"
-      },
-      {
-        "location": "/code/mnemonica/tactica-nestjs/src/graph.controller.ts:91:3",
-        "kind": "return",
-        "code": "return output;",
-        "targetType": "Date"
       },
       {
         "location": "/code/mnemonica/tactica-nestjs/src/graph.controller.ts:121:15",
@@ -2263,19 +2558,381 @@
         "targetType": "MnemonicaTraceMiddleware"
       }
     ],
+    "build": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:213:17",
+        "kind": "instantiation",
+        "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
+        "context": "chained construction"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:221:19",
+        "kind": "passAsArg",
+        "code": "SwaggerModule.createDocument(app, config)",
+        "targetType": "build",
+        "context": "arg 1 to createDocument"
+      }
+    ],
+    "addTag": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:213:17",
+        "kind": "instantiation",
+        "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
+        "context": "chained construction"
+      }
+    ],
+    "setVersion": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:213:17",
+        "kind": "instantiation",
+        "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
+        "context": "chained construction"
+      }
+    ],
+    "setDescription": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:213:17",
+        "kind": "instantiation",
+        "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
+        "context": "chained construction"
+      }
+    ],
+    "setTitle": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:213:17",
+        "kind": "instantiation",
+        "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')",
+        "context": "chained construction"
+      }
+    ],
     "DocumentBuilder": [
       {
         "location": "/code/mnemonica/tactica-nestjs/src/main.ts:213:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()",
         "context": "new expression"
+      }
+    ],
+    "MechanicsRoot": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:158:24",
+        "kind": "instantiation",
+        "code": "new MechanicsRoot({ id: 'root-1', tag: 'original' })",
+        "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/tactica-nestjs/src/main.ts:221:19",
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:160:21",
+        "kind": "methodCall",
+        "code": "mechanicsRoot.fork()",
+        "propertyName": "fork",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:160:21",
+        "kind": "propertyRead",
+        "code": "mechanicsRoot.fork",
+        "propertyName": "fork",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:162:2",
         "kind": "passAsArg",
-        "code": "SwaggerModule.createDocument(app, config)",
-        "targetType": "DocumentBuilder",
-        "context": "arg 1 to createDocument"
+        "code": "assert.equal(forkedSame.id, 'root-1')",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:162:15",
+        "kind": "propertyRead",
+        "code": "forkedSame.id",
+        "propertyName": "id",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:163:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(forkedSame.tag, 'original')",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:163:15",
+        "kind": "propertyRead",
+        "code": "forkedSame.tag",
+        "propertyName": "tag",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:164:2",
+        "kind": "passAsArg",
+        "code": "assert.notStrictEqual(forkedSame, mechanicsRoot, 'fork yields a distinct instance')",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to notStrictEqual"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:165:2",
+        "kind": "passAsArg",
+        "code": "assert.strictEqual(utils.parent(forkedSame), mechanicsRoot, 'fork lineage: parent is the source inst",
+        "targetType": "MechanicsRoot",
+        "context": "arg 1 to strictEqual"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:165:21",
+        "kind": "passAsArg",
+        "code": "utils.parent(forkedSame)",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to parent"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:167:22",
+        "kind": "methodCall",
+        "code": "mechanicsRoot.fork({ id: 'root-2', tag: 'forked' })",
+        "propertyName": "fork",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:167:22",
+        "kind": "propertyRead",
+        "code": "mechanicsRoot.fork",
+        "propertyName": "fork",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:168:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(forkedFresh.id, 'root-2')",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:168:15",
+        "kind": "propertyRead",
+        "code": "forkedFresh.id",
+        "propertyName": "id",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:169:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(forkedFresh.tag, 'forked')",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:169:15",
+        "kind": "propertyRead",
+        "code": "forkedFresh.tag",
+        "propertyName": "tag",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:172:25",
+        "kind": "propertyRead",
+        "code": "mechanicsRoot.clone",
+        "propertyName": "clone",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:174:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(clonedProperty.tag, 'original')",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:174:15",
+        "kind": "propertyRead",
+        "code": "clonedProperty.tag",
+        "propertyName": "tag",
+        "targetType": "MechanicsRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:175:2",
+        "kind": "passAsArg",
+        "code": "assert.notStrictEqual(clonedProperty, mechanicsRoot)",
+        "targetType": "MechanicsRoot",
+        "context": "arg 0 to notStrictEqual"
+      }
+    ],
+    "MechanicsClonable": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:178:28",
+        "kind": "instantiation",
+        "code": "new MechanicsClonable({ id: 'clonable-1' })",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:179:21",
+        "kind": "methodCall",
+        "code": "mechanicsClonable.clone()",
+        "propertyName": "clone",
+        "targetType": "MechanicsClonable"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:179:21",
+        "kind": "propertyRead",
+        "code": "mechanicsClonable.clone",
+        "propertyName": "clone",
+        "targetType": "MechanicsClonable"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:181:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(clonedCall.id, 'clonable-1')",
+        "targetType": "MechanicsClonable",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:181:15",
+        "kind": "propertyRead",
+        "code": "clonedCall.id",
+        "propertyName": "id",
+        "targetType": "MechanicsClonable"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:182:2",
+        "kind": "passAsArg",
+        "code": "assert.notStrictEqual(clonedCall, mechanicsClonable)",
+        "targetType": "MechanicsClonable",
+        "context": "arg 0 to notStrictEqual"
+      }
+    ],
+    "MechanicsChainRoot.MechanicsChainTip": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:226:25",
+        "kind": "instantiation",
+        "code": "new MechanicsChainRoot({ id: 'chain-1' }).MechanicsChainTip({ tip: 'sync-tip' })",
+        "context": "chained construction"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:228:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(chainTipResult.tip, 'sync-tip')",
+        "targetType": "MechanicsChainRoot.MechanicsChainTip",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:228:15",
+        "kind": "propertyRead",
+        "code": "chainTipResult.tip",
+        "propertyName": "tip",
+        "targetType": "MechanicsChainRoot.MechanicsChainTip"
+      }
+    ],
+    "MechanicsChainRoot": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:226:25",
+        "kind": "instantiation",
+        "code": "new MechanicsChainRoot({ id: 'chain-1' })",
+        "context": "new expression"
+      }
+    ],
+    "MechanicsAsyncChainRoot.MechanicsAsyncChainTip": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:231:32",
+        "kind": "instantiation",
+        "code": "new MechanicsAsyncChainRoot({ value: 3 }).MechanicsAsyncChainTip({ delay: 1 })",
+        "context": "chained construction"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:233:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(awaitedChainTip.delay, 1)",
+        "targetType": "MechanicsAsyncChainRoot.MechanicsAsyncChainTip",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:233:15",
+        "kind": "propertyRead",
+        "code": "awaitedChainTip.delay",
+        "propertyName": "delay",
+        "targetType": "MechanicsAsyncChainRoot.MechanicsAsyncChainTip"
+      }
+    ],
+    "MechanicsAsyncChainRoot": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:231:32",
+        "kind": "instantiation",
+        "code": "new MechanicsAsyncChainRoot({ value: 3 })",
+        "context": "new expression"
+      }
+    ],
+    "MechanicsAsyncRoot": [
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:236:31",
+        "kind": "instantiation",
+        "code": "new MechanicsAsyncRoot({ value: 7 })",
+        "context": "new expression"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:237:28",
+        "kind": "methodCall",
+        "code": "mechanicsAsync.fork()",
+        "propertyName": "fork",
+        "targetType": "MechanicsAsyncRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:237:28",
+        "kind": "propertyRead",
+        "code": "mechanicsAsync.fork",
+        "propertyName": "fork",
+        "targetType": "MechanicsAsyncRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:239:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(awaitedFork.value, 7)",
+        "targetType": "MechanicsAsyncRoot",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:239:15",
+        "kind": "propertyRead",
+        "code": "awaitedFork.value",
+        "propertyName": "value",
+        "targetType": "MechanicsAsyncRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:240:2",
+        "kind": "passAsArg",
+        "code": "assert.strictEqual(utils.parent(awaitedFork), mechanicsAsync)",
+        "targetType": "MechanicsAsyncRoot",
+        "context": "arg 1 to strictEqual"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:240:21",
+        "kind": "passAsArg",
+        "code": "utils.parent(awaitedFork)",
+        "targetType": "MechanicsAsyncRoot",
+        "context": "arg 0 to parent"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:242:33",
+        "kind": "methodCall",
+        "code": "mechanicsAsync.fork({ value: 42 })",
+        "propertyName": "fork",
+        "targetType": "MechanicsAsyncRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:242:33",
+        "kind": "propertyRead",
+        "code": "mechanicsAsync.fork",
+        "propertyName": "fork",
+        "targetType": "MechanicsAsyncRoot"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:243:2",
+        "kind": "passAsArg",
+        "code": "assert.equal(awaitedForkFresh.value, 42)",
+        "targetType": "MechanicsAsyncRoot",
+        "context": "arg 0 to equal"
+      },
+      {
+        "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:243:15",
+        "kind": "propertyRead",
+        "code": "awaitedForkFresh.value",
+        "propertyName": "value",
+        "targetType": "MechanicsAsyncRoot"
       }
     ]
   }

@@ -48,7 +48,9 @@ src/
 │   └── async.dto.ts         # DTOs for async/await examples
 ├── entities/
 │   ├── user.entity.ts       # Mnemonica entities with define()
-│   └── async.entity.ts      # Async constructor examples (define chains)
+│   ├── async.entity.ts      # Async constructor examples (define chains)
+│   ├── eds-probe.entity.ts  # AoT-only EDS fixture (wrap scope resolution)
+│   └── construction-showcase.entity.ts  # fork/clone/merge/call/apply/bind/chain tips (runnable, asserted)
 ├── user.controller.ts       # NestJS controllers with Swagger decorators
 ├── async.controller.ts      # Async/await examples controller
 ├── user.service.ts          # NestJS services
@@ -356,6 +358,17 @@ curl -X POST http://localhost:3000/async/sync-base/sub-async/sub-decorate \
   -H "Content-Type: application/json" \
   -d '{"baseValue":"hello","delay":100,"extra":"world","decorateValue":"decorated"}'
 ```
+
+## Construction Mechanics (tactica ≥ 0.3.9)
+
+Beyond plain `new`, tactica records every construction shape as an `instantiation` in `.tactica/usages.json` — byte-indistinguishable from `new` until the deferred mechanism-kind revision (the callee text stays readable via `constructorText`):
+
+- **fork / clone** — `instance.fork()` (re-runs the constructor; the result is a distinct instance parented on the source) and `instance.clone` in both the property form (`readonly clone: this`) and the call form. mnemonica 1.3+ does not auto-inject these — each type opts in from `utils` (see `MechanicsRoot` in the showcase).
+- **utils.merge(a, b)** — a's type re-run over b's context.
+- **call / apply / bind** — typed construction without `new`; import-aware (named imports from `mnemonica` only). `bind` records no usage by contract — the bound call is not followed.
+- **chain tips** — `new Root(...).Nested(...)` and the awaited form `await new Root(...).AsyncNested(...)`; the tip call records the usage and the result binds to the tip type.
+
+`src/entities/construction-showcase.entity.ts` exercises all of them against real instances with runtime assertions (instanceof, extracted fields, parse-parent lineage), and `npm run check:integration` both executes the showcase and polices the recorded `.tactica/usages.json` entries.
 
 ## How Tactica Detects This
 

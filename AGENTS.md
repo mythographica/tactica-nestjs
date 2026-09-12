@@ -118,7 +118,12 @@ src/
 │   └── async.dto.ts         # DTOs for async examples
 ├── entities/
 │   ├── user.entity.ts       # Mnemonica entities with define() - REFERENCE EXAMPLE
-│   └── async.entity.ts      # Async/await + @decorate() - REFERENCE EXAMPLE
+│   ├── async.entity.ts      # Async/await + @decorate() - REFERENCE EXAMPLE
+│   └── construction-showcase.entity.ts  # fork/clone/merge/call/apply/bind/chain-tip
+│                            # mechanics - runnable showcase, asserted at runtime by
+│                            # `npm run check:integration`; its sites must stay
+│                            # single-line-friendly for the usages.json regexes
+│                            # in scripts/check-integration.cjs
 ├── user.controller.ts       # NestJS controllers
 ├── chaos.controller.ts      # Load/error fixture: /chaos/ok, /chaos/crash, /chaos/reject,
 │                            # /chaos/delayed (outcome: ok|reject|throw — 100ms timer,
