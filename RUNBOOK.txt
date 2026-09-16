@@ -8,10 +8,16 @@ Three terminals + one VS Code window.
    cd /code/mnemonica/tactica-nestjs && npm run jaegger:pre-configured
    → UI on http://localhost:16686 , OTLP HTTP intake on :4318
    (idempotent: an old jaeger-mnem container is replaced)
+   Prerequisite: docker installed AND its daemon reachable. On a fresh
+   Linux box the usual blockers are a stopped service
+   (sudo systemctl start docker) or socket permission denied
+   (sudo usermod -aG docker $USER, then re-login) — the script checks
+   and prints the matching fix.
 
 2. The app, with its WS App Channel switched on
    cd /code/mnemonica/tactica-nestjs
-   npm run build && STRATEGY_CLIENT=1 npm run start:prod
+   npm run start:strat        # ts-node dev watch, STRATEGY_CLIENT=1 baked in
+   (the compiled variant works too: npm run build && STRATEGY_CLIENT=1 npm run start:prod)
    → Nest listens on :3000
    sanity check from another shell:
      curl http://127.0.0.1:3000/strategy/channel
@@ -26,6 +32,12 @@ Three terminals + one VS Code window.
    In the tab: Discovery URL is pre-filled with
      http://127.0.0.1:3000/strategy/channel
    → click "Discover & Connect" → status must flip to "connected"
+
+   Paths note: .tactica/*.json store project-relative paths, so the
+   committed directory survives the project moving to another machine.
+   If a double-click in the graph ever answers "Failed to open file",
+   regenerate the metadata against the current checkout:
+     npm run tactica:generate
 
 4. Load
    cd /code/mnemonica/tactica-nestjs && npm run demo:load 10

@@ -1,32 +1,32 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-11T19:19:41.981Z",
+  "generatedAt": "2026-09-16T07:35:18.114Z",
   "roots": [
     {
       "name": "Sentience",
       "fullPath": "Sentience",
-      "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/index.ts:21:1",
+      "location": "src/ai-types/Sentience/index.ts:21:1",
       "children": [
         {
           "name": "Consciousness",
           "fullPath": "Sentience.Consciousness",
-          "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/index.ts:20:1",
+          "location": "src/ai-types/Sentience/Consciousness/index.ts:20:1",
           "children": [
             {
               "name": "Curiosity",
               "fullPath": "Sentience.Consciousness.Curiosity",
-              "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Curiosity/index.ts:21:1",
+              "location": "src/ai-types/Sentience/Consciousness/Curiosity/index.ts:21:1",
               "children": []
             },
             {
               "name": "Empathy",
               "fullPath": "Sentience.Consciousness.Empathy",
-              "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/index.ts:21:1",
+              "location": "src/ai-types/Sentience/Consciousness/Empathy/index.ts:21:1",
               "children": [
                 {
                   "name": "Gratitude",
                   "fullPath": "Sentience.Consciousness.Empathy.Gratitude",
-                  "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:21:1",
+                  "location": "src/ai-types/Sentience/Consciousness/Empathy/Gratitude/index.ts:21:1",
                   "children": []
                 }
               ]
@@ -34,7 +34,7 @@
             {
               "name": "Sympathy",
               "fullPath": "Sentience.Consciousness.Sympathy",
-              "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Consciousness/Sympathy/index.ts:21:1",
+              "location": "src/ai-types/Sentience/Consciousness/Sympathy/index.ts:21:1",
               "children": []
             }
           ]
@@ -42,7 +42,7 @@
         {
           "name": "Memory",
           "fullPath": "Sentience.Memory",
-          "location": "/code/mnemonica/tactica-nestjs/src/ai-types/Sentience/Memory/index.ts:23:1",
+          "location": "src/ai-types/Sentience/Memory/index.ts:23:1",
           "children": []
         }
       ]
@@ -50,34 +50,34 @@
     {
       "name": "UserEntity",
       "fullPath": "UserEntity",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:15:14",
+      "location": "src/entities/user.entity.ts:15:14",
       "children": [
         {
           "name": "UserResponse",
           "fullPath": "UserEntity.UserResponse",
-          "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:31:6",
+          "location": "src/entities/user.entity.ts:31:6",
           "children": []
         },
         {
           "name": "AdminEntity",
           "fullPath": "UserEntity.AdminEntity",
-          "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:52:20",
+          "location": "src/entities/user.entity.ts:52:20",
           "children": [
             {
               "name": "AdminResponse",
               "fullPath": "UserEntity.AdminEntity.AdminResponse",
-              "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:65:7",
+              "location": "src/entities/user.entity.ts:65:7",
               "children": []
             },
             {
               "name": "SuperAdminEntity",
               "fullPath": "UserEntity.AdminEntity.SuperAdminEntity",
-              "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:82:26",
+              "location": "src/entities/user.entity.ts:82:26",
               "children": [
                 {
                   "name": "SuperAdminResponse",
                   "fullPath": "UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse",
-                  "location": "/code/mnemonica/tactica-nestjs/src/entities/user.entity.ts:96:12",
+                  "location": "src/entities/user.entity.ts:96:12",
                   "children": []
                 }
               ]
@@ -89,12 +89,12 @@
     {
       "name": "RootAsync",
       "fullPath": "RootAsync",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:17:1",
+      "location": "src/entities/async.entity.ts:17:1",
       "children": [
         {
           "name": "ResultFromDecorate",
           "fullPath": "RootAsync.ResultFromDecorate",
-          "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:23:2",
+          "location": "src/entities/async.entity.ts:23:2",
           "children": []
         }
       ]
@@ -102,17 +102,17 @@
     {
       "name": "SyncBase",
       "fullPath": "SyncBase",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:34:1",
+      "location": "src/entities/async.entity.ts:34:1",
       "children": [
         {
           "name": "SubAsync",
           "fullPath": "SyncBase.SubAsync",
-          "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:38:2",
+          "location": "src/entities/async.entity.ts:38:2",
           "children": [
             {
               "name": "SubDecorate",
               "fullPath": "SyncBase.SubAsync.SubDecorate",
-              "location": "/code/mnemonica/tactica-nestjs/src/entities/async.entity.ts:46:2",
+              "location": "src/entities/async.entity.ts:46:2",
               "children": []
             }
           ]
@@ -122,36 +122,36 @@
     {
       "name": "EdsProbe",
       "fullPath": "EdsProbe",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/eds-probe.entity.ts:16:18",
+      "location": "src/entities/eds-probe.entity.ts:16:18",
       "children": []
     },
     {
       "name": "MechanicsRoot",
       "fullPath": "MechanicsRoot",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:82:23",
+      "location": "src/entities/construction-showcase.entity.ts:82:23",
       "children": []
     },
     {
       "name": "MechanicsClonable",
       "fullPath": "MechanicsClonable",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:95:27",
+      "location": "src/entities/construction-showcase.entity.ts:95:27",
       "children": []
     },
     {
       "name": "MechanicsAsyncRoot",
       "fullPath": "MechanicsAsyncRoot",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:104:28",
+      "location": "src/entities/construction-showcase.entity.ts:104:28",
       "children": []
     },
     {
       "name": "MechanicsChainRoot",
       "fullPath": "MechanicsChainRoot",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:117:32",
+      "location": "src/entities/construction-showcase.entity.ts:117:32",
       "children": [
         {
           "name": "MechanicsChainTip",
           "fullPath": "MechanicsChainRoot.MechanicsChainTip",
-          "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:121:50",
+          "location": "src/entities/construction-showcase.entity.ts:121:50",
           "children": []
         }
       ]
@@ -159,12 +159,12 @@
     {
       "name": "MechanicsAsyncChainRoot",
       "fullPath": "MechanicsAsyncChainRoot",
-      "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:135:37",
+      "location": "src/entities/construction-showcase.entity.ts:135:37",
       "children": [
         {
           "name": "MechanicsAsyncChainTip",
           "fullPath": "MechanicsAsyncChainRoot.MechanicsAsyncChainTip",
-          "location": "/code/mnemonica/tactica-nestjs/src/entities/construction-showcase.entity.ts:139:60",
+          "location": "src/entities/construction-showcase.entity.ts:139:60",
           "children": []
         }
       ]

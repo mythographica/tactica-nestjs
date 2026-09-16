@@ -27,7 +27,7 @@ npm run tactica:generate
 npm run tactica:watch
 ```
 
-The generated types are located in `.tactica/types.ts`; the whole `.tactica/` directory is committed to git, so the graph tooling (mnemographica) works from a fresh clone without running tactica first.
+The generated types are located in `.tactica/types.ts`; the whole `.tactica/` directory is committed to git, so the graph tooling (mnemographica) works from a fresh clone without running tactica first. Paths inside `.tactica/*.json` are project-relative, so the committed directory keeps working when the checkout moves to another machine. If VS Code ever reports a bad path when you open an element from the graph, run `npm run tactica:generate` — that rebuilds the metadata against the current checkout.
 
 ## Overview
 
@@ -188,7 +188,10 @@ This demo is wired with [`@mnemonica/nestjs`](https://www.npmjs.com/package/@mne
 ### Jaeger (OTLP export)
 
 ```bash
-npm run jaegger:pre-configured   # docker all-in-one, idempotent restart
+npm run jaegger:pre-configured   # docker all-in-one, idempotent restart; needs
+                                 # a reachable docker daemon — the script prints
+                                 # the exact fix otherwise (start the service,
+                                 # or add your user to the docker group)
 npm run demo:load                # generate traffic (chaos endpoints)
 ```
 
@@ -200,7 +203,7 @@ npm run demo:load                # generate traffic (chaos endpoints)
 
 The app self-hosts the strategy WS channel in-process when `STRATEGY_CLIENT=1` is in the environment:
 
-1. Run `STRATEGY_CLIENT=1 npm run start:dev`.
+1. Run `npm run start:strat` (dev watch mode with `STRATEGY_CLIENT=1` baked in).
 2. In VS Code with the MnemoGraphica extension: `Mnemonica: Ψ App Channel` → **Discover & Connect** (discovery via `GET http://127.0.0.1:3000/strategy/channel`).
 3. Hit any endpoint (or `npm run demo:load`) — the **Live Trace** sidebar collects the edges live; clicking a trace isolates its full lineage in the 3D graph.
 

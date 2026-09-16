@@ -14,8 +14,12 @@ All commands run from the `tactica-nestjs/` directory (formerly `tactica-example
 # Install dependencies
 npm install
 
-# Development mode with auto-reload
+# Development mode with auto-reload (ts-node + node --watch, no nest CLI needed)
 npm run start:dev
+
+# Full build then run the compiled app (what plain `npm start` does)
+npm run build
+npm start
 
 # Build for production
 npm run build
@@ -27,7 +31,9 @@ npm run tactica:generate
 npm run tactica:watch
 
 # Jaeger all-in-one for the E2E runbook (docker, idempotent restart;
-# UI on :16686, OTLP HTTP on :4318, vscode:// link patterns mounted)
+# UI on :16686, OTLP HTTP on :4318, vscode:// link patterns mounted).
+# Needs a reachable docker daemon; the script diagnoses a stopped
+# service or a missing docker-group membership and prints the fix.
 npm run jaegger:pre-configured
 ```
 
@@ -36,6 +42,11 @@ npm run jaegger:pre-configured
 is framework-blind without it; `instrumentation.json` would carry
 `points: []`). The plugin subpath exists since `@mnemonica/nestjs@0.8.0`;
 `use:local` repacks the adapter into `.local-links/` to provide it.
+
+**.tactica portability:** paths inside `.tactica/*.json` are project-relative
+(committed to git, survives the checkout moving machines). If the graph
+tooling ever reports a bad path, `npm run tactica:generate` rebuilds the
+metadata against the current checkout.
 
 ## Code Style
 
