@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-16T07:35:18.089Z",
+  "generatedAt": "2026-09-16T08:05:12.314Z",
   "modules": {
     "src/entities/user.entity.ts": {
       "filePath": "src/entities/user.entity.ts",
