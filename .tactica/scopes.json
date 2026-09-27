@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-16T08:05:12.315Z",
+  "generatedAt": "2026-09-27T20:53:18.604Z",
   "scopes": {
     "src/entities/user.entity.ts": {
       "scopeId": "src/entities/user.entity.ts",
@@ -1019,133 +1019,133 @@
       "filePath": "src/main.ts",
       "location": "src/main.ts:1:1"
     },
-    "src/main.ts:79:13": {
-      "scopeId": "src/main.ts:79:13",
+    "src/main.ts:28:13": {
+      "scopeId": "src/main.ts:28:13",
       "name": "mb",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:79:13"
+      "location": "src/main.ts:28:13"
     },
-    "src/main.ts:83:28": {
-      "scopeId": "src/main.ts:83:28",
-      "name": "src/main.ts:83",
+    "src/main.ts:32:28": {
+      "scopeId": "src/main.ts:32:28",
+      "name": "src/main.ts:32",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:83:28"
+      "location": "src/main.ts:32:28"
     },
-    "src/main.ts:118:1": {
-      "scopeId": "src/main.ts:118:1",
+    "src/main.ts:66:1": {
+      "scopeId": "src/main.ts:66:1",
       "name": "restoreMemoriesOnStartup",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:118:1"
+      "location": "src/main.ts:66:1"
     },
-    "src/main.ts:153:33": {
-      "scopeId": "src/main.ts:153:33",
-      "name": "src/main.ts:153",
+    "src/main.ts:101:33": {
+      "scopeId": "src/main.ts:101:33",
+      "name": "src/main.ts:101",
       "kind": "function",
-      "parentScopeId": "src/main.ts:118:1",
+      "parentScopeId": "src/main.ts:66:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:153:33"
+      "location": "src/main.ts:101:33"
     },
-    "src/main.ts:190:1": {
-      "scopeId": "src/main.ts:190:1",
+    "src/main.ts:138:1": {
+      "scopeId": "src/main.ts:138:1",
       "name": "bootstrap",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:190:1"
+      "location": "src/main.ts:138:1"
     },
-    "src/main.ts:203:10": {
-      "scopeId": "src/main.ts:203:10",
-      "name": "src/main.ts:203",
+    "src/main.ts:151:10": {
+      "scopeId": "src/main.ts:151:10",
+      "name": "src/main.ts:151",
       "kind": "arrow",
-      "parentScopeId": "src/main.ts:190:1",
+      "parentScopeId": "src/main.ts:138:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:203:10"
+      "location": "src/main.ts:151:10"
     },
-    "src/main.ts:282:1": {
-      "scopeId": "src/main.ts:282:1",
+    "src/main.ts:230:1": {
+      "scopeId": "src/main.ts:230:1",
       "name": "extractSafe",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:282:1"
+      "location": "src/main.ts:230:1"
     },
-    "src/main.ts:293:1": {
-      "scopeId": "src/main.ts:293:1",
+    "src/main.ts:241:1": {
+      "scopeId": "src/main.ts:241:1",
       "name": "recordProcessErrorSpan",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:293:1"
+      "location": "src/main.ts:241:1"
     },
-    "src/main.ts:306:1": {
-      "scopeId": "src/main.ts:306:1",
+    "src/main.ts:254:1": {
+      "scopeId": "src/main.ts:254:1",
       "name": "processErrorReport",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:306:1"
+      "location": "src/main.ts:254:1"
     },
-    "src/main.ts:316:47": {
-      "scopeId": "src/main.ts:316:47",
-      "name": "src/main.ts:316",
+    "src/main.ts:264:47": {
+      "scopeId": "src/main.ts:264:47",
+      "name": "src/main.ts:264",
       "kind": "arrow",
-      "parentScopeId": "src/main.ts:306:1",
+      "parentScopeId": "src/main.ts:254:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:316:47"
+      "location": "src/main.ts:264:47"
     },
-    "src/main.ts:327:23": {
-      "scopeId": "src/main.ts:327:23",
-      "name": "src/main.ts:327",
+    "src/main.ts:275:23": {
+      "scopeId": "src/main.ts:275:23",
+      "name": "src/main.ts:275",
       "kind": "arrow",
-      "parentScopeId": "src/main.ts:306:1",
+      "parentScopeId": "src/main.ts:254:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:327:23"
+      "location": "src/main.ts:275:23"
     },
-    "src/main.ts:332:26": {
-      "scopeId": "src/main.ts:332:26",
-      "name": "src/main.ts:332",
+    "src/main.ts:280:26": {
+      "scopeId": "src/main.ts:280:26",
+      "name": "src/main.ts:280",
       "kind": "arrow",
-      "parentScopeId": "src/main.ts:306:1",
+      "parentScopeId": "src/main.ts:254:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:332:26"
+      "location": "src/main.ts:280:26"
     },
-    "src/main.ts:350:33": {
-      "scopeId": "src/main.ts:350:33",
-      "name": "src/main.ts:350",
-      "kind": "arrow",
-      "parentScopeId": "src/main.ts",
-      "filePath": "src/main.ts",
-      "location": "src/main.ts:350:33"
-    },
-    "src/main.ts:354:34": {
-      "scopeId": "src/main.ts:354:34",
-      "name": "src/main.ts:354",
+    "src/main.ts:298:33": {
+      "scopeId": "src/main.ts:298:33",
+      "name": "src/main.ts:298",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:354:34"
+      "location": "src/main.ts:298:33"
     },
-    "src/main.ts:360:42": {
-      "scopeId": "src/main.ts:360:42",
-      "name": "src/main.ts:360",
+    "src/main.ts:302:34": {
+      "scopeId": "src/main.ts:302:34",
+      "name": "src/main.ts:302",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:360:42"
+      "location": "src/main.ts:302:34"
     },
-    "src/main.ts:365:43": {
-      "scopeId": "src/main.ts:365:43",
-      "name": "src/main.ts:365",
+    "src/main.ts:308:42": {
+      "scopeId": "src/main.ts:308:42",
+      "name": "src/main.ts:308",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:365:43"
+      "location": "src/main.ts:308:42"
+    },
+    "src/main.ts:313:43": {
+      "scopeId": "src/main.ts:313:43",
+      "name": "src/main.ts:313",
+      "kind": "arrow",
+      "parentScopeId": "src/main.ts",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:313:43"
     },
     "src/ai-types/Sentience/index.ts": {
       "scopeId": "src/ai-types/Sentience/index.ts",
@@ -1259,101 +1259,101 @@
       "filePath": "src/entities/construction-showcase.entity.ts",
       "location": "src/entities/construction-showcase.entity.ts:1:1"
     },
-    "src/entities/construction-showcase.entity.ts:27:15": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:27:15",
+    "src/entities/construction-showcase.entity.ts:25:15": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:25:15",
       "name": "sleep",
       "kind": "arrow",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:27:15"
+      "location": "src/entities/construction-showcase.entity.ts:25:15"
     },
-    "src/entities/construction-showcase.entity.ts:27:49": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:27:49",
-      "name": "src/entities/construction-showcase.entity.ts:27",
+    "src/entities/construction-showcase.entity.ts:25:49": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:25:49",
+      "name": "src/entities/construction-showcase.entity.ts:25",
       "kind": "arrow",
-      "parentScopeId": "src/entities/construction-showcase.entity.ts:27:15",
+      "parentScopeId": "src/entities/construction-showcase.entity.ts:25:15",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:27:49"
+      "location": "src/entities/construction-showcase.entity.ts:25:49"
     },
-    "src/entities/construction-showcase.entity.ts:82:47": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:82:47",
-      "name": "src/entities/construction-showcase.entity.ts:82",
+    "src/entities/construction-showcase.entity.ts:80:47": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:80:47",
+      "name": "src/entities/construction-showcase.entity.ts:80",
       "kind": "function",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:82:47"
+      "location": "src/entities/construction-showcase.entity.ts:80:47"
     },
-    "src/entities/construction-showcase.entity.ts:87:8": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:87:8",
+    "src/entities/construction-showcase.entity.ts:85:8": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:85:8",
       "name": "get",
       "kind": "arrow",
-      "parentScopeId": "src/entities/construction-showcase.entity.ts:82:47",
+      "parentScopeId": "src/entities/construction-showcase.entity.ts:80:47",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:87:8"
+      "location": "src/entities/construction-showcase.entity.ts:85:8"
     },
-    "src/entities/construction-showcase.entity.ts:95:55": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:95:55",
+    "src/entities/construction-showcase.entity.ts:93:55": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:93:55",
+      "name": "src/entities/construction-showcase.entity.ts:93",
+      "kind": "function",
+      "parentScopeId": "src/entities/construction-showcase.entity.ts",
+      "filePath": "src/entities/construction-showcase.entity.ts",
+      "location": "src/entities/construction-showcase.entity.ts:93:55"
+    },
+    "src/entities/construction-showcase.entity.ts:95:15": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:95:15",
       "name": "src/entities/construction-showcase.entity.ts:95",
-      "kind": "function",
-      "parentScopeId": "src/entities/construction-showcase.entity.ts",
-      "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:95:55"
-    },
-    "src/entities/construction-showcase.entity.ts:97:15": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:97:15",
-      "name": "src/entities/construction-showcase.entity.ts:97",
       "kind": "arrow",
-      "parentScopeId": "src/entities/construction-showcase.entity.ts:95:55",
+      "parentScopeId": "src/entities/construction-showcase.entity.ts:93:55",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:97:15"
+      "location": "src/entities/construction-showcase.entity.ts:95:15"
     },
-    "src/entities/construction-showcase.entity.ts:104:57": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:104:57",
-      "name": "src/entities/construction-showcase.entity.ts:104",
+    "src/entities/construction-showcase.entity.ts:102:57": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:102:57",
+      "name": "src/entities/construction-showcase.entity.ts:102",
       "kind": "function",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:104:57"
+      "location": "src/entities/construction-showcase.entity.ts:102:57"
     },
-    "src/entities/construction-showcase.entity.ts:117:61": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:117:61",
-      "name": "src/entities/construction-showcase.entity.ts:117",
+    "src/entities/construction-showcase.entity.ts:116:61": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:116:61",
+      "name": "src/entities/construction-showcase.entity.ts:116",
       "kind": "function",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:117:61"
+      "location": "src/entities/construction-showcase.entity.ts:116:61"
     },
-    "src/entities/construction-showcase.entity.ts:121:78": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:121:78",
-      "name": "src/entities/construction-showcase.entity.ts:121",
+    "src/entities/construction-showcase.entity.ts:120:78": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:120:78",
+      "name": "src/entities/construction-showcase.entity.ts:120",
       "kind": "function",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:121:78"
+      "location": "src/entities/construction-showcase.entity.ts:120:78"
     },
-    "src/entities/construction-showcase.entity.ts:135:71": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:135:71",
-      "name": "src/entities/construction-showcase.entity.ts:135",
+    "src/entities/construction-showcase.entity.ts:130:71": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:130:71",
+      "name": "src/entities/construction-showcase.entity.ts:130",
       "kind": "function",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:135:71"
+      "location": "src/entities/construction-showcase.entity.ts:130:71"
     },
-    "src/entities/construction-showcase.entity.ts:139:93": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:139:93",
-      "name": "src/entities/construction-showcase.entity.ts:139",
+    "src/entities/construction-showcase.entity.ts:134:93": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:134:93",
+      "name": "src/entities/construction-showcase.entity.ts:134",
       "kind": "function",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:139:93"
+      "location": "src/entities/construction-showcase.entity.ts:134:93"
     },
-    "src/entities/construction-showcase.entity.ts:155:40": {
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
+    "src/entities/construction-showcase.entity.ts:146:40": {
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
       "name": "runConstructionShowcase",
       "kind": "function",
       "parentScopeId": "src/entities/construction-showcase.entity.ts",
       "filePath": "src/entities/construction-showcase.entity.ts",
-      "location": "src/entities/construction-showcase.entity.ts:155:40"
+      "location": "src/entities/construction-showcase.entity.ts:146:40"
     }
   },
   "variables": [
@@ -4350,84 +4350,20 @@
       "reassignments": []
     },
     {
-      "name": "diveWeakApi",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:35:7",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "diveRing",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:36:7",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "parsed",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:38:8",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "label",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:41:9",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "hasWeakApi",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:55:7",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "setWeak",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:65:8",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "weakActive",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:75:7",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "countCollected",
-      "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:77:8",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
       "name": "tick",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:78:6",
+      "declaration": "src/main.ts:27:6",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [
-        "src/main.ts:84:3"
+        "src/main.ts:33:3"
       ],
       "inferredType": "number"
     },
     {
       "name": "mb",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:79:8",
+      "declaration": "src/main.ts:28:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -4435,8 +4371,8 @@
     },
     {
       "name": "bytes",
-      "scopeId": "src/main.ts:79:13",
-      "declaration": "src/main.ts:79:14",
+      "scopeId": "src/main.ts:28:13",
+      "declaration": "src/main.ts:28:14",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4444,8 +4380,8 @@
     },
     {
       "name": "result",
-      "scopeId": "src/main.ts:79:13",
-      "declaration": "src/main.ts:80:9",
+      "scopeId": "src/main.ts:28:13",
+      "declaration": "src/main.ts:29:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -4453,47 +4389,39 @@
     {
       "name": "timer",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:83:8",
+      "declaration": "src/main.ts:32:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "globalWithGc",
-      "scopeId": "src/main.ts:83:28",
-      "declaration": "src/main.ts:85:9",
+      "scopeId": "src/main.ts:32:28",
+      "declaration": "src/main.ts:34:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "gcForced",
-      "scopeId": "src/main.ts:83:28",
-      "declaration": "src/main.ts:86:9",
+      "scopeId": "src/main.ts:32:28",
+      "declaration": "src/main.ts:35:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mem",
-      "scopeId": "src/main.ts:83:28",
-      "declaration": "src/main.ts:90:9",
+      "scopeId": "src/main.ts:32:28",
+      "declaration": "src/main.ts:39:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "forced",
-      "scopeId": "src/main.ts:83:28",
-      "declaration": "src/main.ts:91:9",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "collected",
-      "scopeId": "src/main.ts:83:28",
-      "declaration": "src/main.ts:92:9",
+      "scopeId": "src/main.ts:32:28",
+      "declaration": "src/main.ts:40:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -4501,7 +4429,7 @@
     {
       "name": "SentienceConstructor",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:102:7",
+      "declaration": "src/main.ts:50:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -4510,7 +4438,7 @@
     {
       "name": "aiMemories",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:106:6",
+      "declaration": "src/main.ts:54:6",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [],
@@ -4518,91 +4446,91 @@
     },
     {
       "name": "fs",
-      "scopeId": "src/main.ts:118:1",
-      "declaration": "src/main.ts:120:9",
+      "scopeId": "src/main.ts:66:1",
+      "declaration": "src/main.ts:68:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "path",
-      "scopeId": "src/main.ts:118:1",
-      "declaration": "src/main.ts:121:9",
+      "scopeId": "src/main.ts:66:1",
+      "declaration": "src/main.ts:69:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "memoryFilePath",
-      "scopeId": "src/main.ts:118:1",
-      "declaration": "src/main.ts:124:9",
+      "scopeId": "src/main.ts:66:1",
+      "declaration": "src/main.ts:72:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "data",
-      "scopeId": "src/main.ts:118:1",
-      "declaration": "src/main.ts:127:10",
+      "scopeId": "src/main.ts:66:1",
+      "declaration": "src/main.ts:75:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "restoredCount",
-      "scopeId": "src/main.ts:118:1",
-      "declaration": "src/main.ts:152:9",
+      "scopeId": "src/main.ts:66:1",
+      "declaration": "src/main.ts:100:9",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [
-        "src/main.ts:169:6"
+        "src/main.ts:117:6"
       ],
       "inferredType": "number"
     },
     {
       "name": "item",
-      "scopeId": "src/main.ts:153:33",
-      "declaration": "src/main.ts:153:43",
+      "scopeId": "src/main.ts:101:33",
+      "declaration": "src/main.ts:101:43",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "memoryId",
-      "scopeId": "src/main.ts:153:33",
-      "declaration": "src/main.ts:154:12",
+      "scopeId": "src/main.ts:101:33",
+      "declaration": "src/main.ts:102:12",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "memoryInstance",
-      "scopeId": "src/main.ts:153:33",
-      "declaration": "src/main.ts:156:12",
+      "scopeId": "src/main.ts:101:33",
+      "declaration": "src/main.ts:104:12",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "app",
-      "scopeId": "src/main.ts:190:1",
-      "declaration": "src/main.ts:191:8",
+      "scopeId": "src/main.ts:138:1",
+      "declaration": "src/main.ts:139:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "otel",
-      "scopeId": "src/main.ts:190:1",
-      "declaration": "src/main.ts:198:8",
+      "scopeId": "src/main.ts:138:1",
+      "declaration": "src/main.ts:146:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mtm",
-      "scopeId": "src/main.ts:190:1",
-      "declaration": "src/main.ts:202:8",
+      "scopeId": "src/main.ts:138:1",
+      "declaration": "src/main.ts:150:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -4610,8 +4538,8 @@
     },
     {
       "name": "req",
-      "scopeId": "src/main.ts:203:10",
-      "declaration": "src/main.ts:203:11",
+      "scopeId": "src/main.ts:151:10",
+      "declaration": "src/main.ts:151:11",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4619,8 +4547,8 @@
     },
     {
       "name": "res",
-      "scopeId": "src/main.ts:203:10",
-      "declaration": "src/main.ts:203:25",
+      "scopeId": "src/main.ts:151:10",
+      "declaration": "src/main.ts:151:25",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4628,8 +4556,8 @@
     },
     {
       "name": "next",
-      "scopeId": "src/main.ts:203:10",
-      "declaration": "src/main.ts:203:40",
+      "scopeId": "src/main.ts:151:10",
+      "declaration": "src/main.ts:151:40",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4637,24 +4565,24 @@
     },
     {
       "name": "config",
-      "scopeId": "src/main.ts:190:1",
-      "declaration": "src/main.ts:213:8",
+      "scopeId": "src/main.ts:138:1",
+      "declaration": "src/main.ts:161:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "document",
-      "scopeId": "src/main.ts:190:1",
-      "declaration": "src/main.ts:221:8",
+      "scopeId": "src/main.ts:138:1",
+      "declaration": "src/main.ts:169:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "port",
-      "scopeId": "src/main.ts:190:1",
-      "declaration": "src/main.ts:224:8",
+      "scopeId": "src/main.ts:138:1",
+      "declaration": "src/main.ts:172:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -4662,7 +4590,7 @@
     {
       "name": "asyncFlowProvider",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:280:5",
+      "declaration": "src/main.ts:228:5",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [],
@@ -4670,8 +4598,8 @@
     },
     {
       "name": "instance",
-      "scopeId": "src/main.ts:282:1",
-      "declaration": "src/main.ts:282:23",
+      "scopeId": "src/main.ts:230:1",
+      "declaration": "src/main.ts:230:23",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4679,16 +4607,16 @@
     },
     {
       "name": "result",
-      "scopeId": "src/main.ts:282:1",
-      "declaration": "src/main.ts:288:9",
+      "scopeId": "src/main.ts:230:1",
+      "declaration": "src/main.ts:236:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "kind",
-      "scopeId": "src/main.ts:293:1",
-      "declaration": "src/main.ts:293:33",
+      "scopeId": "src/main.ts:241:1",
+      "declaration": "src/main.ts:241:33",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4696,8 +4624,8 @@
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:293:1",
-      "declaration": "src/main.ts:293:47",
+      "scopeId": "src/main.ts:241:1",
+      "declaration": "src/main.ts:241:47",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4705,8 +4633,8 @@
     },
     {
       "name": "branch",
-      "scopeId": "src/main.ts:293:1",
-      "declaration": "src/main.ts:293:61",
+      "scopeId": "src/main.ts:241:1",
+      "declaration": "src/main.ts:241:61",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4714,8 +4642,8 @@
     },
     {
       "name": "frameEdgeId",
-      "scopeId": "src/main.ts:293:1",
-      "declaration": "src/main.ts:293:79",
+      "scopeId": "src/main.ts:241:1",
+      "declaration": "src/main.ts:241:79",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4723,8 +4651,8 @@
     },
     {
       "name": "runningCount",
-      "scopeId": "src/main.ts:293:1",
-      "declaration": "src/main.ts:293:107",
+      "scopeId": "src/main.ts:241:1",
+      "declaration": "src/main.ts:241:107",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4732,16 +4660,16 @@
     },
     {
       "name": "span",
-      "scopeId": "src/main.ts:293:1",
-      "declaration": "src/main.ts:294:8",
+      "scopeId": "src/main.ts:241:1",
+      "declaration": "src/main.ts:242:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "kind",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:306:30",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:254:30",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4749,8 +4677,8 @@
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:306:44",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:254:44",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4758,124 +4686,124 @@
     },
     {
       "name": "flow",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:307:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:255:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "instance",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:308:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:256:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "frame",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:309:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:257:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "running",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:310:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:258:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "erroredEdge",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:316:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:264:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/main.ts:316:47",
-      "declaration": "src/main.ts:316:48",
+      "scopeId": "src/main.ts:264:47",
+      "declaration": "src/main.ts:264:48",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "attemptedArgs",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:317:6",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:265:6",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [
-        "src/main.ts:320:3",
-        "src/main.ts:322:3"
+        "src/main.ts:268:3",
+        "src/main.ts:270:3"
       ],
       "inferredType": "unknown"
     },
     {
       "name": "props",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:319:9",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:267:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "report",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:324:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:272:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/main.ts:327:23",
-      "declaration": "src/main.ts:327:24",
+      "scopeId": "src/main.ts:275:23",
+      "declaration": "src/main.ts:275:24",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/main.ts:332:26",
-      "declaration": "src/main.ts:332:27",
+      "scopeId": "src/main.ts:280:26",
+      "declaration": "src/main.ts:280:27",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "segments",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:343:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:291:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mark",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:344:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:292:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "answered",
-      "scopeId": "src/main.ts:306:1",
-      "declaration": "src/main.ts:345:8",
+      "scopeId": "src/main.ts:254:1",
+      "declaration": "src/main.ts:293:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:350:33",
-      "declaration": "src/main.ts:350:34",
+      "scopeId": "src/main.ts:298:33",
+      "declaration": "src/main.ts:298:34",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4883,8 +4811,8 @@
     },
     {
       "name": "reason",
-      "scopeId": "src/main.ts:354:34",
-      "declaration": "src/main.ts:354:35",
+      "scopeId": "src/main.ts:302:34",
+      "declaration": "src/main.ts:302:35",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4892,16 +4820,16 @@
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:354:34",
-      "declaration": "src/main.ts:355:8",
+      "scopeId": "src/main.ts:302:34",
+      "declaration": "src/main.ts:303:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "opts",
-      "scopeId": "src/main.ts:360:42",
-      "declaration": "src/main.ts:360:43",
+      "scopeId": "src/main.ts:308:42",
+      "declaration": "src/main.ts:308:43",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4909,8 +4837,8 @@
     },
     {
       "name": "opts",
-      "scopeId": "src/main.ts:365:43",
-      "declaration": "src/main.ts:365:44",
+      "scopeId": "src/main.ts:313:43",
+      "declaration": "src/main.ts:313:44",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4918,8 +4846,8 @@
     },
     {
       "name": "instance",
-      "scopeId": "src/main.ts:365:43",
-      "declaration": "src/main.ts:366:8",
+      "scopeId": "src/main.ts:313:43",
+      "declaration": "src/main.ts:314:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -5053,7 +4981,7 @@
     {
       "name": "sleep",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:27:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:25:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -5061,8 +4989,8 @@
     },
     {
       "name": "ms",
-      "scopeId": "src/entities/construction-showcase.entity.ts:27:15",
-      "declaration": "src/entities/construction-showcase.entity.ts:27:16",
+      "scopeId": "src/entities/construction-showcase.entity.ts:25:15",
+      "declaration": "src/entities/construction-showcase.entity.ts:25:16",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5070,8 +4998,8 @@
     },
     {
       "name": "resolve",
-      "scopeId": "src/entities/construction-showcase.entity.ts:27:49",
-      "declaration": "src/entities/construction-showcase.entity.ts:27:49",
+      "scopeId": "src/entities/construction-showcase.entity.ts:25:49",
+      "declaration": "src/entities/construction-showcase.entity.ts:25:49",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
@@ -5079,15 +5007,15 @@
     {
       "name": "MechanicsRoot",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:82:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:80:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "this",
-      "scopeId": "src/entities/construction-showcase.entity.ts:82:47",
-      "declaration": "src/entities/construction-showcase.entity.ts:82:57",
+      "scopeId": "src/entities/construction-showcase.entity.ts:80:47",
+      "declaration": "src/entities/construction-showcase.entity.ts:80:57",
       "isParameter": true,
       "isMutable": false,
       "reassignments": [],
@@ -5095,8 +5023,8 @@
     },
     {
       "name": "data",
-      "scopeId": "src/entities/construction-showcase.entity.ts:82:47",
-      "declaration": "src/entities/construction-showcase.entity.ts:82:86",
+      "scopeId": "src/entities/construction-showcase.entity.ts:80:47",
+      "declaration": "src/entities/construction-showcase.entity.ts:80:86",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5105,15 +5033,15 @@
     {
       "name": "MechanicsClonable",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:95:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:93:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "this",
-      "scopeId": "src/entities/construction-showcase.entity.ts:95:55",
-      "declaration": "src/entities/construction-showcase.entity.ts:95:65",
+      "scopeId": "src/entities/construction-showcase.entity.ts:93:55",
+      "declaration": "src/entities/construction-showcase.entity.ts:93:65",
       "isParameter": true,
       "isMutable": false,
       "reassignments": [],
@@ -5121,8 +5049,8 @@
     },
     {
       "name": "data",
-      "scopeId": "src/entities/construction-showcase.entity.ts:95:55",
-      "declaration": "src/entities/construction-showcase.entity.ts:95:98",
+      "scopeId": "src/entities/construction-showcase.entity.ts:93:55",
+      "declaration": "src/entities/construction-showcase.entity.ts:93:98",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5131,15 +5059,15 @@
     {
       "name": "MechanicsAsyncRoot",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:104:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:102:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "this",
-      "scopeId": "src/entities/construction-showcase.entity.ts:104:57",
-      "declaration": "src/entities/construction-showcase.entity.ts:104:73",
+      "scopeId": "src/entities/construction-showcase.entity.ts:102:57",
+      "declaration": "src/entities/construction-showcase.entity.ts:102:73",
       "isParameter": true,
       "isMutable": false,
       "reassignments": [],
@@ -5147,8 +5075,8 @@
     },
     {
       "name": "data",
-      "scopeId": "src/entities/construction-showcase.entity.ts:104:57",
-      "declaration": "src/entities/construction-showcase.entity.ts:104:107",
+      "scopeId": "src/entities/construction-showcase.entity.ts:102:57",
+      "declaration": "src/entities/construction-showcase.entity.ts:102:107",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5157,15 +5085,15 @@
     {
       "name": "mechanicsChainRootBase",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:117:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:116:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "this",
-      "scopeId": "src/entities/construction-showcase.entity.ts:117:61",
-      "declaration": "src/entities/construction-showcase.entity.ts:117:71",
+      "scopeId": "src/entities/construction-showcase.entity.ts:116:61",
+      "declaration": "src/entities/construction-showcase.entity.ts:116:71",
       "isParameter": true,
       "isMutable": false,
       "reassignments": [],
@@ -5173,8 +5101,8 @@
     },
     {
       "name": "data",
-      "scopeId": "src/entities/construction-showcase.entity.ts:117:61",
-      "declaration": "src/entities/construction-showcase.entity.ts:117:93",
+      "scopeId": "src/entities/construction-showcase.entity.ts:116:61",
+      "declaration": "src/entities/construction-showcase.entity.ts:116:93",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5183,15 +5111,15 @@
     {
       "name": "MechanicsChainTip",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:121:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:120:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "this",
-      "scopeId": "src/entities/construction-showcase.entity.ts:121:78",
-      "declaration": "src/entities/construction-showcase.entity.ts:121:88",
+      "scopeId": "src/entities/construction-showcase.entity.ts:120:78",
+      "declaration": "src/entities/construction-showcase.entity.ts:120:88",
       "isParameter": true,
       "isMutable": false,
       "reassignments": [],
@@ -5199,8 +5127,8 @@
     },
     {
       "name": "data",
-      "scopeId": "src/entities/construction-showcase.entity.ts:121:78",
-      "declaration": "src/entities/construction-showcase.entity.ts:121:121",
+      "scopeId": "src/entities/construction-showcase.entity.ts:120:78",
+      "declaration": "src/entities/construction-showcase.entity.ts:120:121",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5209,23 +5137,24 @@
     {
       "name": "MechanicsChainRoot",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:129:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:124:7",
       "isParameter": false,
       "isMutable": false,
-      "reassignments": []
+      "reassignments": [],
+      "typePath": "MechanicsChainRoot"
     },
     {
       "name": "mechanicsAsyncChainRootBase",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:135:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:130:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "this",
-      "scopeId": "src/entities/construction-showcase.entity.ts:135:71",
-      "declaration": "src/entities/construction-showcase.entity.ts:135:81",
+      "scopeId": "src/entities/construction-showcase.entity.ts:130:71",
+      "declaration": "src/entities/construction-showcase.entity.ts:130:81",
       "isParameter": true,
       "isMutable": false,
       "reassignments": [],
@@ -5233,8 +5162,8 @@
     },
     {
       "name": "data",
-      "scopeId": "src/entities/construction-showcase.entity.ts:135:71",
-      "declaration": "src/entities/construction-showcase.entity.ts:135:106",
+      "scopeId": "src/entities/construction-showcase.entity.ts:130:71",
+      "declaration": "src/entities/construction-showcase.entity.ts:130:106",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5243,15 +5172,15 @@
     {
       "name": "MechanicsAsyncChainTip",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:139:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:134:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "this",
-      "scopeId": "src/entities/construction-showcase.entity.ts:139:93",
-      "declaration": "src/entities/construction-showcase.entity.ts:139:109",
+      "scopeId": "src/entities/construction-showcase.entity.ts:134:93",
+      "declaration": "src/entities/construction-showcase.entity.ts:134:109",
       "isParameter": true,
       "isMutable": false,
       "reassignments": [],
@@ -5259,8 +5188,8 @@
     },
     {
       "name": "data",
-      "scopeId": "src/entities/construction-showcase.entity.ts:139:93",
-      "declaration": "src/entities/construction-showcase.entity.ts:139:147",
+      "scopeId": "src/entities/construction-showcase.entity.ts:134:93",
+      "declaration": "src/entities/construction-showcase.entity.ts:134:147",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -5269,15 +5198,16 @@
     {
       "name": "MechanicsAsyncChainRoot",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:149:7",
+      "declaration": "src/entities/construction-showcase.entity.ts:140:7",
       "isParameter": false,
       "isMutable": false,
-      "reassignments": []
+      "reassignments": [],
+      "typePath": "MechanicsAsyncChainRoot"
     },
     {
       "name": "runConstructionShowcase",
       "scopeId": "src/entities/construction-showcase.entity.ts",
-      "declaration": "src/entities/construction-showcase.entity.ts:155:14",
+      "declaration": "src/entities/construction-showcase.entity.ts:146:14",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -5285,8 +5215,8 @@
     },
     {
       "name": "mechanicsRoot",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:158:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:149:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -5295,32 +5225,32 @@
     },
     {
       "name": "forkedSame",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:160:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:151:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "forkedFresh",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:167:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:158:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "clonedProperty",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:172:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:163:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mechanicsClonable",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:178:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:169:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -5329,16 +5259,16 @@
     },
     {
       "name": "clonedCall",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:179:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:170:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "UserEntity",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:186:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:177:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -5346,8 +5276,8 @@
     },
     {
       "name": "showcaseUser",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:187:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:178:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -5356,8 +5286,8 @@
     },
     {
       "name": "adminContext",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:188:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:179:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -5365,96 +5295,97 @@
     },
     {
       "name": "mergedUser",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:195:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:186:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "AdminEntity",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:206:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:196:8",
       "isParameter": false,
       "isMutable": false,
-      "reassignments": []
+      "reassignments": [],
+      "typePath": "UserEntity.AdminEntity"
     },
     {
       "name": "calledAdmin",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:208:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:198:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "appliedAdmin",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:214:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:204:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "boundAdminFactory",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:218:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:208:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "boundAdmin",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:219:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:209:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "chainTipResult",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:226:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:216:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "awaitedChainTip",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:231:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:221:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mechanicsAsync",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:236:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:226:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "awaitedFork",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:237:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:227:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "awaitedForkFresh",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:242:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:232:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mechanics",
-      "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
-      "declaration": "src/entities/construction-showcase.entity.ts:245:8",
+      "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
+      "declaration": "src/entities/construction-showcase.entity.ts:235:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],

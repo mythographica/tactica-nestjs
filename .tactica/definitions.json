@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-16T08:05:12.294Z",
+  "generatedAt": "2026-09-27T20:53:18.574Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
@@ -156,7 +156,7 @@
     },
     "MechanicsRoot": {
       "name": "MechanicsRoot",
-      "location": "src/entities/construction-showcase.entity.ts:82:23",
+      "location": "src/entities/construction-showcase.entity.ts:80:23",
       "kind": "define",
       "parent": null,
       "strictChain": true,
@@ -164,7 +164,7 @@
     },
     "MechanicsClonable": {
       "name": "MechanicsClonable",
-      "location": "src/entities/construction-showcase.entity.ts:95:27",
+      "location": "src/entities/construction-showcase.entity.ts:93:27",
       "kind": "define",
       "parent": null,
       "strictChain": true,
@@ -172,7 +172,7 @@
     },
     "MechanicsAsyncRoot": {
       "name": "MechanicsAsyncRoot",
-      "location": "src/entities/construction-showcase.entity.ts:104:28",
+      "location": "src/entities/construction-showcase.entity.ts:102:28",
       "kind": "define",
       "parent": null,
       "strictChain": true,
@@ -180,7 +180,7 @@
     },
     "MechanicsChainRoot": {
       "name": "MechanicsChainRoot",
-      "location": "src/entities/construction-showcase.entity.ts:117:32",
+      "location": "src/entities/construction-showcase.entity.ts:116:32",
       "kind": "define",
       "parent": null,
       "strictChain": true,
@@ -188,7 +188,7 @@
     },
     "MechanicsChainRoot.MechanicsChainTip": {
       "name": "MechanicsChainTip",
-      "location": "src/entities/construction-showcase.entity.ts:121:50",
+      "location": "src/entities/construction-showcase.entity.ts:120:50",
       "kind": "define",
       "parent": "MechanicsChainRoot",
       "strictChain": true,
@@ -196,7 +196,7 @@
     },
     "MechanicsAsyncChainRoot": {
       "name": "MechanicsAsyncChainRoot",
-      "location": "src/entities/construction-showcase.entity.ts:135:37",
+      "location": "src/entities/construction-showcase.entity.ts:130:37",
       "kind": "define",
       "parent": null,
       "strictChain": true,
@@ -204,7 +204,7 @@
     },
     "MechanicsAsyncChainRoot.MechanicsAsyncChainTip": {
       "name": "MechanicsAsyncChainTip",
-      "location": "src/entities/construction-showcase.entity.ts:139:60",
+      "location": "src/entities/construction-showcase.entity.ts:134:60",
       "kind": "define",
       "parent": "MechanicsAsyncChainRoot",
       "strictChain": true,

@@ -1,7 +1,5 @@
 import assert from 'node:assert/strict';
 import { utils, call, apply, bind, define, lookup } from 'mnemonica';
-import type { IDEF } from 'mnemonica';
-import type { UserEntity_AdminEntity } from '../../.tactica/types';
 
 // Side-effect imports: register the demo's types so the lookup() calls below
 // resolve at runtime regardless of which module loads first.
@@ -110,9 +108,10 @@ const MechanicsAsyncRoot = define('MechanicsAsyncRoot', async function (this: Me
 
 /**
  * MechanicsChainRoot → MechanicsChainTip — the sync chain-tip pair. The
- * dual-signature view (call + construct on the nested ctor) is what the
- * chain-tip call form type-checks against; see the note on the instance
- * type above for why it lives on a separate const.
+ * demo's `new`-able root view comes from lookup(): the regenerated
+ * .tactica types carry DUAL signatures on nested ctors (construct + the
+ * chain-tip call form), so both `new R().A()` and the call form
+ * `new R().A(...)` type-check against the generated types with no cast.
  */
 const mechanicsChainRootBase = define('MechanicsChainRoot', function (this: { id: string }, data: { id: string }) {
 	this.id = data.id;
@@ -122,11 +121,7 @@ const MechanicsChainTip = mechanicsChainRootBase.define('MechanicsChainTip', fun
 	this.tip = data.tip;
 });
 
-type MechanicsChainRootDual = {
-	new (data: { id: string }): MechanicsChainRootInstance;
-};
-
-const MechanicsChainRoot = mechanicsChainRootBase as unknown as MechanicsChainRootDual;
+const MechanicsChainRoot = lookup('MechanicsChainRoot');
 
 /**
  * MechanicsAsyncChainRoot → MechanicsAsyncChainTip — the awaited chain-tip
@@ -142,11 +137,7 @@ const MechanicsAsyncChainTip = mechanicsAsyncChainRootBase.define('MechanicsAsyn
 	return this;
 });
 
-type MechanicsAsyncChainRootDual = {
-	new (data: { value: number }): MechanicsAsyncChainRootInstance;
-};
-
-const MechanicsAsyncChainRoot = mechanicsAsyncChainRootBase as unknown as MechanicsAsyncChainRootDual;
+const MechanicsAsyncChainRoot = lookup('MechanicsAsyncChainRoot');
 
 /**
  * Runs every construction mechanic against real instances. Each block is
@@ -199,11 +190,10 @@ export const runConstructionShowcase = async function (): Promise<string[]> {
 	assert.equal(mergedUser.role, 'ops', 'arg-1 fields visible through the chain');
 
 	// --- call / apply / bind: named imports from 'mnemonica' ---------------
-	// The Ctor arg must be a subtype constructor of the entity's type. The
-	// lookup()-obtained ctor is the only form carrying TypeName at runtime
-	// (an instance proxy does not, and the generated ctor signatures don't
-	// fit core's IDEF<T> union — bridged once here).
-	const AdminEntity = lookup('UserEntity.AdminEntity') as unknown as IDEF<UserEntity_AdminEntity>;
+	// mnemonica 1.3.3 widened call/apply/bind to CtorParameter<T>, which
+	// accepts required-arg constructors — the lookup()-obtained ctor types
+	// with no cast.
+	const AdminEntity = lookup('UserEntity.AdminEntity');
 
 	const calledAdmin = call(showcaseUser, AdminEntity, { id: 'c-1', email: 'c@case.dev', name: 'Called', role: 'called', permissions: [] });
 	assert.equal(utils.parse(calledAdmin).name, 'AdminEntity', 'call constructs the Ctor on the entity');

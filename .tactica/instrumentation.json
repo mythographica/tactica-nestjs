@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-16T08:05:12.336Z",
+  "generatedAt": "2026-09-27T20:53:18.625Z",
   "points": [
     {
       "kind": "pipe",
@@ -91,27 +91,27 @@
   "creationGraph": {
     "nodes": [
       {
-        "scopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "scopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "name": "runConstructionShowcase",
         "kind": "function",
         "filePath": "src/entities/construction-showcase.entity.ts",
-        "location": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:146:40",
         "starter": true
       },
       {
-        "scopeId": "src/main.ts:153:33",
-        "name": "src/main.ts:153",
+        "scopeId": "src/main.ts:101:33",
+        "name": "src/main.ts:101",
         "kind": "function",
         "filePath": "src/main.ts",
-        "location": "src/main.ts:153:33",
+        "location": "src/main.ts:101:33",
         "starter": true
       },
       {
-        "scopeId": "src/main.ts:118:1",
+        "scopeId": "src/main.ts:66:1",
         "name": "restoreMemoriesOnStartup",
         "kind": "function",
         "filePath": "src/main.ts",
-        "location": "src/main.ts:118:1",
+        "location": "src/main.ts:66:1",
         "starter": false
       },
       {
@@ -414,7 +414,7 @@
     "edges": [
       {
         "caller": "src/main.ts",
-        "callee": "src/main.ts:118:1"
+        "callee": "src/main.ts:66:1"
       },
       {
         "caller": "src/app.module.ts",
@@ -748,15 +748,15 @@
         "variable": "user"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:187:23",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:178:23",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "UserEntity",
         "constructorText": "UserEntity",
         "variable": "showcaseUser"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:195:21",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:186:21",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "UserEntity",
         "constructorText": "utils.merge",
         "variable": "mergedUser"
@@ -858,22 +858,22 @@
         "variable": "admin"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:188:23",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:179:23",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "UserEntity.AdminEntity",
         "constructorText": "showcaseUser.AdminEntity",
         "variable": "adminContext"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:208:22",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:198:22",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "UserEntity.AdminEntity",
         "constructorText": "AdminEntity",
         "variable": "calledAdmin"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:214:23",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:204:23",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "UserEntity.AdminEntity",
         "constructorText": "AdminEntity",
         "variable": "appliedAdmin"
@@ -984,105 +984,105 @@
         "variable": "subDecorate"
       },
       {
-        "location": "src/main.ts:144:38",
-        "holderScopeId": "src/main.ts:118:1",
+        "location": "src/main.ts:92:38",
+        "holderScopeId": "src/main.ts:66:1",
         "typePath": "Sentience",
         "constructorText": "SentienceConstructor"
       },
       {
-        "location": "src/main.ts:156:29",
-        "holderScopeId": "src/main.ts:153:33",
+        "location": "src/main.ts:104:29",
+        "holderScopeId": "src/main.ts:101:33",
         "typePath": "Sentience.Memory",
         "constructorText": "global.aiMemories.rootInstance.Memory",
         "variable": "memoryInstance"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:158:24",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsRoot",
-        "constructorText": "MechanicsRoot",
-        "variable": "mechanicsRoot"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:160:21",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsRoot",
-        "constructorText": "mechanicsRoot.fork",
-        "variable": "forkedSame"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:167:22",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsRoot",
-        "constructorText": "mechanicsRoot.fork",
-        "variable": "forkedFresh"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:172:25",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsRoot",
-        "constructorText": "mechanicsRoot.clone",
-        "variable": "clonedProperty"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:178:28",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsClonable",
-        "constructorText": "MechanicsClonable",
-        "variable": "mechanicsClonable"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:179:21",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsClonable",
-        "constructorText": "mechanicsClonable.clone",
-        "variable": "clonedCall"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:226:25",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsChainRoot.MechanicsChainTip",
-        "constructorText": "new MechanicsChainRoot({ id: 'chain-1' }).MechanicsChainTip",
-        "variable": "chainTipResult"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:226:25",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:216:25",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "MechanicsChainRoot",
         "constructorText": "MechanicsChainRoot",
         "variable": "chainTipResult"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:231:32",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
-        "typePath": "MechanicsAsyncChainRoot.MechanicsAsyncChainTip",
-        "constructorText": "new MechanicsAsyncChainRoot({ value: 3 }).MechanicsAsyncChainTip",
-        "variable": "awaitedChainTip"
-      },
-      {
-        "location": "src/entities/construction-showcase.entity.ts:231:32",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:221:32",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "MechanicsAsyncChainRoot",
         "constructorText": "MechanicsAsyncChainRoot",
         "variable": "awaitedChainTip"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:236:31",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:149:24",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "MechanicsRoot",
+        "variable": "mechanicsRoot"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:151:21",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "mechanicsRoot.fork",
+        "variable": "forkedSame"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:158:22",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "mechanicsRoot.fork",
+        "variable": "forkedFresh"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:163:25",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsRoot",
+        "constructorText": "mechanicsRoot.clone",
+        "variable": "clonedProperty"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:169:28",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsClonable",
+        "constructorText": "MechanicsClonable",
+        "variable": "mechanicsClonable"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:170:21",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsClonable",
+        "constructorText": "mechanicsClonable.clone",
+        "variable": "clonedCall"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:216:25",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsChainRoot.MechanicsChainTip",
+        "constructorText": "new MechanicsChainRoot({ id: 'chain-1' }).MechanicsChainTip",
+        "variable": "chainTipResult"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:221:32",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
+        "typePath": "MechanicsAsyncChainRoot.MechanicsAsyncChainTip",
+        "constructorText": "new MechanicsAsyncChainRoot({ value: 3 }).MechanicsAsyncChainTip",
+        "variable": "awaitedChainTip"
+      },
+      {
+        "location": "src/entities/construction-showcase.entity.ts:226:31",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "MechanicsAsyncRoot",
         "constructorText": "MechanicsAsyncRoot",
         "variable": "mechanicsAsync"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:237:28",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:227:28",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "MechanicsAsyncRoot",
         "constructorText": "mechanicsAsync.fork",
         "variable": "awaitedFork"
       },
       {
-        "location": "src/entities/construction-showcase.entity.ts:242:33",
-        "holderScopeId": "src/entities/construction-showcase.entity.ts:155:40",
+        "location": "src/entities/construction-showcase.entity.ts:232:33",
+        "holderScopeId": "src/entities/construction-showcase.entity.ts:146:40",
         "typePath": "MechanicsAsyncRoot",
         "constructorText": "mechanicsAsync.fork",
         "variable": "awaitedForkFresh"

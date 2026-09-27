@@ -10,8 +10,7 @@ import { defaultTypes, lookup, utils, getProps } from 'mnemonica';
 import type { hooksOpts } from 'mnemonica';
 import { MnemonicaOtelProvider, MnemonicaTraceMiddleware, AsyncFlowProvider } from '@mnemonica/nestjs';
 import { bootstrapStrategyChannel } from './strategy-channel';
-import { getFlow, getErrorInstance, getRunningEdges, setTraceLimit } from '@mnemonica/dive';
-import * as divePkg from '@mnemonica/dive';
+import { getFlow, getErrorInstance, getRunningEdges, stats } from '@mnemonica/dive';
 import { resolveCrash } from './crash-park';
 import { trace, SpanStatusCode } from '@opentelemetry/api';
 import type { Request, Response, NextFunction } from 'express';
@@ -19,62 +18,12 @@ import '../.tactica/registry'; // Augments mnemonica's TypeRegistry
 import { bootstrapAITypes } from './ai-types/bootstrap';
 import type { Sentience, Sentience_Memory } from '../.tactica/types';
 
-// Ring experiment (2026-09-02, Viktor): memory watch + ring/weak gates.
-// DIVE_RING: unset → library default (UNBOUNDED since dive's 2026-09-02
-// flip); an integer (e.g. 1024) → setTraceLimit(n) restores a bound;
-// 'unbounded' also accepted for the 2026-09-02 scripts.
-// DIVE_WEAK=1 / DIVE_STRONG=1 → instance storage override (dive's
-// default is WEAK since 2026-09-02). MEM_WATCH=1 prints
-// memoryUsage every second; under node --expose-gc every 10th tick
-// forces GC first, so the post-load floor is visible without waiting
-// on natural collection.
-type weakRefsApi = {
-	setWeakInstanceRefs?: (enable: boolean) => void;
-	getCollectedInstanceCount?: () => number;
-};
-const diveWeakApi = divePkg as weakRefsApi;
-const diveRing = process.env.DIVE_RING;
-if (diveRing !== undefined && diveRing !== '') {
-	const parsed = diveRing === 'unbounded' ? Number.MAX_SAFE_INTEGER : Number.parseInt(diveRing, 10);
-	if (Number.isInteger(parsed) && parsed >= 0) {
-		setTraceLimit(parsed);
-		const label = parsed === Number.MAX_SAFE_INTEGER ? 'UNBOUNDED (eviction disabled)' : String(parsed);
-		console.log(`[memwatch] dive ring limit: ${label}`);
-	} else {
-		console.warn(`[memwatch] DIVE_RING="${diveRing}" not understood — library default stays`);
-	}
-}
-// Weak/strong half of the experiment: dive's default is WEAK since
-// 2026-09-02 (edge.instance a WeakRef — the payload is GC-releasable,
-// the skeleton stays, the registry notifies). DIVE_STRONG=1 opts out
-// (reproduces experiment 1's pin); DIVE_WEAK=1 stays accepted as an
-// explicit-on for pre-default dive builds. The API is accessed
-// dynamically so this file still compiles against a pre-weak-refs dive
-// (Viktor keeps one on a backup branch): missing exports degrade to a
-// logged skip, and old dive + no env = strong refs = experiment 1 too.
-const hasWeakApi = typeof diveWeakApi.setWeakInstanceRefs === 'function';
-if (process.env.DIVE_STRONG === '1') {
-	if (hasWeakApi) {
-		const setWeak = diveWeakApi.setWeakInstanceRefs;
-		setWeak?.(false);
-		console.log('[memwatch] dive instance refs STRONG (opt-out via DIVE_STRONG=1 — experiment 1 mode)');
-	} else {
-		console.log('[memwatch] dive instance refs STRONG (pre-weak-refs dive — experiment 1 mode)');
-	}
-} else if (process.env.DIVE_WEAK === '1') {
-	const setWeak = diveWeakApi.setWeakInstanceRefs;
-	if (setWeak) {
-		setWeak(true);
-		console.log('[memwatch] dive instance refs WEAK (explicit DIVE_WEAK=1)');
-	} else {
-		console.warn('[memwatch] DIVE_WEAK=1 but this dive has no setWeakInstanceRefs — STRONG refs stay (that IS experiment 1)');
-	}
-} else {
-	console.log(`[memwatch] dive instance refs ${hasWeakApi ? 'WEAK (library default)' : 'STRONG (pre-weak-refs dive)'}`);
-}
-const weakActive = hasWeakApi && process.env.DIVE_STRONG !== '1';
+// Memory watch (2026-09-02, Viktor). MEM_WATCH=1 prints memoryUsage every
+// second; under node --expose-gc every 10th tick forces GC first, so the
+// post-load floor is visible without waiting on natural collection. dive's
+// object-linked model (2026-09-25) has no ring and no weak/strong gate —
+// stats carries the retention counters (alive edges, collected instances).
 if (process.env.MEM_WATCH === '1') {
-	const countCollected = diveWeakApi.getCollectedInstanceCount;
 	let tick = 0;
 	const mb = (bytes: number): string => {
 		const result = (bytes / 1024 / 1024).toFixed(1);
@@ -89,8 +38,7 @@ if (process.env.MEM_WATCH === '1') {
 		}
 		const mem = process.memoryUsage();
 		const forced = gcForced ? ' (gc forced)' : '';
-		const collected = weakActive && countCollected ? ` collected=${countCollected()}` : '';
-		console.log(`[memwatch] rss=${mb(mem.rss)}MB heap=${mb(mem.heapUsed)}/${mb(mem.heapTotal)}MB ext=${mb(mem.external)}MB${collected}${forced}`);
+		console.log(`[memwatch] rss=${mb(mem.rss)}MB heap=${mb(mem.heapUsed)}/${mb(mem.heapTotal)}MB ext=${mb(mem.external)}MB alive=${stats.alive} collected=${stats.collectedInstances}${forced}`);
 	}, 1000);
 	timer.unref();
 }

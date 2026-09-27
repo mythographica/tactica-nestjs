@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-16T08:05:12.314Z",
+  "generatedAt": "2026-09-27T20:53:18.600Z",
   "modules": {
     "src/entities/user.entity.ts": {
       "filePath": "src/entities/user.entity.ts",
@@ -2025,18 +2025,10 @@
           "external": true
         },
         {
-          "name": "setTraceLimit",
+          "name": "stats",
           "kind": "unknown",
           "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
-          "isReExport": false,
-          "external": true
-        },
-        {
-          "name": "divePkg",
-          "kind": "unknown",
-          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
-          "importKind": "namespace",
           "isReExport": false,
           "external": true
         },
@@ -2543,21 +2535,6 @@
           "importKind": "named",
           "isReExport": false,
           "external": true
-        },
-        {
-          "name": "IDEF",
-          "kind": "unknown",
-          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
-          "importKind": "named",
-          "isReExport": false,
-          "external": true
-        },
-        {
-          "name": "UserEntity_AdminEntity",
-          "kind": "unknown",
-          "sourceModule": ".tactica/types.ts",
-          "importKind": "named",
-          "isReExport": false
         }
       ],
       "dependencies": [
