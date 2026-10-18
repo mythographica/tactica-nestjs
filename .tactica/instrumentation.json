@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-27T20:53:18.625Z",
+  "generatedAt": "2026-10-18T07:16:49.213Z",
   "points": [
     {
       "kind": "pipe",
@@ -99,19 +99,19 @@
         "starter": true
       },
       {
-        "scopeId": "src/main.ts:101:33",
-        "name": "src/main.ts:101",
+        "scopeId": "src/main.ts:102:33",
+        "name": "src/main.ts:102",
         "kind": "function",
         "filePath": "src/main.ts",
-        "location": "src/main.ts:101:33",
+        "location": "src/main.ts:102:33",
         "starter": true
       },
       {
-        "scopeId": "src/main.ts:66:1",
+        "scopeId": "src/main.ts:67:1",
         "name": "restoreMemoriesOnStartup",
         "kind": "function",
         "filePath": "src/main.ts",
-        "location": "src/main.ts:66:1",
+        "location": "src/main.ts:67:1",
         "starter": false
       },
       {
@@ -267,51 +267,51 @@
         "starter": false
       },
       {
-        "scopeId": "src/chaos.controller.ts:549:22",
-        "name": "src/chaos.controller.ts:549",
+        "scopeId": "src/chaos.controller.ts:583:22",
+        "name": "src/chaos.controller.ts:583",
         "kind": "arrow",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:549:22",
+        "location": "src/chaos.controller.ts:583:22",
         "starter": true
       },
       {
-        "scopeId": "src/chaos.controller.ts:490:29",
-        "name": "src/chaos.controller.ts:490",
+        "scopeId": "src/chaos.controller.ts:524:29",
+        "name": "src/chaos.controller.ts:524",
         "kind": "arrow",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:490:29",
+        "location": "src/chaos.controller.ts:524:29",
         "starter": true
       },
       {
-        "scopeId": "src/chaos.controller.ts:447:2",
+        "scopeId": "src/chaos.controller.ts:481:2",
         "name": "ChaosController.unblinding",
         "kind": "method",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:447:2",
+        "location": "src/chaos.controller.ts:481:2",
         "starter": false
       },
       {
-        "scopeId": "src/chaos.controller.ts:402:29",
-        "name": "src/chaos.controller.ts:402",
+        "scopeId": "src/chaos.controller.ts:436:29",
+        "name": "src/chaos.controller.ts:436",
         "kind": "arrow",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:402:29",
+        "location": "src/chaos.controller.ts:436:29",
         "starter": true
       },
       {
-        "scopeId": "src/chaos.controller.ts:354:2",
+        "scopeId": "src/chaos.controller.ts:388:2",
         "name": "ChaosController.blindspot",
         "kind": "method",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:354:2",
+        "location": "src/chaos.controller.ts:388:2",
         "starter": false
       },
       {
-        "scopeId": "src/chaos.controller.ts:315:2",
+        "scopeId": "src/chaos.controller.ts:349:2",
         "name": "ChaosController.midSleep",
         "kind": "method",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:315:2",
+        "location": "src/chaos.controller.ts:349:2",
         "starter": false
       },
       {
@@ -331,24 +331,32 @@
         "starter": false
       },
       {
-        "scopeId": "src/chaos.controller.ts:569:2",
+        "scopeId": "src/chaos.controller.ts:603:2",
         "name": "ChaosController.nestedWraps",
         "kind": "method",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:569:2",
+        "location": "src/chaos.controller.ts:603:2",
         "starter": false
       },
       {
-        "scopeId": "src/chaos.controller.ts:505:2",
+        "scopeId": "src/chaos.controller.ts:539:2",
         "name": "ChaosController.cornerCut",
         "kind": "method",
         "filePath": "src/chaos.controller.ts",
-        "location": "src/chaos.controller.ts:505:2",
+        "location": "src/chaos.controller.ts:539:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/chaos.controller.ts:319:2",
+        "name": "ChaosController.crashIntResponse",
+        "kind": "method",
+        "filePath": "src/chaos.controller.ts",
+        "location": "src/chaos.controller.ts:319:2",
         "starter": false
       },
       {
         "scopeId": "src/chaos.controller.ts:285:2",
-        "name": "ChaosController.crashIntResponse",
+        "name": "ChaosController.rejectUnResponse",
         "kind": "method",
         "filePath": "src/chaos.controller.ts",
         "location": "src/chaos.controller.ts:285:2",
@@ -414,7 +422,7 @@
     "edges": [
       {
         "caller": "src/main.ts",
-        "callee": "src/main.ts:66:1"
+        "callee": "src/main.ts:67:1"
       },
       {
         "caller": "src/app.module.ts",
@@ -558,15 +566,15 @@
       },
       {
         "caller": "src/app.module.ts",
-        "callee": "src/chaos.controller.ts:447:2"
+        "callee": "src/chaos.controller.ts:481:2"
       },
       {
         "caller": "src/app.module.ts",
-        "callee": "src/chaos.controller.ts:354:2"
+        "callee": "src/chaos.controller.ts:388:2"
       },
       {
         "caller": "src/app.module.ts",
-        "callee": "src/chaos.controller.ts:315:2"
+        "callee": "src/chaos.controller.ts:349:2"
       },
       {
         "caller": "src/user.controller.ts:39:2",
@@ -602,11 +610,15 @@
       },
       {
         "caller": "src/app.module.ts",
-        "callee": "src/chaos.controller.ts:569:2"
+        "callee": "src/chaos.controller.ts:603:2"
       },
       {
         "caller": "src/app.module.ts",
-        "callee": "src/chaos.controller.ts:505:2"
+        "callee": "src/chaos.controller.ts:539:2"
+      },
+      {
+        "caller": "src/app.module.ts",
+        "callee": "src/chaos.controller.ts:319:2"
       },
       {
         "caller": "src/app.module.ts",
@@ -706,43 +718,50 @@
         "variable": "user"
       },
       {
-        "location": "src/chaos.controller.ts:297:16",
+        "location": "src/chaos.controller.ts:294:16",
         "holderScopeId": "src/chaos.controller.ts:285:2",
         "typePath": "UserEntity",
         "constructorText": "UserEntity",
         "variable": "user"
       },
       {
-        "location": "src/chaos.controller.ts:324:16",
-        "holderScopeId": "src/chaos.controller.ts:315:2",
+        "location": "src/chaos.controller.ts:331:16",
+        "holderScopeId": "src/chaos.controller.ts:319:2",
         "typePath": "UserEntity",
         "constructorText": "UserEntity",
         "variable": "user"
       },
       {
-        "location": "src/chaos.controller.ts:363:16",
-        "holderScopeId": "src/chaos.controller.ts:354:2",
+        "location": "src/chaos.controller.ts:358:16",
+        "holderScopeId": "src/chaos.controller.ts:349:2",
         "typePath": "UserEntity",
         "constructorText": "UserEntity",
         "variable": "user"
       },
       {
-        "location": "src/chaos.controller.ts:457:16",
-        "holderScopeId": "src/chaos.controller.ts:447:2",
+        "location": "src/chaos.controller.ts:397:16",
+        "holderScopeId": "src/chaos.controller.ts:388:2",
         "typePath": "UserEntity",
         "constructorText": "UserEntity",
         "variable": "user"
       },
       {
-        "location": "src/chaos.controller.ts:516:16",
-        "holderScopeId": "src/chaos.controller.ts:505:2",
+        "location": "src/chaos.controller.ts:491:16",
+        "holderScopeId": "src/chaos.controller.ts:481:2",
         "typePath": "UserEntity",
         "constructorText": "UserEntity",
         "variable": "user"
       },
       {
-        "location": "src/chaos.controller.ts:578:16",
-        "holderScopeId": "src/chaos.controller.ts:569:2",
+        "location": "src/chaos.controller.ts:550:16",
+        "holderScopeId": "src/chaos.controller.ts:539:2",
+        "typePath": "UserEntity",
+        "constructorText": "UserEntity",
+        "variable": "user"
+      },
+      {
+        "location": "src/chaos.controller.ts:612:16",
+        "holderScopeId": "src/chaos.controller.ts:603:2",
         "typePath": "UserEntity",
         "constructorText": "UserEntity",
         "variable": "user"
@@ -776,41 +795,41 @@
         "variable": "userResponse"
       },
       {
-        "location": "src/chaos.controller.ts:332:24",
-        "holderScopeId": "src/chaos.controller.ts:315:2",
+        "location": "src/chaos.controller.ts:366:24",
+        "holderScopeId": "src/chaos.controller.ts:349:2",
         "typePath": "UserEntity.UserResponse",
         "constructorText": "user.UserResponse",
         "variable": "userResponse"
       },
       {
-        "location": "src/chaos.controller.ts:381:20",
-        "holderScopeId": "src/chaos.controller.ts:354:2",
+        "location": "src/chaos.controller.ts:415:20",
+        "holderScopeId": "src/chaos.controller.ts:388:2",
         "typePath": "UserEntity.UserResponse",
         "constructorText": "user.UserResponse"
       },
       {
-        "location": "src/chaos.controller.ts:403:20",
-        "holderScopeId": "src/chaos.controller.ts:402:29",
+        "location": "src/chaos.controller.ts:437:20",
+        "holderScopeId": "src/chaos.controller.ts:436:29",
         "typePath": "UserEntity.UserResponse",
         "constructorText": "user.UserResponse",
         "variable": "crafted"
       },
       {
-        "location": "src/chaos.controller.ts:470:20",
-        "holderScopeId": "src/chaos.controller.ts:447:2",
+        "location": "src/chaos.controller.ts:504:20",
+        "holderScopeId": "src/chaos.controller.ts:481:2",
         "typePath": "UserEntity.UserResponse",
         "constructorText": "user.UserResponse"
       },
       {
-        "location": "src/chaos.controller.ts:491:20",
-        "holderScopeId": "src/chaos.controller.ts:490:29",
+        "location": "src/chaos.controller.ts:525:20",
+        "holderScopeId": "src/chaos.controller.ts:524:29",
         "typePath": "UserEntity.UserResponse",
         "constructorText": "user.UserResponse",
         "variable": "crafted"
       },
       {
-        "location": "src/chaos.controller.ts:554:20",
-        "holderScopeId": "src/chaos.controller.ts:549:22",
+        "location": "src/chaos.controller.ts:588:20",
+        "holderScopeId": "src/chaos.controller.ts:583:22",
         "typePath": "UserEntity.UserResponse",
         "constructorText": "user.UserResponse",
         "variable": "crafted"
@@ -984,14 +1003,14 @@
         "variable": "subDecorate"
       },
       {
-        "location": "src/main.ts:92:38",
-        "holderScopeId": "src/main.ts:66:1",
+        "location": "src/main.ts:93:38",
+        "holderScopeId": "src/main.ts:67:1",
         "typePath": "Sentience",
         "constructorText": "SentienceConstructor"
       },
       {
-        "location": "src/main.ts:104:29",
-        "holderScopeId": "src/main.ts:101:33",
+        "location": "src/main.ts:105:29",
+        "holderScopeId": "src/main.ts:102:33",
         "typePath": "Sentience.Memory",
         "constructorText": "global.aiMemories.rootInstance.Memory",
         "variable": "memoryInstance"

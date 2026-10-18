@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-27T20:53:18.604Z",
+  "generatedAt": "2026-10-18T07:16:49.197Z",
   "scopes": {
     "src/entities/user.entity.ts": {
       "scopeId": "src/entities/user.entity.ts",
@@ -719,123 +719,139 @@
     },
     "src/chaos.controller.ts:285:2": {
       "scopeId": "src/chaos.controller.ts:285:2",
-      "name": "ChaosController.crashIntResponse",
+      "name": "ChaosController.rejectUnResponse",
       "kind": "method",
       "parentScopeId": "src/chaos.controller.ts",
       "filePath": "src/chaos.controller.ts",
       "location": "src/chaos.controller.ts:285:2"
     },
-    "src/chaos.controller.ts:305:24": {
-      "scopeId": "src/chaos.controller.ts:305:24",
-      "name": "src/chaos.controller.ts:305",
+    "src/chaos.controller.ts:304:24": {
+      "scopeId": "src/chaos.controller.ts:304:24",
+      "name": "src/chaos.controller.ts:304",
       "kind": "arrow",
       "parentScopeId": "src/chaos.controller.ts:285:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:305:24"
+      "location": "src/chaos.controller.ts:304:24"
     },
-    "src/chaos.controller.ts:315:2": {
-      "scopeId": "src/chaos.controller.ts:315:2",
+    "src/chaos.controller.ts:319:2": {
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "name": "ChaosController.crashIntResponse",
+      "kind": "method",
+      "parentScopeId": "src/chaos.controller.ts",
+      "filePath": "src/chaos.controller.ts",
+      "location": "src/chaos.controller.ts:319:2"
+    },
+    "src/chaos.controller.ts:339:24": {
+      "scopeId": "src/chaos.controller.ts:339:24",
+      "name": "src/chaos.controller.ts:339",
+      "kind": "arrow",
+      "parentScopeId": "src/chaos.controller.ts:319:2",
+      "filePath": "src/chaos.controller.ts",
+      "location": "src/chaos.controller.ts:339:24"
+    },
+    "src/chaos.controller.ts:349:2": {
+      "scopeId": "src/chaos.controller.ts:349:2",
       "name": "ChaosController.midSleep",
       "kind": "method",
       "parentScopeId": "src/chaos.controller.ts",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:315:2"
+      "location": "src/chaos.controller.ts:349:2"
     },
-    "src/chaos.controller.ts:345:35": {
-      "scopeId": "src/chaos.controller.ts:345:35",
-      "name": "src/chaos.controller.ts:345",
+    "src/chaos.controller.ts:379:35": {
+      "scopeId": "src/chaos.controller.ts:379:35",
+      "name": "src/chaos.controller.ts:379",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:315:2",
+      "parentScopeId": "src/chaos.controller.ts:349:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:345:35"
+      "location": "src/chaos.controller.ts:379:35"
     },
-    "src/chaos.controller.ts:354:2": {
-      "scopeId": "src/chaos.controller.ts:354:2",
+    "src/chaos.controller.ts:388:2": {
+      "scopeId": "src/chaos.controller.ts:388:2",
       "name": "ChaosController.blindspot",
       "kind": "method",
       "parentScopeId": "src/chaos.controller.ts",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:354:2"
+      "location": "src/chaos.controller.ts:388:2"
     },
-    "src/chaos.controller.ts:402:29": {
-      "scopeId": "src/chaos.controller.ts:402:29",
-      "name": "src/chaos.controller.ts:402",
+    "src/chaos.controller.ts:436:29": {
+      "scopeId": "src/chaos.controller.ts:436:29",
+      "name": "src/chaos.controller.ts:436",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:354:2",
+      "parentScopeId": "src/chaos.controller.ts:388:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:402:29"
+      "location": "src/chaos.controller.ts:436:29"
     },
-    "src/chaos.controller.ts:427:49": {
-      "scopeId": "src/chaos.controller.ts:427:49",
-      "name": "src/chaos.controller.ts:427",
+    "src/chaos.controller.ts:461:49": {
+      "scopeId": "src/chaos.controller.ts:461:49",
+      "name": "src/chaos.controller.ts:461",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:354:2",
+      "parentScopeId": "src/chaos.controller.ts:388:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:427:49"
+      "location": "src/chaos.controller.ts:461:49"
     },
-    "src/chaos.controller.ts:433:33": {
-      "scopeId": "src/chaos.controller.ts:433:33",
-      "name": "src/chaos.controller.ts:433",
+    "src/chaos.controller.ts:467:33": {
+      "scopeId": "src/chaos.controller.ts:467:33",
+      "name": "src/chaos.controller.ts:467",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:354:2",
+      "parentScopeId": "src/chaos.controller.ts:388:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:433:33"
+      "location": "src/chaos.controller.ts:467:33"
     },
-    "src/chaos.controller.ts:447:2": {
-      "scopeId": "src/chaos.controller.ts:447:2",
+    "src/chaos.controller.ts:481:2": {
+      "scopeId": "src/chaos.controller.ts:481:2",
       "name": "ChaosController.unblinding",
       "kind": "method",
       "parentScopeId": "src/chaos.controller.ts",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:447:2"
+      "location": "src/chaos.controller.ts:481:2"
     },
-    "src/chaos.controller.ts:490:29": {
-      "scopeId": "src/chaos.controller.ts:490:29",
-      "name": "src/chaos.controller.ts:490",
+    "src/chaos.controller.ts:524:29": {
+      "scopeId": "src/chaos.controller.ts:524:29",
+      "name": "src/chaos.controller.ts:524",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:447:2",
+      "parentScopeId": "src/chaos.controller.ts:481:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:490:29"
+      "location": "src/chaos.controller.ts:524:29"
     },
-    "src/chaos.controller.ts:505:2": {
-      "scopeId": "src/chaos.controller.ts:505:2",
+    "src/chaos.controller.ts:539:2": {
+      "scopeId": "src/chaos.controller.ts:539:2",
       "name": "ChaosController.cornerCut",
       "kind": "method",
       "parentScopeId": "src/chaos.controller.ts",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:505:2"
+      "location": "src/chaos.controller.ts:539:2"
     },
-    "src/chaos.controller.ts:549:22": {
-      "scopeId": "src/chaos.controller.ts:549:22",
-      "name": "src/chaos.controller.ts:549",
+    "src/chaos.controller.ts:583:22": {
+      "scopeId": "src/chaos.controller.ts:583:22",
+      "name": "src/chaos.controller.ts:583",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:505:2",
+      "parentScopeId": "src/chaos.controller.ts:539:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:549:22"
+      "location": "src/chaos.controller.ts:583:22"
     },
-    "src/chaos.controller.ts:569:2": {
-      "scopeId": "src/chaos.controller.ts:569:2",
+    "src/chaos.controller.ts:603:2": {
+      "scopeId": "src/chaos.controller.ts:603:2",
       "name": "ChaosController.nestedWraps",
       "kind": "method",
       "parentScopeId": "src/chaos.controller.ts",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:569:2"
+      "location": "src/chaos.controller.ts:603:2"
     },
-    "src/chaos.controller.ts:587:23": {
-      "scopeId": "src/chaos.controller.ts:587:23",
-      "name": "src/chaos.controller.ts:587",
+    "src/chaos.controller.ts:621:23": {
+      "scopeId": "src/chaos.controller.ts:621:23",
+      "name": "src/chaos.controller.ts:621",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:569:2",
+      "parentScopeId": "src/chaos.controller.ts:603:2",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:587:23"
+      "location": "src/chaos.controller.ts:621:23"
     },
-    "src/chaos.controller.ts:588:23": {
-      "scopeId": "src/chaos.controller.ts:588:23",
-      "name": "src/chaos.controller.ts:588",
+    "src/chaos.controller.ts:622:23": {
+      "scopeId": "src/chaos.controller.ts:622:23",
+      "name": "src/chaos.controller.ts:622",
       "kind": "arrow",
-      "parentScopeId": "src/chaos.controller.ts:587:23",
+      "parentScopeId": "src/chaos.controller.ts:621:23",
       "filePath": "src/chaos.controller.ts",
-      "location": "src/chaos.controller.ts:588:23"
+      "location": "src/chaos.controller.ts:622:23"
     },
     "src/mark.interceptor.ts": {
       "scopeId": "src/mark.interceptor.ts",
@@ -1019,133 +1035,149 @@
       "filePath": "src/main.ts",
       "location": "src/main.ts:1:1"
     },
-    "src/main.ts:28:13": {
-      "scopeId": "src/main.ts:28:13",
+    "src/main.ts:29:13": {
+      "scopeId": "src/main.ts:29:13",
       "name": "mb",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:28:13"
+      "location": "src/main.ts:29:13"
     },
-    "src/main.ts:32:28": {
-      "scopeId": "src/main.ts:32:28",
-      "name": "src/main.ts:32",
+    "src/main.ts:33:28": {
+      "scopeId": "src/main.ts:33:28",
+      "name": "src/main.ts:33",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:32:28"
+      "location": "src/main.ts:33:28"
     },
-    "src/main.ts:66:1": {
-      "scopeId": "src/main.ts:66:1",
+    "src/main.ts:67:1": {
+      "scopeId": "src/main.ts:67:1",
       "name": "restoreMemoriesOnStartup",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:66:1"
+      "location": "src/main.ts:67:1"
     },
-    "src/main.ts:101:33": {
-      "scopeId": "src/main.ts:101:33",
-      "name": "src/main.ts:101",
+    "src/main.ts:102:33": {
+      "scopeId": "src/main.ts:102:33",
+      "name": "src/main.ts:102",
       "kind": "function",
-      "parentScopeId": "src/main.ts:66:1",
+      "parentScopeId": "src/main.ts:67:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:101:33"
+      "location": "src/main.ts:102:33"
     },
-    "src/main.ts:138:1": {
-      "scopeId": "src/main.ts:138:1",
+    "src/main.ts:139:1": {
+      "scopeId": "src/main.ts:139:1",
       "name": "bootstrap",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:138:1"
+      "location": "src/main.ts:139:1"
     },
-    "src/main.ts:151:10": {
-      "scopeId": "src/main.ts:151:10",
-      "name": "src/main.ts:151",
+    "src/main.ts:155:10": {
+      "scopeId": "src/main.ts:155:10",
+      "name": "src/main.ts:155",
       "kind": "arrow",
-      "parentScopeId": "src/main.ts:138:1",
+      "parentScopeId": "src/main.ts:139:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:151:10"
+      "location": "src/main.ts:155:10"
     },
-    "src/main.ts:230:1": {
-      "scopeId": "src/main.ts:230:1",
+    "src/main.ts:156:34": {
+      "scopeId": "src/main.ts:156:34",
+      "name": "src/main.ts:156",
+      "kind": "arrow",
+      "parentScopeId": "src/main.ts:155:10",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:156:34"
+    },
+    "src/main.ts:236:1": {
+      "scopeId": "src/main.ts:236:1",
       "name": "extractSafe",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:230:1"
+      "location": "src/main.ts:236:1"
     },
-    "src/main.ts:241:1": {
-      "scopeId": "src/main.ts:241:1",
+    "src/main.ts:259:1": {
+      "scopeId": "src/main.ts:259:1",
+      "name": "requestOf",
+      "kind": "function",
+      "parentScopeId": "src/main.ts",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:259:1"
+    },
+    "src/main.ts:280:1": {
+      "scopeId": "src/main.ts:280:1",
       "name": "recordProcessErrorSpan",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:241:1"
+      "location": "src/main.ts:280:1"
     },
-    "src/main.ts:254:1": {
-      "scopeId": "src/main.ts:254:1",
+    "src/main.ts:297:1": {
+      "scopeId": "src/main.ts:297:1",
       "name": "processErrorReport",
       "kind": "function",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:254:1"
+      "location": "src/main.ts:297:1"
     },
-    "src/main.ts:264:47": {
-      "scopeId": "src/main.ts:264:47",
-      "name": "src/main.ts:264",
-      "kind": "arrow",
-      "parentScopeId": "src/main.ts:254:1",
-      "filePath": "src/main.ts",
-      "location": "src/main.ts:264:47"
-    },
-    "src/main.ts:275:23": {
-      "scopeId": "src/main.ts:275:23",
-      "name": "src/main.ts:275",
-      "kind": "arrow",
-      "parentScopeId": "src/main.ts:254:1",
-      "filePath": "src/main.ts",
-      "location": "src/main.ts:275:23"
-    },
-    "src/main.ts:280:26": {
-      "scopeId": "src/main.ts:280:26",
-      "name": "src/main.ts:280",
-      "kind": "arrow",
-      "parentScopeId": "src/main.ts:254:1",
-      "filePath": "src/main.ts",
-      "location": "src/main.ts:280:26"
-    },
-    "src/main.ts:298:33": {
-      "scopeId": "src/main.ts:298:33",
-      "name": "src/main.ts:298",
-      "kind": "arrow",
-      "parentScopeId": "src/main.ts",
-      "filePath": "src/main.ts",
-      "location": "src/main.ts:298:33"
-    },
-    "src/main.ts:302:34": {
-      "scopeId": "src/main.ts:302:34",
-      "name": "src/main.ts:302",
-      "kind": "arrow",
-      "parentScopeId": "src/main.ts",
-      "filePath": "src/main.ts",
-      "location": "src/main.ts:302:34"
-    },
-    "src/main.ts:308:42": {
-      "scopeId": "src/main.ts:308:42",
+    "src/main.ts:308:47": {
+      "scopeId": "src/main.ts:308:47",
       "name": "src/main.ts:308",
       "kind": "arrow",
-      "parentScopeId": "src/main.ts",
+      "parentScopeId": "src/main.ts:297:1",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:308:42"
+      "location": "src/main.ts:308:47"
     },
-    "src/main.ts:313:43": {
-      "scopeId": "src/main.ts:313:43",
-      "name": "src/main.ts:313",
+    "src/main.ts:320:23": {
+      "scopeId": "src/main.ts:320:23",
+      "name": "src/main.ts:320",
+      "kind": "arrow",
+      "parentScopeId": "src/main.ts:297:1",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:320:23"
+    },
+    "src/main.ts:325:26": {
+      "scopeId": "src/main.ts:325:26",
+      "name": "src/main.ts:325",
+      "kind": "arrow",
+      "parentScopeId": "src/main.ts:297:1",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:325:26"
+    },
+    "src/main.ts:343:33": {
+      "scopeId": "src/main.ts:343:33",
+      "name": "src/main.ts:343",
       "kind": "arrow",
       "parentScopeId": "src/main.ts",
       "filePath": "src/main.ts",
-      "location": "src/main.ts:313:43"
+      "location": "src/main.ts:343:33"
+    },
+    "src/main.ts:347:34": {
+      "scopeId": "src/main.ts:347:34",
+      "name": "src/main.ts:347",
+      "kind": "arrow",
+      "parentScopeId": "src/main.ts",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:347:34"
+    },
+    "src/main.ts:353:42": {
+      "scopeId": "src/main.ts:353:42",
+      "name": "src/main.ts:353",
+      "kind": "arrow",
+      "parentScopeId": "src/main.ts",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:353:42"
+    },
+    "src/main.ts:358:43": {
+      "scopeId": "src/main.ts:358:43",
+      "name": "src/main.ts:358",
+      "kind": "arrow",
+      "parentScopeId": "src/main.ts",
+      "filePath": "src/main.ts",
+      "location": "src/main.ts:358:43"
     },
     "src/ai-types/Sentience/index.ts": {
       "scopeId": "src/ai-types/Sentience/index.ts",
@@ -3388,18 +3420,9 @@
       "inferredType": "{ mark?: string } | undefined"
     },
     {
-      "name": "req",
-      "scopeId": "src/chaos.controller.ts:285:2",
-      "declaration": "src/chaos.controller.ts:291:78",
-      "isParameter": true,
-      "isMutable": true,
-      "reassignments": [],
-      "inferredType": "Request"
-    },
-    {
       "name": "res",
       "scopeId": "src/chaos.controller.ts:285:2",
-      "declaration": "src/chaos.controller.ts:291:99",
+      "declaration": "src/chaos.controller.ts:291:78",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3422,17 +3445,9 @@
       "reassignments": []
     },
     {
-      "name": "imark",
-      "scopeId": "src/chaos.controller.ts:285:2",
-      "declaration": "src/chaos.controller.ts:296:9",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
       "name": "user",
       "scopeId": "src/chaos.controller.ts:285:2",
-      "declaration": "src/chaos.controller.ts:297:9",
+      "declaration": "src/chaos.controller.ts:294:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3442,7 +3457,15 @@
     {
       "name": "grenade",
       "scopeId": "src/chaos.controller.ts:285:2",
-      "declaration": "src/chaos.controller.ts:305:9",
+      "declaration": "src/chaos.controller.ts:304:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "result",
+      "scopeId": "src/chaos.controller.ts:304:24",
+      "declaration": "src/chaos.controller.ts:305:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -3450,15 +3473,15 @@
     {
       "name": "gate",
       "scopeId": "src/chaos.controller.ts:285:2",
-      "declaration": "src/chaos.controller.ts:311:9",
+      "declaration": "src/chaos.controller.ts:315:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "body",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:321:26",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:325:34",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3466,8 +3489,85 @@
     },
     {
       "name": "req",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:321:70",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:325:78",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:325:99",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "id",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:326:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "mark",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:327:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "imark",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:330:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "user",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:331:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "UserEntity",
+      "typePath": "UserEntity"
+    },
+    {
+      "name": "grenade",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:339:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "gate",
+      "scopeId": "src/chaos.controller.ts:319:2",
+      "declaration": "src/chaos.controller.ts:345:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "body",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:355:26",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "{ mark?: string } | undefined"
+    },
+    {
+      "name": "req",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:355:70",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3475,24 +3575,24 @@
     },
     {
       "name": "id",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:322:9",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:356:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mark",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:323:9",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:357:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "user",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:324:9",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:358:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3501,8 +3601,8 @@
     },
     {
       "name": "userResponse",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:332:9",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:366:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3510,8 +3610,8 @@
     },
     {
       "name": "sleep",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:345:9",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:379:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3519,24 +3619,24 @@
     },
     {
       "name": "resolve",
-      "scopeId": "src/chaos.controller.ts:345:35",
-      "declaration": "src/chaos.controller.ts:345:36",
+      "scopeId": "src/chaos.controller.ts:379:35",
+      "declaration": "src/chaos.controller.ts:379:36",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "result",
-      "scopeId": "src/chaos.controller.ts:315:2",
-      "declaration": "src/chaos.controller.ts:350:9",
+      "scopeId": "src/chaos.controller.ts:349:2",
+      "declaration": "src/chaos.controller.ts:384:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "body",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:360:27",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:394:27",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3544,8 +3644,8 @@
     },
     {
       "name": "req",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:360:71",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:394:71",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3553,24 +3653,24 @@
     },
     {
       "name": "id",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:361:9",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:395:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mark",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:362:9",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:396:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "user",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:363:9",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:397:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3579,56 +3679,56 @@
     },
     {
       "name": "queueKey",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:372:9",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:406:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "message",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:376:9",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:410:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "crafted",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:411:10",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:445:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "result",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:413:10",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:447:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "responsePayload",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:396:9",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:430:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "queueHandler",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:402:9",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:436:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "msg",
-      "scopeId": "src/chaos.controller.ts:402:29",
-      "declaration": "src/chaos.controller.ts:402:30",
+      "scopeId": "src/chaos.controller.ts:436:29",
+      "declaration": "src/chaos.controller.ts:436:30",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3636,8 +3736,8 @@
     },
     {
       "name": "crafted",
-      "scopeId": "src/chaos.controller.ts:402:29",
-      "declaration": "src/chaos.controller.ts:403:10",
+      "scopeId": "src/chaos.controller.ts:436:29",
+      "declaration": "src/chaos.controller.ts:437:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3645,64 +3745,64 @@
     },
     {
       "name": "error",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:416:10",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:450:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "flow",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:417:10",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:451:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "erroredEdge",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:427:10",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:461:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/chaos.controller.ts:427:49",
-      "declaration": "src/chaos.controller.ts:427:50",
+      "scopeId": "src/chaos.controller.ts:461:49",
+      "declaration": "src/chaos.controller.ts:461:50",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "erroredResponse",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:428:10",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:462:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "report",
-      "scopeId": "src/chaos.controller.ts:354:2",
-      "declaration": "src/chaos.controller.ts:429:10",
+      "scopeId": "src/chaos.controller.ts:388:2",
+      "declaration": "src/chaos.controller.ts:463:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/chaos.controller.ts:433:33",
-      "declaration": "src/chaos.controller.ts:433:34",
+      "scopeId": "src/chaos.controller.ts:467:33",
+      "declaration": "src/chaos.controller.ts:467:34",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "body",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:454:28",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:488:28",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3710,8 +3810,8 @@
     },
     {
       "name": "req",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:454:72",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:488:72",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3719,24 +3819,24 @@
     },
     {
       "name": "id",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:455:9",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:489:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mark",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:456:9",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:490:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "user",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:457:9",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:491:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3745,56 +3845,56 @@
     },
     {
       "name": "queueKey",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:463:9",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:497:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "message",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:467:9",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "crafted",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:498:9",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "result",
-      "scopeId": "src/chaos.controller.ts:447:2",
+      "scopeId": "src/chaos.controller.ts:481:2",
       "declaration": "src/chaos.controller.ts:501:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
+      "name": "crafted",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:532:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "result",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:535:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
       "name": "responsePayload",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:484:9",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:518:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "queueHandler",
-      "scopeId": "src/chaos.controller.ts:447:2",
-      "declaration": "src/chaos.controller.ts:490:9",
+      "scopeId": "src/chaos.controller.ts:481:2",
+      "declaration": "src/chaos.controller.ts:524:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "msg",
-      "scopeId": "src/chaos.controller.ts:490:29",
-      "declaration": "src/chaos.controller.ts:490:30",
+      "scopeId": "src/chaos.controller.ts:524:29",
+      "declaration": "src/chaos.controller.ts:524:30",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3802,8 +3902,8 @@
     },
     {
       "name": "crafted",
-      "scopeId": "src/chaos.controller.ts:490:29",
-      "declaration": "src/chaos.controller.ts:491:10",
+      "scopeId": "src/chaos.controller.ts:524:29",
+      "declaration": "src/chaos.controller.ts:525:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3811,8 +3911,8 @@
     },
     {
       "name": "body",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:512:27",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:546:27",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3820,8 +3920,8 @@
     },
     {
       "name": "req",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:512:88",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:546:88",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3829,8 +3929,8 @@
     },
     {
       "name": "res",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:512:130",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:546:130",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3838,32 +3938,32 @@
     },
     {
       "name": "id",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:513:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:547:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mark",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:514:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:548:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "flavor",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:515:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:549:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "user",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:516:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:550:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3872,16 +3972,16 @@
     },
     {
       "name": "taskId",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:525:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:559:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "payload",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:534:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:568:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3889,16 +3989,16 @@
     },
     {
       "name": "craft",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:549:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:583:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "data",
-      "scopeId": "src/chaos.controller.ts:549:22",
-      "declaration": "src/chaos.controller.ts:549:23",
+      "scopeId": "src/chaos.controller.ts:583:22",
+      "declaration": "src/chaos.controller.ts:583:23",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3906,8 +4006,8 @@
     },
     {
       "name": "crafted",
-      "scopeId": "src/chaos.controller.ts:549:22",
-      "declaration": "src/chaos.controller.ts:554:10",
+      "scopeId": "src/chaos.controller.ts:583:22",
+      "declaration": "src/chaos.controller.ts:588:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3915,24 +4015,24 @@
     },
     {
       "name": "crafted",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:563:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:597:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "result",
-      "scopeId": "src/chaos.controller.ts:505:2",
-      "declaration": "src/chaos.controller.ts:565:9",
+      "scopeId": "src/chaos.controller.ts:539:2",
+      "declaration": "src/chaos.controller.ts:599:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "body",
-      "scopeId": "src/chaos.controller.ts:569:2",
-      "declaration": "src/chaos.controller.ts:575:23",
+      "scopeId": "src/chaos.controller.ts:603:2",
+      "declaration": "src/chaos.controller.ts:609:23",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -3940,24 +4040,24 @@
     },
     {
       "name": "id",
-      "scopeId": "src/chaos.controller.ts:569:2",
-      "declaration": "src/chaos.controller.ts:576:9",
+      "scopeId": "src/chaos.controller.ts:603:2",
+      "declaration": "src/chaos.controller.ts:610:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mark",
-      "scopeId": "src/chaos.controller.ts:569:2",
-      "declaration": "src/chaos.controller.ts:577:9",
+      "scopeId": "src/chaos.controller.ts:603:2",
+      "declaration": "src/chaos.controller.ts:611:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "user",
-      "scopeId": "src/chaos.controller.ts:569:2",
-      "declaration": "src/chaos.controller.ts:578:9",
+      "scopeId": "src/chaos.controller.ts:603:2",
+      "declaration": "src/chaos.controller.ts:612:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3966,24 +4066,24 @@
     },
     {
       "name": "worker",
-      "scopeId": "src/chaos.controller.ts:569:2",
-      "declaration": "src/chaos.controller.ts:587:9",
+      "scopeId": "src/chaos.controller.ts:603:2",
+      "declaration": "src/chaos.controller.ts:621:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "inner",
-      "scopeId": "src/chaos.controller.ts:587:23",
-      "declaration": "src/chaos.controller.ts:588:10",
+      "scopeId": "src/chaos.controller.ts:621:23",
+      "declaration": "src/chaos.controller.ts:622:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "text",
-      "scopeId": "src/chaos.controller.ts:588:23",
-      "declaration": "src/chaos.controller.ts:589:11",
+      "scopeId": "src/chaos.controller.ts:622:23",
+      "declaration": "src/chaos.controller.ts:623:11",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -3991,24 +4091,24 @@
     },
     {
       "name": "text",
-      "scopeId": "src/chaos.controller.ts:587:23",
-      "declaration": "src/chaos.controller.ts:592:10",
+      "scopeId": "src/chaos.controller.ts:621:23",
+      "declaration": "src/chaos.controller.ts:626:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "inner",
-      "scopeId": "src/chaos.controller.ts:569:2",
-      "declaration": "src/chaos.controller.ts:596:9",
+      "scopeId": "src/chaos.controller.ts:603:2",
+      "declaration": "src/chaos.controller.ts:630:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "result",
-      "scopeId": "src/chaos.controller.ts:569:2",
-      "declaration": "src/chaos.controller.ts:597:9",
+      "scopeId": "src/chaos.controller.ts:603:2",
+      "declaration": "src/chaos.controller.ts:631:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -4352,18 +4452,18 @@
     {
       "name": "tick",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:27:6",
+      "declaration": "src/main.ts:28:6",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [
-        "src/main.ts:33:3"
+        "src/main.ts:34:3"
       ],
       "inferredType": "number"
     },
     {
       "name": "mb",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:28:8",
+      "declaration": "src/main.ts:29:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -4371,8 +4471,8 @@
     },
     {
       "name": "bytes",
-      "scopeId": "src/main.ts:28:13",
-      "declaration": "src/main.ts:28:14",
+      "scopeId": "src/main.ts:29:13",
+      "declaration": "src/main.ts:29:14",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4380,8 +4480,8 @@
     },
     {
       "name": "result",
-      "scopeId": "src/main.ts:28:13",
-      "declaration": "src/main.ts:29:9",
+      "scopeId": "src/main.ts:29:13",
+      "declaration": "src/main.ts:30:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -4389,39 +4489,39 @@
     {
       "name": "timer",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:32:8",
+      "declaration": "src/main.ts:33:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "globalWithGc",
-      "scopeId": "src/main.ts:32:28",
-      "declaration": "src/main.ts:34:9",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "gcForced",
-      "scopeId": "src/main.ts:32:28",
+      "scopeId": "src/main.ts:33:28",
       "declaration": "src/main.ts:35:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
+      "name": "gcForced",
+      "scopeId": "src/main.ts:33:28",
+      "declaration": "src/main.ts:36:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
       "name": "mem",
-      "scopeId": "src/main.ts:32:28",
-      "declaration": "src/main.ts:39:9",
+      "scopeId": "src/main.ts:33:28",
+      "declaration": "src/main.ts:40:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "forced",
-      "scopeId": "src/main.ts:32:28",
-      "declaration": "src/main.ts:40:9",
+      "scopeId": "src/main.ts:33:28",
+      "declaration": "src/main.ts:41:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -4429,7 +4529,7 @@
     {
       "name": "SentienceConstructor",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:50:7",
+      "declaration": "src/main.ts:51:7",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -4438,7 +4538,7 @@
     {
       "name": "aiMemories",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:54:6",
+      "declaration": "src/main.ts:55:6",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [],
@@ -4446,91 +4546,91 @@
     },
     {
       "name": "fs",
-      "scopeId": "src/main.ts:66:1",
-      "declaration": "src/main.ts:68:9",
-      "isParameter": false,
-      "isMutable": false,
-      "reassignments": []
-    },
-    {
-      "name": "path",
-      "scopeId": "src/main.ts:66:1",
+      "scopeId": "src/main.ts:67:1",
       "declaration": "src/main.ts:69:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
+      "name": "path",
+      "scopeId": "src/main.ts:67:1",
+      "declaration": "src/main.ts:70:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
       "name": "memoryFilePath",
-      "scopeId": "src/main.ts:66:1",
-      "declaration": "src/main.ts:72:9",
+      "scopeId": "src/main.ts:67:1",
+      "declaration": "src/main.ts:73:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "data",
-      "scopeId": "src/main.ts:66:1",
-      "declaration": "src/main.ts:75:10",
+      "scopeId": "src/main.ts:67:1",
+      "declaration": "src/main.ts:76:10",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "restoredCount",
-      "scopeId": "src/main.ts:66:1",
-      "declaration": "src/main.ts:100:9",
+      "scopeId": "src/main.ts:67:1",
+      "declaration": "src/main.ts:101:9",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [
-        "src/main.ts:117:6"
+        "src/main.ts:118:6"
       ],
       "inferredType": "number"
     },
     {
       "name": "item",
-      "scopeId": "src/main.ts:101:33",
-      "declaration": "src/main.ts:101:43",
+      "scopeId": "src/main.ts:102:33",
+      "declaration": "src/main.ts:102:43",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "memoryId",
-      "scopeId": "src/main.ts:101:33",
-      "declaration": "src/main.ts:102:12",
+      "scopeId": "src/main.ts:102:33",
+      "declaration": "src/main.ts:103:12",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "memoryInstance",
-      "scopeId": "src/main.ts:101:33",
-      "declaration": "src/main.ts:104:12",
+      "scopeId": "src/main.ts:102:33",
+      "declaration": "src/main.ts:105:12",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "app",
-      "scopeId": "src/main.ts:138:1",
-      "declaration": "src/main.ts:139:8",
+      "scopeId": "src/main.ts:139:1",
+      "declaration": "src/main.ts:140:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "otel",
-      "scopeId": "src/main.ts:138:1",
-      "declaration": "src/main.ts:146:8",
+      "scopeId": "src/main.ts:139:1",
+      "declaration": "src/main.ts:147:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mtm",
-      "scopeId": "src/main.ts:138:1",
-      "declaration": "src/main.ts:150:8",
+      "scopeId": "src/main.ts:139:1",
+      "declaration": "src/main.ts:151:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": [],
@@ -4538,8 +4638,8 @@
     },
     {
       "name": "req",
-      "scopeId": "src/main.ts:151:10",
-      "declaration": "src/main.ts:151:11",
+      "scopeId": "src/main.ts:155:10",
+      "declaration": "src/main.ts:155:11",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4547,8 +4647,8 @@
     },
     {
       "name": "res",
-      "scopeId": "src/main.ts:151:10",
-      "declaration": "src/main.ts:151:25",
+      "scopeId": "src/main.ts:155:10",
+      "declaration": "src/main.ts:155:25",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4556,8 +4656,8 @@
     },
     {
       "name": "next",
-      "scopeId": "src/main.ts:151:10",
-      "declaration": "src/main.ts:151:40",
+      "scopeId": "src/main.ts:155:10",
+      "declaration": "src/main.ts:155:40",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4565,24 +4665,24 @@
     },
     {
       "name": "config",
-      "scopeId": "src/main.ts:138:1",
-      "declaration": "src/main.ts:161:8",
+      "scopeId": "src/main.ts:139:1",
+      "declaration": "src/main.ts:167:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "document",
-      "scopeId": "src/main.ts:138:1",
-      "declaration": "src/main.ts:169:8",
+      "scopeId": "src/main.ts:139:1",
+      "declaration": "src/main.ts:175:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "port",
-      "scopeId": "src/main.ts:138:1",
-      "declaration": "src/main.ts:172:8",
+      "scopeId": "src/main.ts:139:1",
+      "declaration": "src/main.ts:178:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
@@ -4590,7 +4690,7 @@
     {
       "name": "asyncFlowProvider",
       "scopeId": "src/main.ts",
-      "declaration": "src/main.ts:228:5",
+      "declaration": "src/main.ts:234:5",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [],
@@ -4598,8 +4698,8 @@
     },
     {
       "name": "instance",
-      "scopeId": "src/main.ts:230:1",
-      "declaration": "src/main.ts:230:23",
+      "scopeId": "src/main.ts:236:1",
+      "declaration": "src/main.ts:236:23",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4607,16 +4707,51 @@
     },
     {
       "name": "result",
-      "scopeId": "src/main.ts:230:1",
-      "declaration": "src/main.ts:236:9",
+      "scopeId": "src/main.ts:236:1",
+      "declaration": "src/main.ts:242:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
+      "name": "requestScope",
+      "scopeId": "src/main.ts",
+      "declaration": "src/main.ts:257:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "AsyncLocalStorage"
+    },
+    {
+      "name": "scope",
+      "scopeId": "src/main.ts:259:1",
+      "declaration": "src/main.ts:259:21",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "requestScopeEntry | undefined"
+    },
+    {
+      "name": "result",
+      "scopeId": "src/main.ts:259:1",
+      "declaration": "src/main.ts:267:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "body",
+      "scopeId": "src/main.ts:259:1",
+      "declaration": "src/main.ts:266:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "unknown"
+    },
+    {
       "name": "kind",
-      "scopeId": "src/main.ts:241:1",
-      "declaration": "src/main.ts:241:33",
+      "scopeId": "src/main.ts:280:1",
+      "declaration": "src/main.ts:280:33",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4624,8 +4759,8 @@
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:241:1",
-      "declaration": "src/main.ts:241:47",
+      "scopeId": "src/main.ts:280:1",
+      "declaration": "src/main.ts:280:47",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4633,8 +4768,8 @@
     },
     {
       "name": "branch",
-      "scopeId": "src/main.ts:241:1",
-      "declaration": "src/main.ts:241:61",
+      "scopeId": "src/main.ts:280:1",
+      "declaration": "src/main.ts:280:61",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4642,8 +4777,8 @@
     },
     {
       "name": "frameEdgeId",
-      "scopeId": "src/main.ts:241:1",
-      "declaration": "src/main.ts:241:79",
+      "scopeId": "src/main.ts:280:1",
+      "declaration": "src/main.ts:280:79",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4651,25 +4786,34 @@
     },
     {
       "name": "runningCount",
-      "scopeId": "src/main.ts:241:1",
-      "declaration": "src/main.ts:241:107",
+      "scopeId": "src/main.ts:280:1",
+      "declaration": "src/main.ts:280:107",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
       "inferredType": "number"
     },
     {
+      "name": "request",
+      "scopeId": "src/main.ts:280:1",
+      "declaration": "src/main.ts:280:129",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "ReturnType<typeof requestOf>"
+    },
+    {
       "name": "span",
-      "scopeId": "src/main.ts:241:1",
-      "declaration": "src/main.ts:242:8",
+      "scopeId": "src/main.ts:280:1",
+      "declaration": "src/main.ts:281:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "kind",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:254:30",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:297:30",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4677,8 +4821,8 @@
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:254:44",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:297:44",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4686,124 +4830,132 @@
     },
     {
       "name": "flow",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:255:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:298:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "instance",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:256:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:299:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "frame",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:257:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:300:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "running",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:258:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:301:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "request",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:302:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "erroredEdge",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:264:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:308:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/main.ts:264:47",
-      "declaration": "src/main.ts:264:48",
+      "scopeId": "src/main.ts:308:47",
+      "declaration": "src/main.ts:308:48",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "attemptedArgs",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:265:6",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:309:6",
       "isParameter": false,
       "isMutable": true,
       "reassignments": [
-        "src/main.ts:268:3",
-        "src/main.ts:270:3"
+        "src/main.ts:312:3",
+        "src/main.ts:314:3"
       ],
       "inferredType": "unknown"
     },
     {
       "name": "props",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:267:9",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:311:9",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "report",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:272:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:316:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/main.ts:275:23",
-      "declaration": "src/main.ts:275:24",
+      "scopeId": "src/main.ts:320:23",
+      "declaration": "src/main.ts:320:24",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "edge",
-      "scopeId": "src/main.ts:280:26",
-      "declaration": "src/main.ts:280:27",
+      "scopeId": "src/main.ts:325:26",
+      "declaration": "src/main.ts:325:27",
       "isParameter": true,
       "isMutable": true,
       "reassignments": []
     },
     {
       "name": "segments",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:291:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:336:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "mark",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:292:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:337:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "answered",
-      "scopeId": "src/main.ts:254:1",
-      "declaration": "src/main.ts:293:8",
+      "scopeId": "src/main.ts:297:1",
+      "declaration": "src/main.ts:338:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:298:33",
-      "declaration": "src/main.ts:298:34",
+      "scopeId": "src/main.ts:343:33",
+      "declaration": "src/main.ts:343:34",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4811,8 +4963,8 @@
     },
     {
       "name": "reason",
-      "scopeId": "src/main.ts:302:34",
-      "declaration": "src/main.ts:302:35",
+      "scopeId": "src/main.ts:347:34",
+      "declaration": "src/main.ts:347:35",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4820,16 +4972,16 @@
     },
     {
       "name": "error",
-      "scopeId": "src/main.ts:302:34",
-      "declaration": "src/main.ts:303:8",
+      "scopeId": "src/main.ts:347:34",
+      "declaration": "src/main.ts:348:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []
     },
     {
       "name": "opts",
-      "scopeId": "src/main.ts:308:42",
-      "declaration": "src/main.ts:308:43",
+      "scopeId": "src/main.ts:353:42",
+      "declaration": "src/main.ts:353:43",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4837,8 +4989,8 @@
     },
     {
       "name": "opts",
-      "scopeId": "src/main.ts:313:43",
-      "declaration": "src/main.ts:313:44",
+      "scopeId": "src/main.ts:358:43",
+      "declaration": "src/main.ts:358:44",
       "isParameter": true,
       "isMutable": true,
       "reassignments": [],
@@ -4846,8 +4998,8 @@
     },
     {
       "name": "instance",
-      "scopeId": "src/main.ts:313:43",
-      "declaration": "src/main.ts:314:8",
+      "scopeId": "src/main.ts:358:43",
+      "declaration": "src/main.ts:359:8",
       "isParameter": false,
       "isMutable": false,
       "reassignments": []

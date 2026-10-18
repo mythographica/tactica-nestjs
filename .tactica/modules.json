@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-27T20:53:18.600Z",
+  "generatedAt": "2026-10-18T07:16:49.196Z",
   "modules": {
     "src/entities/user.entity.ts": {
       "filePath": "src/entities/user.entity.ts",
@@ -2109,7 +2109,9 @@
         "src/ai-types/bootstrap.ts"
       ],
       "unresolvedSpecifiers": [],
-      "builtinSpecifiers": []
+      "builtinSpecifiers": [
+        "node:async_hooks"
+      ]
     },
     "src/ai-types/Sentience/index.ts": {
       "filePath": "src/ai-types/Sentience/index.ts",

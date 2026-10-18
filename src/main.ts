@@ -14,6 +14,7 @@ import { getFlow, getErrorInstance, getRunningEdges, stats } from '@mnemonica/di
 import { resolveCrash } from './crash-park';
 import { trace, SpanStatusCode } from '@opentelemetry/api';
 import type { Request, Response, NextFunction } from 'express';
+import { AsyncLocalStorage } from 'node:async_hooks';
 import '../.tactica/registry'; // Augments mnemonica's TypeRegistry
 import { bootstrapAITypes } from './ai-types/bootstrap';
 import type { Sentience, Sentience_Memory } from '../.tactica/types';
@@ -148,7 +149,12 @@ async function bootstrap() {
 	// crash handlers below via the module-level binding.
 	asyncFlowProvider = app.get(AsyncFlowProvider, { strict: false });
 	const mtm = new MnemonicaTraceMiddleware(trace.getTracer('tactica-nestjs'), otel, asyncFlowProvider);
-	app.use((req: Request, res: Response, next: NextFunction) => mtm.use(req, res, next));
+	// requestScope wraps the whole request: everything the request starts,
+	// including a failure that escapes to the process-level handlers below,
+	// can read which request it belongs to
+	app.use((req: Request, res: Response, next: NextFunction) => {
+		requestScope.run({ req, res }, () => mtm.use(req, res, next));
+	});
 
 	// Enable global validation pipe
 	app.useGlobalPipes(new ValidationPipe({
@@ -238,9 +244,46 @@ function extractSafe (instance: object): unknown {
 	}
 }
 
-function recordProcessErrorSpan(kind: string, error: Error, branch: string[], frameEdgeId: number | null, runningCount: number) {
+// The request that started the failing execution. The process-level
+// handlers run inside the failing execution's async context (that is how
+// asyncFlowProvider.currentFrame() finds its frame there), so the request
+// stored here at the boundary is readable in them: the crash report and the
+// process.* span carry the request that came in from outside the process.
+type requestScopeEntry = {
+	req : Request;
+	res : Response;
+};
+
+const requestScope = new AsyncLocalStorage<requestScopeEntry>();
+
+function requestOf (scope: requestScopeEntry | undefined) {
+	if (!scope) {
+		const result = null;
+		return result;
+	}
+	const { req, res } = scope;
+	// express types the body as any — keep it unknown in the report
+	const body: unknown = req.body;
+	const result = {
+		method      : req.method,
+		url         : req.originalUrl,
+		params      : req.params,
+		query       : req.query,
+		body,
+		// false: the response already went out before the failure
+		// (the chaos routes answer 201 first); true: still open
+		open        : !res.headersSent,
+	};
+	return result;
+}
+
+function recordProcessErrorSpan(kind: string, error: Error, branch: string[], frameEdgeId: number | null, runningCount: number, request: ReturnType<typeof requestOf>) {
 	const span = trace.getTracer('tactica-nestjs').startSpan(`process.${kind}`);
 	span.setAttribute('process.error.kind', kind);
+	if (request) {
+		span.setAttribute('http.method', request.method);
+		span.setAttribute('http.url', request.url);
+	}
 	span.setAttribute('dive.branch', branch.join(' → '));
 	if (frameEdgeId !== null) {
 		span.setAttribute('dive.frame_edge_id', frameEdgeId);
@@ -256,6 +299,7 @@ function processErrorReport (kind: string, error: Error): void {
 	const instance = getErrorInstance(error);
 	const frame = asyncFlowProvider?.currentFrame();
 	const running = getRunningEdges();
+	const request = requestOf(requestScope.getStore());
 	// Errored-construction walk (2026-09-03): if the failure IS a failed
 	// mnemonica construction, the caught error is the errored instance
 	// itself and core's getProps exposes the attempted constructor args
@@ -272,6 +316,7 @@ function processErrorReport (kind: string, error: Error): void {
 	const report = {
 		kind,
 		message  : error.message,
+		request,
 		branch   : flow.map((edge) => `${edge.kind}:${edge.name}`),
 		instance : instance ? utils.extract(instance) : null,
 		frame    : frame
@@ -292,7 +337,7 @@ function processErrorReport (kind: string, error: Error): void {
 	const mark = segments[segments.length - 1];
 	const answered = resolveCrash(mark, report);
 	console.log(`[chaos] answered=${answered} ${JSON.stringify(report)}`);
-	recordProcessErrorSpan(kind, error, report.branch, frame?.edgeId ?? null, running.length);
+	recordProcessErrorSpan(kind, error, report.branch, frame?.edgeId ?? null, running.length, request);
 }
 
 process.on('uncaughtException', (error: Error) => {

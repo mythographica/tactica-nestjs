@@ -282,6 +282,40 @@ export class ChaosController {
 		await gate;
 	}
 
+	@Post('reject_un_response')
+	@ApiOperation({
+		summary: 'unhandledRejection that answers its own request',
+		description: 'Parks the response, leaves a rejected promise dangling on the next tick; the process-level unhandledRejection handler answers the parked socket with HTTP 500 + the report',
+	})
+	@ApiResponse({ status: 500, description: 'Rejection report delivered as the response body' })
+	async rejectUnResponse (@Body() body: { mark?: string } | undefined, @Res() res: Response): Promise<void> {
+		const id = crypto.randomUUID();
+		const mark = markOf(body?.mark);
+		const user = new UserEntity({
+			id,
+			email: `${mark}@chaos.local`,
+			name: `chaos-reject-un-${mark}-${id}`,
+		});
+
+		// Same escape as /chaos/reject — but the response is PARKED below, so
+		// the process-level handler can answer THIS request with the report.
+		// The mark stays the LAST ':'-separated segment: main.ts parses it
+		// from error.message to find the parked entry.
+		const grenade = wrap(() => {
+			const result = Promise.reject(new Error(`chaos-reject-un:${id}:${mark}`));
+			return result;
+		}, user, 'chaos:reject-un-response');
+
+		// Deliberately NOT awaited/caught — the rejection stays dangling.
+		setImmediate(grenade);
+
+		// @Res() without passthrough: Nest never auto-sends. The gate
+		// resolves when the process-level unhandledRejection handler answers
+		// res.status(500).json(report) — or when the park timeout fires.
+		const gate = parkCrash(mark, res);
+		await gate;
+	}
+
 	@Post('crash_int_response')
 	@ApiOperation({
 		summary: 'uncaughtException answered with interceptor correlation',

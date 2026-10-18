@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-27T20:53:18.576Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T07:16:49.178Z",
   "flow": {
     "Error": [
       {
@@ -82,67 +82,79 @@
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:306:10",
+        "location": "src/chaos.controller.ts:305:34",
+        "kind": "instantiation",
+        "code": "new Error(`chaos-reject-un:${id}:${mark}`)",
+        "context": "new expression"
+      },
+      {
+        "location": "src/chaos.controller.ts:306:4",
+        "kind": "return",
+        "code": "return result;",
+        "targetType": "Error"
+      },
+      {
+        "location": "src/chaos.controller.ts:340:10",
         "kind": "instantiation",
         "code": "new Error(`chaos-crash-int:${id}:${imark}:${mark}`)",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:351:3",
+        "location": "src/chaos.controller.ts:385:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/chaos.controller.ts:374:10",
+        "location": "src/chaos.controller.ts:408:10",
         "kind": "instantiation",
         "code": "new Error('blindspot: no queue key stashed — MistPlusMiddleware not registered for this route')",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:388:4",
+        "location": "src/chaos.controller.ts:422:4",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/chaos.controller.ts:414:4",
+        "location": "src/chaos.controller.ts:448:4",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/chaos.controller.ts:465:10",
+        "location": "src/chaos.controller.ts:499:10",
         "kind": "instantiation",
         "code": "new Error('unblinding: no queue key stashed — MistPlusMiddleware not registered for this route')",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:477:4",
+        "location": "src/chaos.controller.ts:511:4",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/chaos.controller.ts:502:3",
+        "location": "src/chaos.controller.ts:536:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/chaos.controller.ts:527:10",
+        "location": "src/chaos.controller.ts:561:10",
         "kind": "instantiation",
         "code": "new Error('corner_cut: no task id attached — CornerCutMiddleware not registered for this route')",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:566:3",
+        "location": "src/chaos.controller.ts:600:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/chaos.controller.ts:598:3",
+        "location": "src/chaos.controller.ts:632:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
@@ -229,31 +241,43 @@
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:30:3",
+        "location": "src/main.ts:31:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:233:3",
+        "location": "src/main.ts:239:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:237:3",
+        "location": "src/main.ts:243:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:303:51",
+        "location": "src/main.ts:262:3",
+        "kind": "return",
+        "code": "return result;",
+        "targetType": "Error"
+      },
+      {
+        "location": "src/main.ts:277:2",
+        "kind": "return",
+        "code": "return result;",
+        "targetType": "Error"
+      },
+      {
+        "location": "src/main.ts:348:51",
         "kind": "instantiation",
         "code": "new Error(String(reason))",
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:304:2",
+        "location": "src/main.ts:349:2",
         "kind": "passAsArg",
         "code": "processErrorReport('unhandledRejection', error)",
         "targetType": "Error",
@@ -446,62 +470,62 @@
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:345:17",
+        "location": "src/chaos.controller.ts:379:17",
         "kind": "instantiation",
         "code": "new Promise<void>((resolve) => {\n\t\t\tsetTimeout(resolve, 1000);\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:557:11",
+        "location": "src/chaos.controller.ts:591:11",
         "kind": "propertyRead",
         "code": "data.name",
         "propertyName": "name",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:99:8",
+        "location": "src/main.ts:100:8",
         "kind": "propertyRead",
         "code": "data.memories",
         "propertyName": "memories",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:99:25",
+        "location": "src/main.ts:100:25",
         "kind": "propertyRead",
         "code": "data.memories.items",
         "propertyName": "items",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:99:25",
+        "location": "src/main.ts:100:25",
         "kind": "propertyRead",
         "code": "data.memories",
         "propertyName": "memories",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:101:5",
+        "location": "src/main.ts:102:5",
         "kind": "methodCall",
         "code": "data.memories.items.forEach(function (item) {\n\t\t\t\t\tconst memoryId = item.id;\n\n\t\t\t\t\tconst memoryInsta",
         "propertyName": "forEach",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:101:5",
+        "location": "src/main.ts:102:5",
         "kind": "propertyRead",
         "code": "data.memories.items.forEach",
         "propertyName": "forEach",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:101:5",
+        "location": "src/main.ts:102:5",
         "kind": "propertyRead",
         "code": "data.memories.items",
         "propertyName": "items",
         "targetType": "Promise"
       },
       {
-        "location": "src/main.ts:101:5",
+        "location": "src/main.ts:102:5",
         "kind": "propertyRead",
         "code": "data.memories",
         "propertyName": "memories",
@@ -1011,134 +1035,147 @@
         "context": "arg 1 to wrap"
       },
       {
-        "location": "src/chaos.controller.ts:297:16",
+        "location": "src/chaos.controller.ts:294:16",
+        "kind": "instantiation",
+        "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-reject-un-${mark}-${id}`,\n\t",
+        "context": "new expression"
+      },
+      {
+        "location": "src/chaos.controller.ts:304:19",
+        "kind": "passAsArg",
+        "code": "wrap(() => {\n\t\t\tconst result = Promise.reject(new Error(`chaos-reject-un:${id}:${mark}`));\n\t\t\treturn",
+        "targetType": "UserEntity",
+        "context": "arg 1 to wrap"
+      },
+      {
+        "location": "src/chaos.controller.ts:331:16",
         "kind": "instantiation",
         "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-int-${mark}-${imark}-${id}`",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:305:19",
+        "location": "src/chaos.controller.ts:339:19",
         "kind": "passAsArg",
         "code": "wrap(() => {\n\t\t\tthrow new Error(`chaos-crash-int:${id}:${imark}:${mark}`);\n\t\t}, user, 'chaos:crash-i",
         "targetType": "UserEntity",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "src/chaos.controller.ts:324:16",
+        "location": "src/chaos.controller.ts:358:16",
         "kind": "instantiation",
         "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-midsleep-${mark}-${id}`,\n\t\t",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:332:28",
+        "location": "src/chaos.controller.ts:366:28",
         "kind": "propertyRead",
         "code": "user.UserResponse",
         "propertyName": "UserResponse",
         "targetType": "UserEntity"
       },
       {
-        "location": "src/chaos.controller.ts:363:16",
+        "location": "src/chaos.controller.ts:397:16",
         "kind": "instantiation",
         "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-mist-${mark}-${id}`,\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:381:24",
+        "location": "src/chaos.controller.ts:415:24",
         "kind": "propertyRead",
         "code": "user.UserResponse",
         "propertyName": "UserResponse",
         "targetType": "UserEntity"
       },
       {
-        "location": "src/chaos.controller.ts:402:24",
+        "location": "src/chaos.controller.ts:436:24",
         "kind": "passAsArg",
         "code": "wrap((msg: queueMessage) => {\n\t\t\tconst crafted = new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t",
         "targetType": "UserEntity",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "src/chaos.controller.ts:403:24",
+        "location": "src/chaos.controller.ts:437:24",
         "kind": "propertyRead",
         "code": "user.UserResponse",
         "propertyName": "UserResponse",
         "targetType": "UserEntity"
       },
       {
-        "location": "src/chaos.controller.ts:434:24",
+        "location": "src/chaos.controller.ts:468:24",
         "kind": "passAsArg",
         "code": "extractSafe(user)",
         "targetType": "UserEntity",
         "context": "arg 0 to extractSafe"
       },
       {
-        "location": "src/chaos.controller.ts:457:16",
+        "location": "src/chaos.controller.ts:491:16",
         "kind": "instantiation",
         "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-unblind-${mark}-${id}`,\n\t\t}",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:470:24",
+        "location": "src/chaos.controller.ts:504:24",
         "kind": "propertyRead",
         "code": "user.UserResponse",
         "propertyName": "UserResponse",
         "targetType": "UserEntity"
       },
       {
-        "location": "src/chaos.controller.ts:490:24",
+        "location": "src/chaos.controller.ts:524:24",
         "kind": "passAsArg",
         "code": "wrap((msg: queueMessage) => {\n\t\t\tconst crafted = new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t",
         "targetType": "UserEntity",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "src/chaos.controller.ts:491:24",
+        "location": "src/chaos.controller.ts:525:24",
         "kind": "propertyRead",
         "code": "user.UserResponse",
         "propertyName": "UserResponse",
         "targetType": "UserEntity"
       },
       {
-        "location": "src/chaos.controller.ts:516:16",
+        "location": "src/chaos.controller.ts:550:16",
         "kind": "instantiation",
         "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-corner-${mark}-${id}`,\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:549:17",
+        "location": "src/chaos.controller.ts:583:17",
         "kind": "passAsArg",
         "code": "wrap((data: { name?: string }) => {\n\t\t\t// data.name is undefined on the malformed payload: the explo",
         "targetType": "UserEntity",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "src/chaos.controller.ts:554:24",
+        "location": "src/chaos.controller.ts:588:24",
         "kind": "propertyRead",
         "code": "user.UserResponse",
         "propertyName": "UserResponse",
         "targetType": "UserEntity"
       },
       {
-        "location": "src/chaos.controller.ts:578:16",
+        "location": "src/chaos.controller.ts:612:16",
         "kind": "instantiation",
         "code": "new UserEntity({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-nested-${mark}-${id}`,\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:587:18",
+        "location": "src/chaos.controller.ts:621:18",
         "kind": "passAsArg",
         "code": "wrap(() => {\n\t\t\tconst inner = wrap(() => {\n\t\t\t\tconst text = `inner:${user.name}`;\n\t\t\t\treturn text;\n\t",
         "targetType": "UserEntity",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "src/chaos.controller.ts:588:18",
+        "location": "src/chaos.controller.ts:622:18",
         "kind": "passAsArg",
         "code": "wrap(() => {\n\t\t\t\tconst text = `inner:${user.name}`;\n\t\t\t\treturn text;\n\t\t\t}, user, 'chaos:nested:inner",
         "targetType": "UserEntity",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "src/chaos.controller.ts:589:27",
+        "location": "src/chaos.controller.ts:623:27",
         "kind": "propertyRead",
         "code": "user.name",
         "propertyName": "name",
@@ -1516,7 +1553,7 @@
         "targetType": "Map"
       },
       {
-        "location": "src/main.ts:80:16",
+        "location": "src/main.ts:81:16",
         "kind": "instantiation",
         "code": "new Map()",
         "context": "new expression"
@@ -1548,89 +1585,89 @@
         "targetType": "UserEntity.UserResponse"
       },
       {
-        "location": "src/chaos.controller.ts:332:24",
+        "location": "src/chaos.controller.ts:366:24",
         "kind": "instantiation",
         "code": "new user.UserResponse({\n\t\t\tid,\n\t\t\temail: `${mark}@chaos.local`,\n\t\t\tname: `chaos-midsleep-response-${",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:381:20",
+        "location": "src/chaos.controller.ts:415:20",
         "kind": "instantiation",
         "code": "new user.UserResponse({\n\t\t\t\tid,\n\t\t\t\temail: `${mark}@chaos.local`,\n\t\t\t\tname: `chaos-mist-ok-${mark}-$",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:387:51",
+        "location": "src/chaos.controller.ts:421:51",
         "kind": "passAsArg",
         "code": "extractSafe(crafted)",
         "targetType": "UserEntity.UserResponse",
         "context": "arg 0 to extractSafe"
       },
       {
-        "location": "src/chaos.controller.ts:403:20",
+        "location": "src/chaos.controller.ts:437:20",
         "kind": "instantiation",
         "code": "new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t\tname : `sanity-failed:${msg.detail}:${mark}`,\n\t\t",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:407:4",
+        "location": "src/chaos.controller.ts:441:4",
         "kind": "return",
         "code": "return crafted;",
         "targetType": "UserEntity.UserResponse"
       },
       {
-        "location": "src/chaos.controller.ts:413:62",
+        "location": "src/chaos.controller.ts:447:62",
         "kind": "passAsArg",
         "code": "extractSafe(crafted)",
         "targetType": "UserEntity.UserResponse",
         "context": "arg 0 to extractSafe"
       },
       {
-        "location": "src/chaos.controller.ts:470:20",
+        "location": "src/chaos.controller.ts:504:20",
         "kind": "instantiation",
         "code": "new user.UserResponse({\n\t\t\t\tid,\n\t\t\t\temail: `${mark}@chaos.local`,\n\t\t\t\tname: `chaos-unblind-ok-${mark",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:476:51",
+        "location": "src/chaos.controller.ts:510:51",
         "kind": "passAsArg",
         "code": "extractSafe(crafted)",
         "targetType": "UserEntity.UserResponse",
         "context": "arg 0 to extractSafe"
       },
       {
-        "location": "src/chaos.controller.ts:491:20",
+        "location": "src/chaos.controller.ts:525:20",
         "kind": "instantiation",
         "code": "new user.UserResponse({\n\t\t\t\t...responsePayload,\n\t\t\t\tname : `sanity-failed:${msg.detail}:${mark}`,\n\t\t",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:495:4",
+        "location": "src/chaos.controller.ts:529:4",
         "kind": "return",
         "code": "return crafted;",
         "targetType": "UserEntity.UserResponse"
       },
       {
-        "location": "src/chaos.controller.ts:501:61",
+        "location": "src/chaos.controller.ts:535:61",
         "kind": "passAsArg",
         "code": "extractSafe(crafted)",
         "targetType": "UserEntity.UserResponse",
         "context": "arg 0 to extractSafe"
       },
       {
-        "location": "src/chaos.controller.ts:554:20",
+        "location": "src/chaos.controller.ts:588:20",
         "kind": "instantiation",
         "code": "new user.UserResponse({\n\t\t\t\tid,\n\t\t\t\temail: `${mark}@chaos.local`,\n\t\t\t\tname: data.name as string,\n\t\t\t",
         "context": "new expression"
       },
       {
-        "location": "src/chaos.controller.ts:560:4",
+        "location": "src/chaos.controller.ts:594:4",
         "kind": "return",
         "code": "return crafted;",
         "targetType": "UserEntity.UserResponse"
       },
       {
-        "location": "src/chaos.controller.ts:565:61",
+        "location": "src/chaos.controller.ts:599:61",
         "kind": "passAsArg",
         "code": "extractSafe(crafted)",
         "targetType": "UserEntity.UserResponse",
@@ -1749,7 +1786,7 @@
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:154:21",
+        "location": "src/main.ts:160:21",
         "kind": "instantiation",
         "code": "new ValidationPipe({\n\t\ttransform: true,\n\t\twhitelist: true,\n\t\tforbidNonWhitelisted: true,\n\t})",
         "context": "new expression"
@@ -2392,7 +2429,7 @@
         "context": "chained construction"
       },
       {
-        "location": "src/main.ts:114:36",
+        "location": "src/main.ts:115:36",
         "kind": "instantiation",
         "code": "new Date().toISOString()",
         "context": "chained construction"
@@ -2412,7 +2449,7 @@
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:114:36",
+        "location": "src/main.ts:115:36",
         "kind": "instantiation",
         "code": "new Date()",
         "context": "new expression"
@@ -2480,7 +2517,7 @@
     ],
     "Sentience": [
       {
-        "location": "src/main.ts:92:38",
+        "location": "src/main.ts:93:38",
         "kind": "instantiation",
         "code": "new SentienceConstructor({\n\t\t\t\t\tawareness: 'AI Sentience System',\n\t\t\t\t\tidentity: 'AI Agent'\n\t\t\t\t})",
         "context": "new expression"
@@ -2488,7 +2525,7 @@
     ],
     "Sentience.Memory": [
       {
-        "location": "src/main.ts:104:29",
+        "location": "src/main.ts:105:29",
         "kind": "instantiation",
         "code": "new global.aiMemories.rootInstance.Memory({\n\t\t\t\t\t\tcontent: item.content,\n\t\t\t\t\t\temotion: item.emotion",
         "context": "new expression"
@@ -2496,20 +2533,20 @@
     ],
     "MnemonicaTraceMiddleware": [
       {
-        "location": "src/main.ts:150:14",
+        "location": "src/main.ts:151:14",
         "kind": "instantiation",
         "code": "new MnemonicaTraceMiddleware(trace.getTracer('tactica-nestjs'), otel, asyncFlowProvider)",
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:151:63",
+        "location": "src/main.ts:156:40",
         "kind": "methodCall",
         "code": "mtm.use(req, res, next)",
         "propertyName": "use",
         "targetType": "MnemonicaTraceMiddleware"
       },
       {
-        "location": "src/main.ts:151:63",
+        "location": "src/main.ts:156:40",
         "kind": "propertyRead",
         "code": "mtm.use",
         "propertyName": "use",
@@ -2518,13 +2555,13 @@
     ],
     "build": [
       {
-        "location": "src/main.ts:161:17",
+        "location": "src/main.ts:167:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
         "context": "chained construction"
       },
       {
-        "location": "src/main.ts:169:19",
+        "location": "src/main.ts:175:19",
         "kind": "passAsArg",
         "code": "SwaggerModule.createDocument(app, config)",
         "targetType": "build",
@@ -2533,7 +2570,7 @@
     ],
     "addTag": [
       {
-        "location": "src/main.ts:161:17",
+        "location": "src/main.ts:167:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
         "context": "chained construction"
@@ -2541,7 +2578,7 @@
     ],
     "setVersion": [
       {
-        "location": "src/main.ts:161:17",
+        "location": "src/main.ts:167:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
         "context": "chained construction"
@@ -2549,7 +2586,7 @@
     ],
     "setDescription": [
       {
-        "location": "src/main.ts:161:17",
+        "location": "src/main.ts:167:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')\n\t\t.setDescription('Example API demon",
         "context": "chained construction"
@@ -2557,7 +2594,7 @@
     ],
     "setTitle": [
       {
-        "location": "src/main.ts:161:17",
+        "location": "src/main.ts:167:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()\n\t\t.setTitle('NestJS + Mnemonica Example')",
         "context": "chained construction"
@@ -2565,10 +2602,32 @@
     ],
     "DocumentBuilder": [
       {
-        "location": "src/main.ts:161:17",
+        "location": "src/main.ts:167:17",
         "kind": "instantiation",
         "code": "new DocumentBuilder()",
         "context": "new expression"
+      }
+    ],
+    "AsyncLocalStorage": [
+      {
+        "location": "src/main.ts:257:22",
+        "kind": "instantiation",
+        "code": "new AsyncLocalStorage<requestScopeEntry>()",
+        "context": "new expression"
+      },
+      {
+        "location": "src/main.ts:302:28",
+        "kind": "methodCall",
+        "code": "requestScope.getStore()",
+        "propertyName": "getStore",
+        "targetType": "AsyncLocalStorage"
+      },
+      {
+        "location": "src/main.ts:302:28",
+        "kind": "propertyRead",
+        "code": "requestScope.getStore",
+        "propertyName": "getStore",
+        "targetType": "AsyncLocalStorage"
       }
     ],
     "MechanicsRoot": [

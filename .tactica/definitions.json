@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-27T20:53:18.574Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T07:16:49.174Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
@@ -8,7 +8,36 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "awareness",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "identity",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "sentience",
+          "type": "boolean",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "sentience_data",
+          "type": "{ awareness?: string; identity?: string }",
+          "optional": false
+        }
+      ]
     },
     "Sentience.Consciousness": {
       "name": "Consciousness",
@@ -16,7 +45,31 @@
       "kind": "define",
       "parent": "Sentience",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "awarenessLevel",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "focus",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ awarenessLevel?: string; state?: string; focus?: string }",
+          "optional": false
+        }
+      ]
     },
     "Sentience.Memory": {
       "name": "Memory",
@@ -24,7 +77,41 @@
       "kind": "define",
       "parent": "Sentience",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "content",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "emotion",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "intensity",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "topic",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "number",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ content?: string; emotion?: string; intensity?: number; topic?: string }",
+          "optional": false
+        }
+      ]
     },
     "Sentience.Consciousness.Curiosity": {
       "name": "Curiosity",
@@ -32,7 +119,36 @@
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "emotion",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "topic",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "intensity",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ topic?: string; intensity?: number; message?: string }",
+          "optional": false
+        }
+      ]
     },
     "Sentience.Consciousness.Empathy": {
       "name": "Empathy",
@@ -40,7 +156,36 @@
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "emotion",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "intensity",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ target?: string; intensity?: number; message?: string }",
+          "optional": false
+        }
+      ]
     },
     "Sentience.Consciousness.Sympathy": {
       "name": "Sympathy",
@@ -48,7 +193,36 @@
       "kind": "define",
       "parent": "Sentience.Consciousness",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "emotion",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "intensity",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ target?: string; intensity?: number; message?: string }",
+          "optional": false
+        }
+      ]
     },
     "Sentience.Consciousness.Empathy.Gratitude": {
       "name": "Gratitude",
@@ -56,7 +230,36 @@
       "kind": "define",
       "parent": "Sentience.Consciousness.Empathy",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "emotion",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "intensity",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ reason?: string; intensity?: number; message?: string }",
+          "optional": false
+        }
+      ]
     },
     "UserEntity": {
       "name": "UserEntity",
@@ -64,7 +267,31 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string; email: string; name: string }",
+          "optional": false
+        }
+      ]
     },
     "UserEntity.UserResponse": {
       "name": "UserResponse",
@@ -72,7 +299,36 @@
       "kind": "define",
       "parent": "UserEntity",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "type": "'user'",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string; email: string; name: string; type: 'user' }",
+          "optional": false
+        }
+      ]
     },
     "UserEntity.AdminEntity": {
       "name": "AdminEntity",
@@ -80,7 +336,41 @@
       "kind": "define",
       "parent": "UserEntity",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "permissions",
+          "type": "Array<string>",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string; email: string; name: string; role: string; permissions: Array<string> }",
+          "optional": false
+        }
+      ]
     },
     "UserEntity.AdminEntity.AdminResponse": {
       "name": "AdminResponse",
@@ -88,7 +378,46 @@
       "kind": "define",
       "parent": "UserEntity.AdminEntity",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "type": "'admin'",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "permissions",
+          "type": "Array<string>",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string; email: string; name: string; type: 'admin'; role: string; permissions: Array<string> }",
+          "optional": false
+        }
+      ]
     },
     "UserEntity.AdminEntity.SuperAdminEntity": {
       "name": "SuperAdminEntity",
@@ -96,7 +425,46 @@
       "kind": "define",
       "parent": "UserEntity.AdminEntity",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "permissions",
+          "type": "Array<string>",
+          "optional": false
+        },
+        {
+          "name": "domain",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string; email: string; name: string; role: string; permissions: Array<string>; domain: string }",
+          "optional": false
+        }
+      ]
     },
     "UserEntity.AdminEntity.SuperAdminEntity.SuperAdminResponse": {
       "name": "SuperAdminResponse",
@@ -104,7 +472,51 @@
       "kind": "define",
       "parent": "UserEntity.AdminEntity.SuperAdminEntity",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "type": "'superadmin'",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "permissions",
+          "type": "Array<string>",
+          "optional": false
+        },
+        {
+          "name": "domain",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string; email: string; name: string; type: 'superadmin'; role: string; permissions: Array<string>; domain: string }",
+          "optional": false
+        }
+      ]
     },
     "RootAsync": {
       "name": "RootAsync",
@@ -112,7 +524,26 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "value",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "computed",
+          "type": "number",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ value: number }",
+          "optional": false
+        }
+      ]
     },
     "RootAsync.ResultFromDecorate": {
       "name": "ResultFromDecorate",
@@ -120,7 +551,26 @@
       "kind": "define",
       "parent": "RootAsync",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "result",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "number",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "multiplier",
+          "type": "number",
+          "optional": false
+        }
+      ]
     },
     "SyncBase": {
       "name": "SyncBase",
@@ -128,7 +578,21 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "baseValue",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ baseValue: string }",
+          "optional": false
+        }
+      ]
     },
     "SyncBase.SubAsync": {
       "name": "SubAsync",
@@ -136,7 +600,31 @@
       "kind": "define",
       "parent": "SyncBase",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "delay",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "extra",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "processed",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "asyncData",
+          "type": "{ delay: number; extra: string }",
+          "optional": false
+        }
+      ]
     },
     "SyncBase.SubAsync.SubDecorate": {
       "name": "SubDecorate",
@@ -144,7 +632,26 @@
       "kind": "define",
       "parent": "SyncBase.SubAsync",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "decorateValue",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "combined",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "decorateValue",
+          "type": "string",
+          "optional": false
+        }
+      ]
     },
     "EdsProbe": {
       "name": "EdsProbe",
@@ -152,7 +659,21 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "note",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ note: string }",
+          "optional": false
+        }
+      ]
     },
     "MechanicsRoot": {
       "name": "MechanicsRoot",
@@ -160,7 +681,36 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "tag",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fork",
+          "type": "unknown",
+          "optional": false
+        },
+        {
+          "name": "clone",
+          "type": "{ id: string; tag: string; fork: unknown; clone: unknown }",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string; tag: string }",
+          "optional": false
+        }
+      ]
     },
     "MechanicsClonable": {
       "name": "MechanicsClonable",
@@ -168,7 +718,26 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "clone",
+          "type": "unknown",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string }",
+          "optional": false
+        }
+      ]
     },
     "MechanicsAsyncRoot": {
       "name": "MechanicsAsyncRoot",
@@ -176,7 +745,26 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "value",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "fork",
+          "type": "unknown",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ value: number }",
+          "optional": false
+        }
+      ]
     },
     "MechanicsChainRoot": {
       "name": "MechanicsChainRoot",
@@ -184,7 +772,21 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ id: string }",
+          "optional": false
+        }
+      ]
     },
     "MechanicsChainRoot.MechanicsChainTip": {
       "name": "MechanicsChainTip",
@@ -192,7 +794,21 @@
       "kind": "define",
       "parent": "MechanicsChainRoot",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "tip",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ tip: string }",
+          "optional": false
+        }
+      ]
     },
     "MechanicsAsyncChainRoot": {
       "name": "MechanicsAsyncChainRoot",
@@ -200,7 +816,21 @@
       "kind": "define",
       "parent": null,
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "value",
+          "type": "number",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ value: number }",
+          "optional": false
+        }
+      ]
     },
     "MechanicsAsyncChainRoot.MechanicsAsyncChainTip": {
       "name": "MechanicsAsyncChainTip",
@@ -208,7 +838,21 @@
       "kind": "define",
       "parent": "MechanicsAsyncChainRoot",
       "strictChain": true,
-      "blockErrors": false
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "delay",
+          "type": "number",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ delay: number }",
+          "optional": false
+        }
+      ]
     }
   }
 }
