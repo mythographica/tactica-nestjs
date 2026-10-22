@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "generatedAt": "2026-10-18T07:16:49.214Z",
+  "generatedAt": "2026-10-21T00:08:28.481Z",
   "callers": {
     "nodes": [
       {
@@ -36,11 +36,11 @@
         "starter": true
       },
       {
-        "scopeId": "src/async.controller.ts:196:2",
-        "name": "AsyncController.getSubDecorate",
+        "scopeId": "src/mvp.controller.ts:27:2",
+        "name": "MvpController.createWidget",
         "kind": "method",
-        "filePath": "src/async.controller.ts",
-        "location": "src/async.controller.ts:196:2",
+        "filePath": "src/mvp.controller.ts",
+        "location": "src/mvp.controller.ts:27:2",
         "starter": false
       },
       {
@@ -49,6 +49,14 @@
         "kind": "module",
         "filePath": "src/app.module.ts",
         "location": "src/app.module.ts:1:1",
+        "starter": false
+      },
+      {
+        "scopeId": "src/async.controller.ts:196:2",
+        "name": "AsyncController.getSubDecorate",
+        "kind": "method",
+        "filePath": "src/async.controller.ts",
+        "location": "src/async.controller.ts:196:2",
         "starter": false
       },
       {
@@ -339,11 +347,15 @@
       },
       {
         "caller": "src/app.module.ts",
-        "callee": "src/async.controller.ts:196:2"
+        "callee": "src/mvp.controller.ts:27:2"
       },
       {
         "caller": "src/main.ts",
         "callee": "src/app.module.ts"
+      },
+      {
+        "caller": "src/app.module.ts",
+        "callee": "src/async.controller.ts:196:2"
       },
       {
         "caller": "src/app.module.ts",
@@ -916,6 +928,20 @@
         "variable": "subDecorate"
       },
       {
+        "location": "src/mvp.controller.ts:36:9",
+        "holderScopeId": "src/mvp.controller.ts:27:2",
+        "typePath": "MvpWidget",
+        "constructorText": "MvpWidgetType",
+        "variable": "widget"
+      },
+      {
+        "location": "src/mvp.controller.ts:43:17",
+        "holderScopeId": "src/mvp.controller.ts:27:2",
+        "typePath": "MvpWidget.WidgetLabel",
+        "constructorText": "widget.WidgetLabel",
+        "variable": "label"
+      },
+      {
         "location": "src/main.ts:93:38",
         "holderScopeId": "src/main.ts:67:1",
         "typePath": "Sentience",
@@ -1050,6 +1076,16 @@
       "scope": "method:SuperAdminController.createSuperAdmin",
       "targets": [
         "SuperAdminController"
+      ]
+    },
+    {
+      "kind": "pipe",
+      "className": "MvpWidgetType",
+      "location": "src/mvp.controller.ts:36:3",
+      "code": "@Body(mvp.forType(MvpWidgetType, CreateWidgetDto))",
+      "scope": "method:MvpController.createWidget",
+      "targets": [
+        "MvpController"
       ]
     },
     {

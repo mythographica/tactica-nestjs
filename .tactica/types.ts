@@ -215,6 +215,21 @@ export type EdsProbe = {
 	note: string;
 };
 
+export type MvpWidget = {
+	name: string;
+	addr: { city: string };
+	WidgetLabel: {
+		new (data: { format: 'short' | 'full' }): MvpWidget_WidgetLabel;
+		(data: { format: 'short' | 'full' }): MvpWidget_WidgetLabel;
+	};
+};
+
+export type MvpWidget_WidgetLabel = ProtoFlat<MvpWidget, {
+	format: 'short' | 'full';
+	text: unknown;
+	WidgetLabel: undefined;
+}>;
+
 export type MechanicsRoot = {
 	id: string;
 	tag: string;

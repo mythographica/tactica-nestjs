@@ -8,6 +8,7 @@ import { trace } from '@opentelemetry/api';
 import './entities/user.entity';
 import './entities/async.entity';
 import './entities/eds-probe.entity';
+import './entities/widget.entity';
 import { InferDebugModule } from 'infer-debug/nestjs';
 import { MnemonicaModule } from '@mnemonica/nestjs';
 import { UserController, AdminController, SuperAdminController } from './user.controller';
@@ -19,6 +20,7 @@ import { MidSleepMiddleware } from './mid-sleep.middleware';
 import { MistPlusMiddleware } from './mist-plus.middleware';
 import { CornerCutMiddleware } from './corner-cut.middleware';
 import { StrategyChannelController } from './strategy-channel.controller';
+import { MvpController } from './mvp.controller';
 import { UserService } from './user.service';
 
 /**
@@ -49,7 +51,7 @@ import { UserService } from './user.service';
 			asyncFlow      : true,
 		}),
 	],
-	controllers: [UserController, AdminController, SuperAdminController, AsyncController, GraphController, ChaosController, StrategyChannelController],
+	controllers: [UserController, AdminController, SuperAdminController, AsyncController, GraphController, ChaosController, StrategyChannelController, MvpController],
 	providers: [
 		UserService,
 		// Demo interceptor: stamps req.imark for the /chaos/crash_int_response

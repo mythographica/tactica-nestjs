@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "generatedAt": "2026-10-18T07:16:49.175Z",
+  "generatedAt": "2026-10-21T00:08:28.402Z",
   "usages": {
     "UserEntity": [
       {
@@ -414,6 +414,30 @@
         "code": "new subAsync.SubDecorate(decorateValue)",
         "constructorText": "subAsync.SubDecorate",
         "holderScopeId": "src/async.controller.ts:196:2"
+      }
+    ],
+    "MvpWidget": [
+      {
+        "location": "src/mvp.controller.ts:9:23",
+        "kind": "lookup",
+        "code": "lookup('MvpWidget')",
+        "holderScopeId": "src/mvp.controller.ts"
+      },
+      {
+        "location": "src/mvp.controller.ts:36:9",
+        "kind": "instantiation",
+        "code": "mvp.forType(MvpWidgetType, CreateWidgetDto)",
+        "constructorText": "MvpWidgetType",
+        "holderScopeId": "src/mvp.controller.ts:27:2"
+      }
+    ],
+    "MvpWidget.WidgetLabel": [
+      {
+        "location": "src/mvp.controller.ts:43:17",
+        "kind": "instantiation",
+        "code": "new widget.WidgetLabel({ format: 'full' })",
+        "constructorText": "widget.WidgetLabel",
+        "holderScopeId": "src/mvp.controller.ts:27:2"
       }
     ],
     "Sentience": [

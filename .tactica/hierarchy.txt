@@ -7,6 +7,8 @@ Type Hierarchy (Trie):
 │   └── MechanicsChainRoot_MechanicsChainTip
 ├── MechanicsClonable
 ├── MechanicsRoot
+├── MvpWidget
+│   └── MvpWidget_WidgetLabel
 ├── RootAsync
 │   └── RootAsync_ResultFromDecorate
 ├── Sentience

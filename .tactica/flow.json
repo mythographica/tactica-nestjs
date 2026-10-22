@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "generatedAt": "2026-10-18T07:16:49.178Z",
+  "generatedAt": "2026-10-21T00:08:28.404Z",
   "flow": {
     "Error": [
       {
@@ -178,6 +178,12 @@
         "targetType": "Error"
       },
       {
+        "location": "src/mvp.controller.ts:57:3",
+        "kind": "return",
+        "code": "return result;",
+        "targetType": "Error"
+      },
+      {
         "location": "src/ai-types/bootstrap.ts:24:7",
         "kind": "propertyRead",
         "code": "result.logs",
@@ -247,37 +253,37 @@
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:239:3",
+        "location": "src/main.ts:240:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:243:3",
+        "location": "src/main.ts:244:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:262:3",
+        "location": "src/main.ts:263:3",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:277:2",
+        "location": "src/main.ts:278:2",
         "kind": "return",
         "code": "return result;",
         "targetType": "Error"
       },
       {
-        "location": "src/main.ts:348:51",
+        "location": "src/main.ts:349:51",
         "kind": "instantiation",
         "code": "new Error(String(reason))",
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:349:2",
+        "location": "src/main.ts:350:2",
         "kind": "passAsArg",
         "code": "processErrorReport('unhandledRejection', error)",
         "targetType": "Error",
@@ -2455,6 +2461,50 @@
         "context": "new expression"
       }
     ],
+    "MvpWidget": [
+      {
+        "location": "src/mvp.controller.ts:36:9",
+        "kind": "instantiation",
+        "code": "mvp.forType(MvpWidgetType, CreateWidgetDto)",
+        "context": "plugin factory construction"
+      },
+      {
+        "location": "src/mvp.controller.ts:36:9",
+        "kind": "passAsArg",
+        "code": "mvp.forType(MvpWidgetType, CreateWidgetDto)",
+        "targetType": "MvpWidget",
+        "context": "arg 0 to forType"
+      }
+    ],
+    "MvpWidget.WidgetLabel": [
+      {
+        "location": "src/mvp.controller.ts:43:17",
+        "kind": "instantiation",
+        "code": "new widget.WidgetLabel({ format: 'full' })",
+        "context": "new expression"
+      },
+      {
+        "location": "src/mvp.controller.ts:48:16",
+        "kind": "propertyRead",
+        "code": "label.constructor.name",
+        "propertyName": "name",
+        "targetType": "MvpWidget.WidgetLabel"
+      },
+      {
+        "location": "src/mvp.controller.ts:48:16",
+        "kind": "propertyRead",
+        "code": "label.constructor",
+        "propertyName": "constructor",
+        "targetType": "MvpWidget.WidgetLabel"
+      },
+      {
+        "location": "src/mvp.controller.ts:49:16",
+        "kind": "passAsArg",
+        "code": "utils.extract(label)",
+        "targetType": "MvpWidget.WidgetLabel",
+        "context": "arg 0 to extract"
+      }
+    ],
     "OTLPTraceExporter": [
       {
         "location": "src/tracing.ts:23:19",
@@ -2610,20 +2660,20 @@
     ],
     "AsyncLocalStorage": [
       {
-        "location": "src/main.ts:257:22",
+        "location": "src/main.ts:258:22",
         "kind": "instantiation",
         "code": "new AsyncLocalStorage<requestScopeEntry>()",
         "context": "new expression"
       },
       {
-        "location": "src/main.ts:302:28",
+        "location": "src/main.ts:303:28",
         "kind": "methodCall",
         "code": "requestScope.getStore()",
         "propertyName": "getStore",
         "targetType": "AsyncLocalStorage"
       },
       {
-        "location": "src/main.ts:302:28",
+        "location": "src/main.ts:303:28",
         "kind": "propertyRead",
         "code": "requestScope.getStore",
         "propertyName": "getStore",

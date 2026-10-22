@@ -29,6 +29,8 @@ import type {
 	SyncBase_SubAsync,
 	SyncBase_SubAsync_SubDecorate,
 	EdsProbe,
+	MvpWidget,
+	MvpWidget_WidgetLabel,
 	MechanicsRoot,
 	MechanicsClonable,
 	MechanicsAsyncRoot,
@@ -65,6 +67,8 @@ declare module 'mnemonica' {
 		'SyncBase.SubAsync': new (asyncData: { delay: number; extra: string }) => Promise<SyncBase_SubAsync>;
 		'SyncBase.SubAsync.SubDecorate': new (decorateValue: string) => SyncBase_SubAsync_SubDecorate;
 		'EdsProbe': new (data: { note: string }) => EdsProbe;
+		'MvpWidget': new (data: { name: string; addr: { city: string } }) => MvpWidget;
+		'MvpWidget.WidgetLabel': new (data: { format: 'short' | 'full' }) => MvpWidget_WidgetLabel;
 		'MechanicsRoot': new (data: { id: string; tag: string }) => MechanicsRoot;
 		'MechanicsClonable': new (data: { id: string }) => MechanicsClonable;
 		'MechanicsAsyncRoot': new (data: { value: number }) => Promise<MechanicsAsyncRoot>;

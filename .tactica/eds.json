@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "generatedAt": "2026-10-18T07:16:49.178Z",
+  "generatedAt": "2026-10-21T00:08:28.403Z",
   "eds": {
     "EdsProbe": [
       {
@@ -47,12 +47,12 @@
         "scopeId": "src/mid-sleep.middleware.ts:43:14"
       },
       {
-        "location": "src/main.ts:298:15",
+        "location": "src/main.ts:299:15",
         "kind": "contextConsume",
         "code": "getFlow(error)"
       },
       {
-        "location": "src/main.ts:299:19",
+        "location": "src/main.ts:300:19",
         "kind": "contextConsume",
         "code": "getErrorInstance(error)"
       }

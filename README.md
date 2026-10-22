@@ -227,6 +227,9 @@ The full end-to-end walkthrough (extension install → graph → live traces →
 - `POST /super-admins` - Create a super admin (3-level inheritance)
 - `GET /super-admins/:id` - Get a super admin
 
+### Validation pipe (`mvp.forType`)
+- `POST /mvp/widget` - `@Body(mvp.forType(MvpWidget, CreateWidgetDto))`: class-validator checks the body (400 on failure), the validated DTO joins the request's pre-root record, and the handler receives a constructed `MvpWidget`
+
 ### Async Examples
 - `POST /async/root-async` - Create RootAsync instance (async constructor)
 - `POST /async/root-async/result` - Create RootAsync then ResultFromDecorate (chained)

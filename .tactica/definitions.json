@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "generatedAt": "2026-10-18T07:16:49.174Z",
+  "generatedAt": "2026-10-21T00:08:28.400Z",
   "definitions": {
     "Sentience": {
       "name": "Sentience",
@@ -671,6 +671,60 @@
         {
           "name": "data",
           "type": "{ note: string }",
+          "optional": false
+        }
+      ]
+    },
+    "MvpWidget": {
+      "name": "MvpWidget",
+      "location": "src/entities/widget.entity.ts:9:16",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "addr",
+          "type": "{ city: string }",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ name: string; addr: { city: string } }",
+          "optional": false
+        }
+      ]
+    },
+    "MvpWidget.WidgetLabel": {
+      "name": "WidgetLabel",
+      "location": "src/entities/widget.entity.ts:19:8",
+      "kind": "define",
+      "parent": "MvpWidget",
+      "strictChain": true,
+      "blockErrors": false,
+      "fields": [
+        {
+          "name": "format",
+          "type": "'short' | 'full'",
+          "optional": false
+        },
+        {
+          "name": "text",
+          "type": "unknown",
+          "optional": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "{ format: 'short' | 'full' }",
           "optional": false
         }
       ]

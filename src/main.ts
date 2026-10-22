@@ -192,6 +192,7 @@ async function bootstrap() {
 	console.log('  GET  /admins/:id      - Get admin');
 	console.log('  POST /super-admins    - Create superadmin (3-level inheritance)');
 	console.log('  GET  /super-admins/:id - Get superadmin');
+	console.log('  POST /mvp/widget      - Validate + construct via mvp.forType');
 	console.log('');
 	console.log('Async/Await + @decorate() Examples:');
 	console.log('  POST /async/root-async              - Async constructor');
